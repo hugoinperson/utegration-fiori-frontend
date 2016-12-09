@@ -1,0 +1,15 @@
+{
+  "name": "utg_fiori_frontend",
+  "version": "1.0.0",
+  "description": "Presentation of SAP Fiori UI for Utegration 2017 company event.",
+  "main": "index.js",
+  "dependencies": {
+    "ws": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jhsu",
+  "license": "MIT"
+}

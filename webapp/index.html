@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>UTG_FIORI_FRONTEND</title>
+
+		<script id="sap-ui-bootstrap"
+			src="SAPUI5/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"utegration.fiori.frontend": ""}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				'use strict';
+				
+				new sap.ui.core.ComponentContainer({
+					height: "100%",
+                    width: "100%",
+					name : "utegration.fiori.frontend"
+				}).placeAt("content");
+			});
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+	</body>
+
+</html>

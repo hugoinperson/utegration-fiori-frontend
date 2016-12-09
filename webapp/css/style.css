@@ -1,0 +1,19 @@
+/* Enter your custom styles here */
+
+.utg-fiori-hostPage .sapMPageHeader {
+	background-color: transparent;
+    box-shadow: none;
+}
+
+.utg-fiori-shell {
+	position: absolute;
+	width: 100%;
+	height: 48px;
+	top: -48px;
+	transition: all 0.8s;
+}
+
+.utg-fiori-shell.show {
+	top: 0;
+	transition: all 0.5s;
+}

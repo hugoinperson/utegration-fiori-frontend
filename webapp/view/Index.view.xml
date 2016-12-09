@@ -1,0 +1,23 @@
+<mvc:View 
+	controllerName="utegration.fiori.frontend.controller.Index" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:u="sap.ui.unified" 
+	xmlns="sap.m">
+	<Page 
+		id="utg-fiori-hostPage" 
+		class="utg-fiori-hostPage"
+		enableScrolling="false">
+		<headerContent>
+			<u:Shell
+				id="utg-fiori-shell"
+				class="utg-fiori-shell"
+				icon="img/favicon.png">
+				<u:headItems>
+					<u:ShellHeadItem tooltip="Configuration" icon="sap-icon://menu2" press="handlePressConfiguration"/>
+				</u:headItems>
+			</u:Shell>
+		</headerContent>
+		<content></content>
+	</Page>
+</mvc:View>
