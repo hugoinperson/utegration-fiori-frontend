@@ -20,9 +20,6 @@ sap.ui.define([
     
     CustomController.prototype.onAfterRendering = function () {
     	var that = this;
-
-    	// Hide the header by default
-    	// that.hostPage.setShowHeader(false);
     	
     	this.hostPage.getHeaderContent()[0].getParent().attachBrowserEvent("mouseenter", function (oEvent) {
     		that.shell.addStyleClass("show");
@@ -31,26 +28,6 @@ sap.ui.define([
     	this.hostPage.getHeaderContent()[0].getParent().attachBrowserEvent("mouseleave", function (oEvent) {
     		that.shell.removeStyleClass("show");
     	});
-    	
-    	// this.getView().attachBrowserEvent("mousemove", function (oEvent) {
-  
-	    //     function complete() {
-	    //     	if (oEvent.pageY < 50) {
-	    //     		// that.hostPage.setShowHeader(true);
-	    //     		that.shell.addStyleClass('show');
-	    //     	} else {
-	    //     		// that.hostPage.setShowHeader(false);
-	    //     		that.shell.removeStyleClass('show');
-	    //     	}
-	    //         timer = null;
-	    //     }
-	
-	    //     if (timer) {
-	    //         clearTimeout(timer);
-	    //     }
-	
-	    //     timer = setTimeout(complete, 0);
-	    // });
     };
     
     

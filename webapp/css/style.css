@@ -5,6 +5,24 @@
     box-shadow: none;
 }
 
+
+/* Hide the first shell header item */
+.utg-fiori-hostPage .sapUiUfdShellHeadContainer .sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:first-child > span {
+	display: none;
+}
+
+/* Adjust the shell header item image size */
+.utg-fiori-hostPage .sapUiUfdShellHeadContainer .sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep > span > img {
+	margin: 0;
+	width: 35px;
+    height: 35px;
+}
+
+.utg-fiori-hostPage .sapUiUfdShellHeadContainer .sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:hover > span {
+	background-color: transparent;
+}
+
+
 .utg-fiori-shell {
 	position: absolute;
 	width: 100%;
