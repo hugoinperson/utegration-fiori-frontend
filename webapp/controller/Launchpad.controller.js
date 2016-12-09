@@ -5,7 +5,7 @@ sap.ui.define([
 	
 	"use strict";
 	
-	var CustomController = Controller.extend("utegration.fiori.frontend.controller.Index");
+	var CustomController = Controller.extend("utegration.fiori.frontend.controller.Launchpad");
 
 	CustomController.prototype.onInit = function () {
     	// global variables

@@ -41,7 +41,7 @@
 	"sap.ui5": {
 		"_version": "1.1.0",
 		"rootView": {
-			"viewName": "utegration.fiori.frontend.view.Index",
+			"viewName": "utegration.fiori.frontend.view.Launchpad",
 			"type": "XML"
 		},
 		"dependencies": {

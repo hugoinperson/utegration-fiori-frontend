@@ -1,5 +1,5 @@
 <mvc:View 
-	controllerName="utegration.fiori.frontend.controller.Index" 
+	controllerName="utegration.fiori.frontend.controller.Launchpad" 
 	xmlns:html="http://www.w3.org/1999/xhtml" 
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:u="sap.ui.unified" 
