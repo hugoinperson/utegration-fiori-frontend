@@ -5,6 +5,11 @@
     box-shadow: none;
 }
 
+.utg-fiori-hostPage .sapMPageHeader .sapMBarContainer.sapMBarRight,
+.utg-fiori-hostPage .sapMPageHeader .sapMBarContainer.sapMBarLeft {
+	height: 48px;
+}
+
 
 /* Hide the first shell header item */
 .utg-fiori-hostPage .sapUiUfdShellHeadContainer .sapUiUfdShellHeadItm.sapUiUfdShellHeadItmSep:first-child > span {

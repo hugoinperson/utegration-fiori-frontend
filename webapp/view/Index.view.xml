@@ -1,0 +1,10 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:m="sap.m"
+    displayBlock="true"
+    height="100%"
+    class="sapUiSizeCompact">
+
+    <m:App id="indexApp" />
+
+</mvc:View>

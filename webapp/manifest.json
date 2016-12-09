@@ -40,10 +40,6 @@
 
 	"sap.ui5": {
 		"_version": "1.1.0",
-		"rootView": {
-			"viewName": "utegration.fiori.frontend.view.Launchpad",
-			"type": "XML"
-		},
 		"dependencies": {
 			"minUI5Version": "1.30.0",
 			"libs": {
@@ -68,6 +64,32 @@
 			"css": [{
 				"uri": "css/style.css"
 			}]
-		}
+		},
+		"rootView": {
+			"viewName": "utegration.fiori.frontend.view.Index",
+			"type": "XML"
+		},
+		"routing": {
+            "config": {
+                "routerClass": "sap.m.routing.Router",
+                "viewType": "XML",
+                "viewPath": "utegration.fiori.frontend.view",
+                "controlId": "indexApp",
+                "controlAggregation": "pages",
+                "transition": "slide"
+            },
+            "routes": [
+            	{
+                    "pattern": "",
+                    "name": "launchpad",
+                    "target": "launchpad"
+                }
+            ],
+            "targets": {
+                "launchpad": {
+                    "viewName": "Launchpad"
+                }
+            }
+	    }
 	}
 }
