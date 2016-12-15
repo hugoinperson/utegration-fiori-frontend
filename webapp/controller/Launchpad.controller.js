@@ -10,7 +10,7 @@ sap.ui.define([
 	CustomController.prototype.onInit = function () {
     	// global variables
     	this.hostPage = this.getView().byId("utg-fiori-hostPage");
-    	this.shell = this.getView().byId("utg-fiori-shell");
+    	this.toolbar = this.getView().byId("utg-fiori-toolbar");
     	// static variables
     	this.slideId = "utg-slide-";
     };
@@ -22,11 +22,11 @@ sap.ui.define([
     	var that = this;
     	
     	this.hostPage.getHeaderContent()[0].getParent().attachBrowserEvent("mouseenter", function (oEvent) {
-    		that.shell.addStyleClass("show");
+    		that.toolbar.addStyleClass("show");
     	});
     	
     	this.hostPage.getHeaderContent()[0].getParent().attachBrowserEvent("mouseleave", function (oEvent) {
-    		that.shell.removeStyleClass("show");
+    		that.toolbar.removeStyleClass("show");
     	});
     };
     

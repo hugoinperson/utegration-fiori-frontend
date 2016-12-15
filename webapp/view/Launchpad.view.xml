@@ -10,19 +10,38 @@
 		class="utg-fiori-hostPage"
 		enableScrolling="true">
 		<headerContent>
-			<u:Shell
-				id="utg-fiori-shell"
-				class="utg-fiori-shell"
-				icon="img/favicon.png">
-				<u:headItems>
-					<u:ShellHeadItem />
-					<u:ShellHeadItem tooltip="user" icon="img/avatar.png" press="onUserClick"/>
-				</u:headItems>
-			</u:Shell>
+			<OverflowToolbar
+				id="utg-fiori-toolbar"
+				class="utg-fiori-toolbar">
+				<ImageContent
+					class="utg-fiori-toolbar-img"
+					src="img/avatar.png"
+					description="Profile image"
+					press="press">
+				</ImageContent>
+				<ImageContent
+					class="utg-fiori-toolbar-img"
+					src="img/favicon.png"
+					description="Profile image"
+					press="press">
+				</ImageContent>
+				<ToolbarSpacer/>
+				<Text text="Home" />
+				<ToolbarSpacer/>
+			</OverflowToolbar>
+			<!--<u:Shell-->
+			<!--	id="utg-fiori-shell"-->
+			<!--	class="utg-fiori-shell"-->
+			<!--	icon="img/favicon.png">-->
+			<!--	<u:headItems>-->
+			<!--		<u:ShellHeadItem />-->
+			<!--		<u:ShellHeadItem tooltip="user" icon="img/avatar.png" press="onUserClick"/>-->
+			<!--	</u:headItems>-->
+			<!--</u:Shell>-->
 		</headerContent>
 		<content>
 			<l:BlockLayout id="utg-fiori-launchpad-blockLayout">
-				<l:BlockLayoutRow accentCells="Accent1">
+				<l:BlockLayoutRow>
 					<l:BlockLayoutCell
 						width="2"
 						title="Left aligned heading">
