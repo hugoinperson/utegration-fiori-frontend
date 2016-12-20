@@ -11,8 +11,12 @@ sap.ui.define([
     	// global variables
     	this.hostPage = this.getView().byId("utg-fiori-hostPage");
     	this.toolbar = this.getView().byId("utg-fiori-toolbar");
+    	this.launchpadWrapper = this.getView().byId("utg-fiori-launchpad-wrapper");
+    	this.meArea = this.getView().byId("utg-fiori-launchpad-meArea");
+    	this.main = this.getView().byId("utg-fiori-launchpad-main");
+    	this.notiCenter = this.getView().byId("utg-fiori-launchpad-notiCenter");
     	// static variables
-    	this.slideId = "utg-slide-";
+    	this.SLIDE_ID = "utg-slide-";
     };
 
     CustomController.prototype.onBeforeRendering = function () {
@@ -30,6 +34,60 @@ sap.ui.define([
     	});
     };
     
+    /*-------------------------------------------------- UI Interaction -------------------------------------------------*/
+    
+    CustomController.prototype.onHomePress = function (oEvent) {
+    	var that = this,
+    		$launchpadWrapper = $(that.launchpadWrapper.getDomRef());
+    	
+    	// If Me Area is open
+    	if (that.meArea.getVisible()) {
+    		$launchpadWrapper.css("overflow-x", "auto");
+			$launchpadWrapper.animate({scrollLeft: $launchpadWrapper.width()}, 800, function(){
+				that.meArea.setVisible(false);
+				$launchpadWrapper.css("overflow-x", "hidden");
+			});
+    	}
+    	
+    	// If Notification Center is open
+    	if (that.notiCenter.getVisible()) {
+    		$launchpadWrapper.css("overflow-x", "auto");
+			$launchpadWrapper.animate({scrollLeft: 0}, 800, function(){
+				that.notiCenter.setVisible(false);
+				$launchpadWrapper.css("overflow-x", "hidden");
+			});
+    	}
+    };
+    
+    CustomController.prototype.onUserAvatarPress = function (oEvent) {
+    	var that = this,
+    		$launchpadWrapper = $(that.launchpadWrapper.getDomRef());
+    	
+    	if (!that.meArea.getVisible()) {
+    		that.meArea.setVisible(true);
+    		setTimeout(function(){
+    			$launchpadWrapper.scrollLeft($launchpadWrapper.width());
+    			$launchpadWrapper.animate({scrollLeft: 0}, 800, function(){
+    				$launchpadWrapper.css("overflow-x", "hidden");	
+    			});
+    		}, 0);
+    	}
+    };
+    
+    CustomController.prototype.onNotiCenterPress = function (oEvent) {
+    	var that = this,
+    		$launchpadWrapper = $(that.launchpadWrapper.getDomRef());
+    	
+    	if (!that.notiCenter.getVisible()) {
+    		that.notiCenter.setVisible(true);
+    		setTimeout(function(){
+    			$launchpadWrapper.scrollLeft();
+    			$launchpadWrapper.animate({scrollLeft: $launchpadWrapper.width()}, 800, function(){
+    				$launchpadWrapper.css("overflow-x", "hidden");	
+    			});
+    		}, 0);
+    	}
+    };
     
 
     return CustomController;

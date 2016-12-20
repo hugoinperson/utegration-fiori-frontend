@@ -1,6 +1,7 @@
 <mvc:View 
 	controllerName="utegration.fiori.frontend.controller.Launchpad" 
-	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:core="sap.ui.core"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:u="sap.ui.unified"
 	xmlns:l="sap.ui.layout"
@@ -17,7 +18,7 @@
 					class="utg-fiori-toolbar-img"
 					src="img/avatar.png"
 					description="Profile image"
-					press="press">
+					press="onUserAvatarPress">
 				</ImageContent>
 				<ImageContent
 					class="utg-fiori-toolbar-img"
@@ -26,176 +27,200 @@
 					press="press">
 				</ImageContent>
 				<ToolbarSpacer/>
-				<Text text="Home" />
+				<Button text="Home" type="Transparent" press="onHomePress"/>
 				<ToolbarSpacer/>
+				<core:Icon
+					src="sap-icon://ui-notifications"
+					class="utg-fiori-toolbar-notiCenterIcon"
+					color="#031E48"
+					press="onNotiCenterPress">
+				</core:Icon>
 			</OverflowToolbar>
-			<!--<u:Shell-->
-			<!--	id="utg-fiori-shell"-->
-			<!--	class="utg-fiori-shell"-->
-			<!--	icon="img/favicon.png">-->
-			<!--	<u:headItems>-->
-			<!--		<u:ShellHeadItem />-->
-			<!--		<u:ShellHeadItem tooltip="user" icon="img/avatar.png" press="onUserClick"/>-->
-			<!--	</u:headItems>-->
-			<!--</u:Shell>-->
 		</headerContent>
 		<content>
-			<l:BlockLayout id="utg-fiori-launchpad-blockLayout">
-				<l:BlockLayoutRow>
-					<l:BlockLayoutCell
-						width="2"
-						title="Left aligned heading">
-						<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
-						<RadioButtonGroup columns="2" selectedIndex="2" class="sapUiMediumMarginTop">
-							<buttons>
-								<RadioButton id="RB2-1" text="Option 1"/>
-								<RadioButton id="RB2-2" text="Option 2" editable="false"/>
-								<RadioButton id="RB2-3" text="Option 3"/>
-							</buttons>
-						</RadioButtonGroup>
-					</l:BlockLayoutCell>
-					<l:BlockLayoutCell
-						width="1"
-						title="Notification Center">
-						<List id="notificationList" class="sapContrast sapContrastPlus">
-							<NotificationListItem
-									title="New order (#2525) With a very long title - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
-									description="And with a very long description and long labels of the action buttons - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
-									showCloseButton="true"
-									datetime="1 hour"
-									unread="true"
-									priority="None"
-									close="onItemClose"
-									press="onListItemPress"
-									authorName="Jean Doe"
-									authorPicture="test-resources/sap/m/images/Woman_04.png">
+			<l:BlockLayout class="utg-fiori-launchpad-container">
+					<l:BlockLayoutRow id="utg-fiori-launchpad-wrapper" class="utg-fiori-launchpad-wrapper" scrollable="true">
+						<!--Me Area-->
+						<l:BlockLayoutCell
+							id="utg-fiori-launchpad-meArea"
+							class="utg-fiori-launchpad-meArea"
+							visible="false"
+							width="70"
+							title="Me area">
+							<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+						</l:BlockLayoutCell>
+						<!--Main Area-->
+						<l:BlockLayoutCell
+							id="utg-fiori-launchpad-main"
+							class="utg-fiori-launchpad-main"
+							width="100"
+							title="Left aligned heading">
+							<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+							<RadioButtonGroup columns="2" selectedIndex="2" class="sapUiMediumMarginTop">
 								<buttons>
-									<Button text="Accept All Requested Information" type="Accept" press="onAcceptPress"></Button>
-									<Button text="Reject All Requested Information" type="Reject" press="onRejectPress"></Button>
+									<RadioButton id="RB2-1" text="Option 1"/>
+									<RadioButton id="RB2-2" text="Option 2" editable="false"/>
+									<RadioButton id="RB2-3" text="Option 3"/>
 								</buttons>
+							</RadioButtonGroup>
+						</l:BlockLayoutCell>
+						<!--Notification Center-->
+						<l:BlockLayoutCell
+							id="utg-fiori-launchpad-notiCenter"
+							class="utg-fiori-launchpad-notiCenter"
+							visible="false"
+							width="70"
+							title="Notification Center">
+							<ScrollContainer
+								height="100%"
+								width="100%"
+								horizontal="false"
+								vertical="true">
+								<List id="notificationList" class="sapContrast sapContrastPlus">
+								<NotificationListItem
+										title="New order (#2525) With a very long title - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
+										description="And with a very long description and long labels of the action buttons - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
+										showCloseButton="true"
+										datetime="1 hour"
+										unread="true"
+										priority="None"
+										close="onItemClose"
+										press="onListItemPress"
+										authorName="Jean Doe"
+										authorPicture="test-resources/sap/m/images/Woman_04.png">
+									<buttons>
+										<Button text="Accept All Requested Information" type="Accept" press="onAcceptPress"></Button>
+										<Button text="Reject All Requested Information" type="Reject" press="onRejectPress"></Button>
+									</buttons>
+									</NotificationListItem>
+				 
+								<NotificationListItem
+										title="New order (#2524), without action buttons"
+										description="Short description"
+										showCloseButton="true"
+										datetime="3 days"
+										unread="true"
+										priority="High"
+										close="onItemClose"
+										press="onListItemPress"
+										authorName="Office Notification"
+										authorPicture="sap-icon://group">
 								</NotificationListItem>
-			 
-							<NotificationListItem
-									title="New order (#2524), without action buttons"
-									description="Short description"
-									showCloseButton="true"
-									datetime="3 days"
-									unread="true"
-									priority="High"
-									close="onItemClose"
-									press="onListItemPress"
-									authorName="Office Notification"
-									authorPicture="sap-icon://group">
-							</NotificationListItem>
-			 
-							<NotificationListItem
-									title="New order (#2523) With a long title - Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-									description="And short description"
-									showCloseButton="false"
-									unread="false"
-									datetime="3 days"
-									priority="High"
-									close="onItemClose"
-									press="onListItemPress"
-									authorName="Patricia Clark"
-									authorPicture="test-resources/sap/m/images/female_BaySu.jpg">
-								<buttons>
-									<Button text="Accept" type="Accept" press="onAcceptPress" icon="sap-icon://accept"></Button>
-									<Button text="Reject" type="Reject" press="onRejectPress" icon="sap-icon://sys-cancel"></Button>
-								</buttons>
-							</NotificationListItem>
-			 
-							<NotificationListItem
-									title="New order (#2522)"
-									description="With a very long description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
-									showCloseButton="true"
-									datetime="3 days"
-									unread="true"
-									priority="Medium"
-									close="onItemClose"
-									press="onListItemPress"
-									authorName="John Smith"
-									authorPicture="test-resources/sap/m/images/headerImg2.jpg">
-							</NotificationListItem>
-			 
-							<NotificationListItem
-									title="New order (#2521)"
-									description="With a very long description and no action buttons below - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
-									showCloseButton="true"
-									datetime="3 days"
-									unread="true"
-									priority="Low"
-									close="onItemClose"
-									press="onListItemPress"
-									authorName="John Smith"
-									authorPicture="test-resources/sap/m/images/headerImg2.jpg">
-							</NotificationListItem>
-			 
-							<NotificationListItem
-									title="New order (#2525) With a very long title and truncation disabled by default! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
-									description="And a very long description and long labels of the action buttons - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
-									showCloseButton="true"
-									datetime="2 day"
-									unread="false"
-									priority="Low"
-									close="onItemClose"
-									press="onListItemPress"
-									authorName="Jean Doe"
-									authorPicture="test-resources/sap/m/images/Woman_04.png"
-									truncate="false">
-								<buttons>
-									<Button text="Accept" type="Accept" press="onAcceptPress"></Button>
-									<Button text="Reject" type="Reject" press="onRejectPress"></Button>
-								</buttons>
-							</NotificationListItem>
-			 
-							<NotificationListItem
-									title="New order (#2525) With a very long title and with truncation enabled but 'Show More' hidden! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
-									description="And a very long description and long labels of the action buttons - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
-									showCloseButton="true"
-									datetime="2 day"
-									unread="false"
-									priority="Low"
-									close="onItemClose"
-									press="onListItemPress"
-									authorName="Jean Doe"
-									authorPicture="test-resources/sap/m/images/Woman_04.png"
-									hideShowMoreButton="true"
-									showButtons="false">
-								<buttons>
-									<Button text="Accept" type="Accept" press="onAcceptPress"></Button>
-									<Button text="Reject" type="Reject" press="onRejectPress"></Button>
-								</buttons>
-							</NotificationListItem>
-			 
-							<NotificationListItem
-									title="New order (#2523) With a long title without description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet"
-									showCloseButton="false"
-									unread="false"
-									datetime="3 days"
-									priority="High"
-									close="onItemClose"
-									press="onListItemPress"
-									authorName="Patricia Clark"
-									authorPicture="test-resources/sap/m/images/female_BaySu.jpg">
-								<buttons>
-									<Button text="Accept" type="Accept" press="onAcceptPress" icon="sap-icon://accept"></Button>
-									<Button text="Reject" type="Reject" press="onRejectPress" icon="sap-icon://sys-cancel"></Button>
-								</buttons>
-							</NotificationListItem>
-			                <NotificationListItem
-			                        title="New order (#2523) With a long title without description"
-			                        showCloseButton="true"
-			                        unread="false"
-			                        datetime="3 days"
-			                        priority="High"
-			                        close="onItemClose"
-			                        press="onListItemPress">
-			                </NotificationListItem>
-						</List>
-					</l:BlockLayoutCell>
-				</l:BlockLayoutRow>
-			</l:BlockLayout>
+				 
+								<NotificationListItem
+										title="New order (#2523) With a long title - Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+										description="And short description"
+										showCloseButton="false"
+										unread="false"
+										datetime="3 days"
+										priority="High"
+										close="onItemClose"
+										press="onListItemPress"
+										authorName="Patricia Clark"
+										authorPicture="test-resources/sap/m/images/female_BaySu.jpg">
+									<buttons>
+										<Button text="Accept" type="Accept" press="onAcceptPress" icon="sap-icon://accept"></Button>
+										<Button text="Reject" type="Reject" press="onRejectPress" icon="sap-icon://sys-cancel"></Button>
+									</buttons>
+								</NotificationListItem>
+				 
+								<NotificationListItem
+										title="New order (#2522)"
+										description="With a very long description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
+										showCloseButton="true"
+										datetime="3 days"
+										unread="true"
+										priority="Medium"
+										close="onItemClose"
+										press="onListItemPress"
+										authorName="John Smith"
+										authorPicture="test-resources/sap/m/images/headerImg2.jpg">
+								</NotificationListItem>
+				 
+								<NotificationListItem
+										title="New order (#2521)"
+										description="With a very long description and no action buttons below - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
+										showCloseButton="true"
+										datetime="3 days"
+										unread="true"
+										priority="Low"
+										close="onItemClose"
+										press="onListItemPress"
+										authorName="John Smith"
+										authorPicture="test-resources/sap/m/images/headerImg2.jpg">
+								</NotificationListItem>
+				 
+								<NotificationListItem
+										title="New order (#2525) With a very long title and truncation disabled by default! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
+										description="And a very long description and long labels of the action buttons - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
+										showCloseButton="true"
+										datetime="2 day"
+										unread="false"
+										priority="Low"
+										close="onItemClose"
+										press="onListItemPress"
+										authorName="Jean Doe"
+										authorPicture="test-resources/sap/m/images/Woman_04.png"
+										truncate="false">
+									<buttons>
+										<Button text="Accept" type="Accept" press="onAcceptPress"></Button>
+										<Button text="Reject" type="Reject" press="onRejectPress"></Button>
+									</buttons>
+								</NotificationListItem>
+				 
+								<NotificationListItem
+										title="New order (#2525) With a very long title and with truncation enabled but 'Show More' hidden! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
+										description="And a very long description and long labels of the action buttons - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent feugiat, turpis vel scelerisque pharetra, tellus odio vehicula dolor, nec elementum lectus turpis at nunc."
+										showCloseButton="true"
+										datetime="2 day"
+										unread="false"
+										priority="Low"
+										close="onItemClose"
+										press="onListItemPress"
+										authorName="Jean Doe"
+										authorPicture="test-resources/sap/m/images/Woman_04.png"
+										hideShowMoreButton="true"
+										showButtons="false">
+									<buttons>
+										<Button text="Accept" type="Accept" press="onAcceptPress"></Button>
+										<Button text="Reject" type="Reject" press="onRejectPress"></Button>
+									</buttons>
+								</NotificationListItem>
+				 
+								<NotificationListItem
+										title="New order (#2523) With a long title without description - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet"
+										showCloseButton="false"
+										unread="false"
+										datetime="3 days"
+										priority="High"
+										close="onItemClose"
+										press="onListItemPress"
+										authorName="Patricia Clark"
+										authorPicture="test-resources/sap/m/images/female_BaySu.jpg">
+									<buttons>
+										<Button text="Accept" type="Accept" press="onAcceptPress" icon="sap-icon://accept"></Button>
+										<Button text="Reject" type="Reject" press="onRejectPress" icon="sap-icon://sys-cancel"></Button>
+									</buttons>
+								</NotificationListItem>
+				                <NotificationListItem
+				                        title="New order (#2523) With a long title without description"
+				                        showCloseButton="true"
+				                        unread="false"
+				                        datetime="3 days"
+				                        priority="High"
+				                        close="onItemClose"
+				                        press="onListItemPress">
+				                </NotificationListItem>
+							</List>
+							</ScrollContainer>
+						</l:BlockLayoutCell>
+					</l:BlockLayoutRow>
+				</l:BlockLayout>
+
+			
+			
+			
+			
 			
 		</content>
 	</Page>
