@@ -41,7 +41,7 @@
 	"sap.ui5": {
 		"_version": "1.1.0",
 		"dependencies": {
-			"minUI5Version": "1.30.0",
+			"minUI5Version": "1.40.0",
 			"libs": {
 				"sap.ui.core": {},
 				"sap.m": {},
@@ -84,11 +84,19 @@
             		"name": "launchpad",
                     "pattern": "",
                     "target": "launchpad"
+                }, {
+                	"name": "topic-introduction",
+                    "pattern": "introduction",
+                    "target": "topic-introduction"
                 }
             ],
             "targets": {
                 "launchpad": {
-                    "viewName": "Launchpad"
+                    "viewName": "Launchpad",
+                    "transition": "fade"
+                },
+                "topic-introduction": {
+                    "viewName": "TopicIntroduction"
                 }
             }
 	    }

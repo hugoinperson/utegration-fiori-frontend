@@ -32,7 +32,10 @@ sap.ui.define([
     /*-------------------------------------------------- UI Interaction -------------------------------------------------*/
     
     CustomController.prototype.onHomePress = function (oEvent) {
+    	// Launchpad page will subscribe this event
     	this._coreEventBus.publish("launchpad", "onHomePress", {});
+    	// Other pages will subscribe to this event
+    	this._coreEventBus.publish("launchpad", "backToLaunchpad", {});
     };
     
     CustomController.prototype.onUserAvatarPress = function (oEvent) {

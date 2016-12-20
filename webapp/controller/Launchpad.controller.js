@@ -91,6 +91,10 @@ sap.ui.define([
     
     /*-------------------------------------------------- UI Interaction -------------------------------------------------*/
     
+    CustomController.prototype.onLaunchpadTilePress = function (oEvent) {
+    	var sKey = oEvent.getSource().data("tileName");
+        this.getOwnerComponent().getRouter().navTo(sKey);
+    };
     
     
     
