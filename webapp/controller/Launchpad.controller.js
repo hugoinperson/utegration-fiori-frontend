@@ -63,7 +63,7 @@ sap.ui.define([
     		$launchpadWrapper.css("overflow-x", "auto");
     		that.meArea.setVisible(true);
     		setTimeout(function(){
-    			$launchpadWrapper.scrollLeft($launchpadWrapper.width());
+    			$launchpadWrapper.scrollLeft($launchpadWrapper[0].scrollWidth);
     			$launchpadWrapper.animate({scrollLeft: 0}, 800, function(){
     				that.notiCenter.setVisible(false);
     				$launchpadWrapper.css("overflow-x", "hidden");	
