@@ -52,7 +52,6 @@
 }
 
 .utg-fiori-launchpad-meArea {
-	background-color: red;
 	height: 100%;
 }
 
@@ -61,7 +60,6 @@
 }
 
 .utg-fiori-launchpad-notiCenter {
-	background-color: azure;
 	height: 100%;
 }
 
@@ -73,13 +71,22 @@
 	background: transparent;
 }
 
+.utg-fiori-launchpad-main-tileContainer {
+	display: inline-block;
+}
+
 .utg-fiori-launchpad-main-subSection > .sapUxAPBlockContainer {
 	margin: 1rem 0!important;
 }
 
-.tileLayout {
-	float: left;
+.utg-fiori-launchpad-main-subSection > .sapUxAPBlockContainer .sapUiRespGrid {
+	padding: 0;
 }
 
+.utg-fiori-launchpad-main-subSection > .sapUxAPBlockContainer .sapUiRespGrid > div {
+	margin: 0;
+}
 
-
+.utg-fiori-launchpad-tileLayout {
+	float: left;
+}
