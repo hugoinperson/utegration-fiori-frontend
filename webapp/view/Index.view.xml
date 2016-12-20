@@ -1,10 +1,47 @@
 <mvc:View
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns:m="sap.m"
-    displayBlock="true"
-    height="100%"
-    class="sapUiSizeCompact">
-
-    <m:App id="indexApp" />
-
+	controllerName="utegration.fiori.frontend.controller.Index"
+    class="sapUiSizeCompact"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:uxap="sap.uxap"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:u="sap.ui.unified"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m">
+	
+	<Page 
+		id="utg-fiori-hostPage" 
+		class="utg-fiori-hostPage"
+		enableScrolling="false">
+		<headerContent>
+			<OverflowToolbar
+				id="utg-fiori-toolbar"
+				class="utg-fiori-toolbar">
+				<ImageContent
+					class="utg-fiori-toolbar-img"
+					src="img/avatar.png"
+					description="Profile image"
+					press="onUserAvatarPress">
+				</ImageContent>
+				<ImageContent
+					class="utg-fiori-toolbar-img"
+					src="img/favicon.png"
+					description="Profile image"
+					press="press">
+				</ImageContent>
+				<ToolbarSpacer/>
+				<Button text="Home" type="Transparent" press="onHomePress"/>
+				<ToolbarSpacer/>
+				<core:Icon
+					src="sap-icon://ui-notifications"
+					class="utg-fiori-toolbar-notiCenterIcon"
+					color="#031E48"
+					press="onNotiCenterPress">
+				</core:Icon>
+			</OverflowToolbar>
+		</headerContent>
+		<content>
+			<App id="indexApp" />
+		</content>
+	</Page>
 </mvc:View>

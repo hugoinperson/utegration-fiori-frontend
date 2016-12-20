@@ -72,6 +72,7 @@
 		"routing": {
             "config": {
                 "routerClass": "sap.m.routing.Router",
+                "async": true,
                 "viewType": "XML",
                 "viewPath": "utegration.fiori.frontend.view",
                 "controlId": "indexApp",
@@ -80,8 +81,8 @@
             },
             "routes": [
             	{
+            		"name": "launchpad",
                     "pattern": "",
-                    "name": "launchpad",
                     "target": "launchpad"
                 }
             ],

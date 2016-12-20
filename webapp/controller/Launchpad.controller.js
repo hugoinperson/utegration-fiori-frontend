@@ -9,34 +9,34 @@ sap.ui.define([
 
 	CustomController.prototype.onInit = function () {
     	// global variables
-    	this.hostPage = this.getView().byId("utg-fiori-hostPage");
-    	this.toolbar = this.getView().byId("utg-fiori-toolbar");
     	this.launchpadWrapper = this.getView().byId("utg-fiori-launchpad-wrapper");
     	this.meArea = this.getView().byId("utg-fiori-launchpad-meArea");
     	this.main = this.getView().byId("utg-fiori-launchpad-main");
     	this.notiCenter = this.getView().byId("utg-fiori-launchpad-notiCenter");
+    	this._coreEventBus = sap.ui.getCore().getEventBus();
     	// static variables
     	this.SLIDE_ID = "utg-slide-";
+    	// Startup functions
+        this._subscribeEvents();
     };
 
     CustomController.prototype.onBeforeRendering = function () {
     };
     
     CustomController.prototype.onAfterRendering = function () {
-    	var that = this;
-    	
-    	this.hostPage.getHeaderContent()[0].getParent().attachBrowserEvent("mouseenter", function (oEvent) {
-    		that.toolbar.addStyleClass("show");
-    	});
-    	
-    	this.hostPage.getHeaderContent()[0].getParent().attachBrowserEvent("mouseleave", function (oEvent) {
-    		that.toolbar.removeStyleClass("show");
-    	});
+    };
+    
+    /*------------------------------------------------------ Events -----------------------------------------------------*/
+    
+    CustomController.prototype._subscribeEvents = function () {
+        this._coreEventBus.subscribe("launchpad", "onHomePress", this._onHomePress, this);
+        this._coreEventBus.subscribe("launchpad", "onUserAvatarPress", this._onUserAvatarPress, this);
+        this._coreEventBus.subscribe("launchpad", "onNotiCenterPress", this._onNotiCenterPress, this);
     };
     
     /*-------------------------------------------------- UI Interaction -------------------------------------------------*/
     
-    CustomController.prototype.onHomePress = function (oEvent) {
+    CustomController.prototype._onHomePress = function (oEvent) {
     	var that = this,
     		$launchpadWrapper = $(that.launchpadWrapper.getDomRef());
     	
@@ -59,7 +59,7 @@ sap.ui.define([
     	}
     };
     
-    CustomController.prototype.onUserAvatarPress = function (oEvent) {
+    CustomController.prototype._onUserAvatarPress = function (oEvent) {
     	var that = this,
     		$launchpadWrapper = $(that.launchpadWrapper.getDomRef());
     	
@@ -74,7 +74,7 @@ sap.ui.define([
     	}
     };
     
-    CustomController.prototype.onNotiCenterPress = function (oEvent) {
+    CustomController.prototype._onNotiCenterPress = function (oEvent) {
     	var that = this,
     		$launchpadWrapper = $(that.launchpadWrapper.getDomRef());
     	
@@ -88,7 +88,6 @@ sap.ui.define([
     		}, 0);
     	}
     };
-    
 
     return CustomController;
 
