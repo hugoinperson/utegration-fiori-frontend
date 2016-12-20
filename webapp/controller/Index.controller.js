@@ -39,11 +39,22 @@ sap.ui.define([
     };
     
     CustomController.prototype.onUserAvatarPress = function (oEvent) {
-    	this._coreEventBus.publish("launchpad", "onUserAvatarPress", {});
+    	setTimeout(function(){
+			// Launchpad page will subscribe this event
+    		this._coreEventBus.publish("launchpad", "onUserAvatarPress", {});
+		}.bind(this), 0);
+    	// Other pages will subscribe to this event
+    	this._coreEventBus.publish("launchpad", "backToLaunchpad", {});
     };
     
     CustomController.prototype.onNotiCenterPress = function (oEvent) {
-    	this._coreEventBus.publish("launchpad", "onNotiCenterPress", {});
+    	setTimeout(function(){
+			// Launchpad page will subscribe this event
+	    	this._coreEventBus.publish("launchpad", "onNotiCenterPress", {});
+		}.bind(this), 0);
+    	
+    	// Other pages will subscribe to this event
+    	this._coreEventBus.publish("launchpad", "backToLaunchpad", {});
     };
 
     return CustomController;

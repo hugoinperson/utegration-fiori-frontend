@@ -36,7 +36,7 @@ sap.ui.define([
         this._coreEventBus.subscribe("launchpad", "backToLaunchpad", this._goToLaunchpad, this);
     };
     
-     CustomController.prototype._goToLaunchpad = function () {
+    CustomController.prototype._goToLaunchpad = function () {
         this.getOwnerComponent().getRouter().navTo("launchpad");
     };
 

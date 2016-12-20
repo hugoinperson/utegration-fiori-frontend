@@ -27,12 +27,12 @@ sap.ui.define([
     /*------------------------------------------------------ Events -----------------------------------------------------*/
     
     CustomController.prototype._subscribeEvents = function () {
-        this._coreEventBus.subscribe("launchpad", "onHomePress", this._onHomePress, this);
-        this._coreEventBus.subscribe("launchpad", "onUserAvatarPress", this._onUserAvatarPress, this);
-        this._coreEventBus.subscribe("launchpad", "onNotiCenterPress", this._onNotiCenterPress, this);
+        this._coreEventBus.subscribe("launchpad", "onHomePress", this._showHome, this);
+        this._coreEventBus.subscribe("launchpad", "onUserAvatarPress", this._showMeArea, this);
+        this._coreEventBus.subscribe("launchpad", "onNotiCenterPress", this._showNotiCenter, this);
     };
     
-    CustomController.prototype._onHomePress = function (oEvent) {
+    CustomController.prototype._showHome = function (oEvent) {
     	var that = this,
     		$launchpadWrapper = $(that.launchpadWrapper.getDomRef());
     	
@@ -55,7 +55,7 @@ sap.ui.define([
     	}
     };
     
-    CustomController.prototype._onUserAvatarPress = function (oEvent) {
+    CustomController.prototype._showMeArea = function (oEvent) {
     	var that = this,
     		$launchpadWrapper = $(that.launchpadWrapper.getDomRef());
     	
@@ -72,7 +72,7 @@ sap.ui.define([
     	}
     };
     
-    CustomController.prototype._onNotiCenterPress = function (oEvent) {
+    CustomController.prototype._showNotiCenter = function (oEvent) {
     	var that = this,
     		$launchpadWrapper = $(that.launchpadWrapper.getDomRef());
     	
