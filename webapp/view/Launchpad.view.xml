@@ -1,6 +1,7 @@
 <mvc:View 
 	controllerName="utegration.fiori.frontend.controller.Launchpad" 
 	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:uxap="sap.uxap"
 	xmlns:core="sap.ui.core"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns:u="sap.ui.unified"
@@ -53,16 +54,183 @@
 						<l:BlockLayoutCell
 							id="utg-fiori-launchpad-main"
 							class="utg-fiori-launchpad-main"
-							width="100"
-							title="Left aligned heading">
-							<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
-							<RadioButtonGroup columns="2" selectedIndex="2" class="sapUiMediumMarginTop">
-								<buttons>
-									<RadioButton id="RB2-1" text="Option 1"/>
-									<RadioButton id="RB2-2" text="Option 2" editable="false"/>
-									<RadioButton id="RB2-3" text="Option 3"/>
-								</buttons>
-							</RadioButtonGroup>
+							width="100">
+							<uxap:ObjectPageLayout 
+								id="utg-fiori-launchpad-main-objectPageLayout" 
+								class="utg-fiori-launchpad-main-objectPageLayout"
+								enableLazyLoading="false">
+								<uxap:sections>
+									<uxap:ObjectPageSection title="My Home">
+										<uxap:subSections>
+											<uxap:ObjectPageSubSection class="utg-fiori-launchpad-main-subSection">
+												<uxap:blocks>
+													<html:div>
+														<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Status Loaded - no press event"
+															subheader="Subheader" frameType="OneByOne">
+															<tileContent>
+																<TileContent unit="Unit" footer="Footer">
+																	<content>
+																		<ImageContent src="sap-icon://line-charts"/>
+																	</content>
+																</TileContent>
+															</tileContent>
+														</GenericTile>
+														<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Status Loaded - with press event"
+															subheader="Subheader" frameType="OneByOne" press="press">
+															<tileContent>
+																<TileContent unit="Unit" footer="Footer">
+																	<content>
+																		<ImageContent src="sap-icon://home-share"/>
+																	</content>
+																</TileContent>
+															</tileContent>
+														</GenericTile>
+														<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Status Loading - no press event"
+															subheader="Subheader" frameType="OneByOne" state="Loading">
+															<tileContent>
+																<TileContent unit="Unit" footer="Footer">
+																	<content>
+																		<NumericContent scale="M" value="2.1"
+																			valueColor="Good" indicator="Up" />
+																	</content>
+																</TileContent>
+															</tileContent>
+														</GenericTile>
+														<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Status Loading - with press event"
+															subheader="Subheader" frameType="OneByOne" state="Loading" press="press">
+															<tileContent>
+																<TileContent unit="Unit" footer="Footer">
+																	<content>
+																		<NumericContent scale="M" value="1.96"
+																			valueColor="Error" indicator="Down" />
+																	</content>
+																</TileContent>
+															</tileContent>
+														</GenericTile>
+														<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Status Failed - no press event"
+															subheader="Subheader" frameType="TwoByOne" state="Failed">
+															<tileContent>
+																<TileContent unit="Unit" footer="Footer">
+																	<content>
+																		<FeedContent
+																			contentText="@@notify Great outcome of the Presentation today. The new functionality and the design was well received. Berlin, Tokyo, Rome, Budapest, New York, Munich, London"
+																			subheader="Subheader" value="9">
+																		</FeedContent>
+																	</content>
+																</TileContent>
+															</tileContent>
+														</GenericTile>
+														<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Status Failed - with press event"
+															subheader="Subheader" frameType="TwoByOne" state="Failed" press="press">
+															<tileContent>
+																<TileContent unit="Unit" footer="Footer">
+																	<content>
+																		<FeedContent
+																			contentText="@@notify Great outcome of the Presentation today. The new functionality and the design was well received. Berlin, Tokyo, Rome, Budapest, New York, Munich, London"
+																			subheader="Subheader" value="9">
+																		</FeedContent>
+																	</content>
+																</TileContent>
+															</tileContent>
+														</GenericTile>
+														<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout">
+															<tiles>
+																<GenericTile
+																	backgroundImage="test-resources/sap/m/demokit/sample/GenericTileAsFeedTile/images/NewsImage1.png"
+																	frameType="TwoByOne" state="Loading">
+																	<tileContent>
+																		<TileContent unit="Unit" footer="Footer">
+																			<content>
+																				<NewsContent
+																					contentText="Status Loading"
+																					subheader="Subheader">
+																				</NewsContent>
+																			</content>
+																		</TileContent>
+																	</tileContent>
+																</GenericTile>
+																<GenericTile
+																	backgroundImage="test-resources/sap/m/demokit/sample/GenericTileAsFeedTile/images/NewsImage2.png"
+																	frameType="TwoByOne" state="Loaded" press="press">
+																	<tileContent>
+																		<TileContent unit="Unit" footer="Footer">
+																			<content>
+																				<NewsContent
+																					contentText="Status Loaded"
+																					subheader="Subheader">
+																				</NewsContent>
+																			</content>
+																		</TileContent>
+																	</tileContent>
+																</GenericTile>
+															</tiles>
+														</SlideTile>
+														<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Status Disabled"
+															subheader="Subheader" frameType="OneByOne" state="Disabled">
+															<tileContent>
+																<TileContent footer="Footer" unit="Unit">
+																	<content>
+																		<NumericContent value="3"
+																			icon="sap-icon://travel-expense" />
+																	</content>
+																</TileContent>
+															</tileContent>
+														</GenericTile>
+														<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Status Disabled - with press event"
+															subheader="Subheader" frameType="OneByOne" state="Disabled" press="press">
+															<tileContent>
+																<TileContent footer="Footer" unit="Unit">
+																	<content>
+																		<NumericContent value="3"
+																			icon="sap-icon://travel-expense" />
+																	</content>
+																</TileContent>
+															</tileContent>
+														</GenericTile>
+													</html:div>
+													
+													
+													
+													
+													
+													
+												</uxap:blocks>
+											</uxap:ObjectPageSubSection>
+										</uxap:subSections>
+									</uxap:ObjectPageSection>
+						 
+									<uxap:ObjectPageSection title="Work Space">
+										<uxap:subSections>
+											<uxap:ObjectPageSubSection class="utg-fiori-launchpad-main-subSection">
+												<uxap:blocks>
+													<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+												</uxap:blocks>
+											</uxap:ObjectPageSubSection>
+										</uxap:subSections>
+									</uxap:ObjectPageSection>
+						 
+									<uxap:ObjectPageSection title="Internal Sales">
+										<uxap:subSections>
+											<uxap:ObjectPageSubSection class="utg-fiori-launchpad-main-subSection">
+												<uxap:blocks>
+													<Text text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr."/>
+												</uxap:blocks>
+											</uxap:ObjectPageSubSection>
+										</uxap:subSections>
+									</uxap:ObjectPageSection>
+								</uxap:sections>
+							</uxap:ObjectPageLayout>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
 						</l:BlockLayoutCell>
 						<!--Notification Center-->
 						<l:BlockLayoutCell

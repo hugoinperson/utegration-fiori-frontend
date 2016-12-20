@@ -57,7 +57,6 @@
 }
 
 .utg-fiori-launchpad-main {
-	background-color: yellow;
 	height: 100%;
 }
 
@@ -65,3 +64,22 @@
 	background-color: azure;
 	height: 100%;
 }
+
+/*********************************************/
+/***************** Main Areas ****************/
+/*********************************************/
+
+.utg-fiori-launchpad-main-objectPageLayout .sapUxAPObjectPageNavigation .sapUxAPAnchorBar {
+	background: transparent;
+}
+
+.utg-fiori-launchpad-main-subSection > .sapUxAPBlockContainer {
+	margin: 1rem 0!important;
+}
+
+.tileLayout {
+	float: left;
+}
+
+
+
