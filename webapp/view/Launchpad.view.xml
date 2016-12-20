@@ -4,7 +4,6 @@
 	xmlns:uxap="sap.uxap"
 	xmlns:core="sap.ui.core"
 	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:u="sap.ui.unified"
 	xmlns:l="sap.ui.layout"
 	xmlns="sap.m">
 

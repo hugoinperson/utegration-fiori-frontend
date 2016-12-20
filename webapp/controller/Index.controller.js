@@ -12,8 +12,6 @@ sap.ui.define([
     	this._hostPage = this.getView().byId("utg-fiori-hostPage");
     	this._toolbar = this.getView().byId("utg-fiori-toolbar");
     	this._coreEventBus = sap.ui.getCore().getEventBus();
-    	// static variables
-    	this.SLIDE_ID = "utg-slide-";
     };
 
     CustomController.prototype.onBeforeRendering = function () {

@@ -14,8 +14,6 @@ sap.ui.define([
     	this.main = this.getView().byId("utg-fiori-launchpad-main");
     	this.notiCenter = this.getView().byId("utg-fiori-launchpad-notiCenter");
     	this._coreEventBus = sap.ui.getCore().getEventBus();
-    	// static variables
-    	this.SLIDE_ID = "utg-slide-";
     	// Startup functions
         this._subscribeEvents();
     };
@@ -33,8 +31,6 @@ sap.ui.define([
         this._coreEventBus.subscribe("launchpad", "onUserAvatarPress", this._onUserAvatarPress, this);
         this._coreEventBus.subscribe("launchpad", "onNotiCenterPress", this._onNotiCenterPress, this);
     };
-    
-    /*-------------------------------------------------- UI Interaction -------------------------------------------------*/
     
     CustomController.prototype._onHomePress = function (oEvent) {
     	var that = this,
@@ -64,10 +60,12 @@ sap.ui.define([
     		$launchpadWrapper = $(that.launchpadWrapper.getDomRef());
     	
     	if (!that.meArea.getVisible()) {
+    		$launchpadWrapper.css("overflow-x", "auto");
     		that.meArea.setVisible(true);
     		setTimeout(function(){
     			$launchpadWrapper.scrollLeft($launchpadWrapper.width());
     			$launchpadWrapper.animate({scrollLeft: 0}, 800, function(){
+    				that.notiCenter.setVisible(false);
     				$launchpadWrapper.css("overflow-x", "hidden");	
     			});
     		}, 0);
@@ -79,15 +77,23 @@ sap.ui.define([
     		$launchpadWrapper = $(that.launchpadWrapper.getDomRef());
     	
     	if (!that.notiCenter.getVisible()) {
+    		$launchpadWrapper.css("overflow-x", "auto");
     		that.notiCenter.setVisible(true);
     		setTimeout(function(){
     			$launchpadWrapper.scrollLeft();
-    			$launchpadWrapper.animate({scrollLeft: $launchpadWrapper.width()}, 800, function(){
-    				$launchpadWrapper.css("overflow-x", "hidden");	
+    			$launchpadWrapper.animate({scrollLeft: $launchpadWrapper[0].scrollWidth}, 800, function(){
+    				that.meArea.setVisible(false);
+    				$launchpadWrapper.css("overflow-x", "hidden");
     			});
     		}, 0);
     	}
     };
+    
+    /*-------------------------------------------------- UI Interaction -------------------------------------------------*/
+    
+    
+    
+    
 
     return CustomController;
 

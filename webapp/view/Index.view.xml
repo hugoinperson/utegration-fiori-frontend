@@ -2,11 +2,8 @@
 	controllerName="utegration.fiori.frontend.controller.Index"
     class="sapUiSizeCompact"
 	xmlns:html="http://www.w3.org/1999/xhtml"
-	xmlns:uxap="sap.uxap"
 	xmlns:core="sap.ui.core"
 	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:u="sap.ui.unified"
-	xmlns:l="sap.ui.layout"
 	xmlns="sap.m">
 	
 	<Page 
