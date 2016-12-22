@@ -1,0 +1,18 @@
+<mvc:View
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:m="sap.m"
+    xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    displayBlock="true"
+    height="100%">
+
+	<m:VBox
+		height="100%"
+		alignItems="Center"
+		justifyContent="Center">
+		<m:Text class="utg-Heading1" text="slide-01 😬"/>
+	</m:VBox>
+
+</mvc:View>
