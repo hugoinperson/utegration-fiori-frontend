@@ -11,6 +11,7 @@
 		// Global variables
 		this._slideNavContainer = this.getView().byId("utg-fiori-SlidePagesNavContainer");
 		this._compRouter = this.getOwnerComponent().getRouter();
+		this._currentSlidePageIndex = null;
 		// Startup functions
         this._subscribeEvents();
     };
@@ -32,6 +33,7 @@
     		slidePageNum = oEvent.getParameters().arguments.slidePageNum;
     	
     	if (!slidePageNum) {
+    		// if no page number specified, then go to the first page
     		this._compRouter.navTo(routeName, {
     			slidePageNum: "01"
     		});
@@ -47,6 +49,8 @@
     		currentPage = this._slideNavContainer.getCurrentPage(),
     		currentIndex = pages.indexOf(currentPage);
     		
+    	// update current slide page index
+    	this._currentSlidePageIndex = targetIndex;
 		
 		if (targetPage && targetIndex > currentIndex) {
 			this._slideNavContainer.to(targetPage);
@@ -55,19 +59,28 @@
 		if (targetPage && targetIndex < currentIndex) {
 			this._slideNavContainer.backToPage(targetPage);
 		}
-		
-		
     };
     
-    
-    
+
+    /*---------------------------------------------------- UI Actions ---------------------------------------------------*/
     
     CustomController.prototype.onNextSlide = function () {
-    	console.log('nextSlide');	
+    	this._routeToSlide(this._currentSlidePageIndex + 1);
     };
     
     CustomController.prototype.onPrevSlide = function () {
-    	console.log('prevSlide');	
+    	this._routeToSlide(this._currentSlidePageIndex - 1);
+    };
+    
+    CustomController.prototype._routeToSlide = function (targetIndex) {
+    	var pages = this._slideNavContainer.getPages(),
+    		targetPage = pages[targetIndex];
+    		
+    	if (targetPage && targetIndex >= 0) {
+    		this._compRouter.navTo("main", {
+				slidePageNum: targetIndex + 1 < 10 ? "0" + String(targetIndex + 1) : String(targetIndex + 1)
+			});	
+    	}
     };
 
     return CustomController;

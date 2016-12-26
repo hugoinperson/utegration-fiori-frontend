@@ -6,10 +6,17 @@ sap.ui.define([
 
     "use strict";
 
-    var CustomComponent = UIComponent.extend("utegration.fiori.frontend.component.introduction.Component");
+    var CustomComponent = UIComponent.extend("utegration.fiori.frontend.component.introduction.Component", {
+    	metadata: {
+			manifest: "json"
+		}
+    });
 
     CustomComponent.prototype.init = function () {
+    	// call the base component's init function
         UIComponent.prototype.init.apply(this);
+        
+        // create the views based on the url/hash
         this.getRouter().initialize();
     };
 
