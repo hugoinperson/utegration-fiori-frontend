@@ -23,6 +23,21 @@ sap.ui.define([
             defaultAggregation : "slideView"
         },
         init: function () {
+        	// $.sap.bindAnyEvent(this.handleKeyboardArrow.bind(this));
+        },
+        onBeforeRendering: function () {
+        },
+        onAfterRendering: function () {
+        },
+        handleKeyboardArrow: function (oEvent) {
+        	if (oEvent.type === "keydown") {
+        		var view = this.getAggregation("slideView");
+        		
+        		// previous animation
+	    		if (oEvent.keyCode === 38){ view.fireEvent("rollbackAnimation"); }
+	    		// next slide
+	    		if (oEvent.keyCode === 40){ view.fireEvent("performAnimation"); }
+	    	}
         },
         renderer: {
         	render: function (oRm, oControl) {

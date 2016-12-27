@@ -1,18 +1,38 @@
 <mvc:View
+	controllerName="utegration.fiori.frontend.component.introduction.controller.slides.Slide-02"
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
     xmlns:l="sap.ui.layout"
+    xmlns:utg="utegration.fiori.frontend.control"
     xmlns:m="sap.m"
     xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
     displayBlock="true"
     height="100%">
     
-    <m:VBox
+    <!--Base-->
+	<utg:AnimateVBox
 		height="100%"
+		direction="Column"
 		alignItems="Center"
 		justifyContent="Center">
-		<m:Text class="utg-Heading1" text="slide-02 😅"/>
-	</m:VBox>
+		
+		<utg:AnimateVBox
+			order="1"
+			height="100%"
+			alignItems="Center"
+			justifyContent="Center">
+			<m:Text class="utg-Heading1" text="slide-01 😅"/>
+		</utg:AnimateVBox>
+		
+		<utg:AnimateVBox
+			order="2"
+			height="100%"
+			alignItems="Center"
+			justifyContent="Center">
+			<m:Text class="utg-Heading1" text="HAHAHAHAH 😅"/>
+		</utg:AnimateVBox>	
+	
+	</utg:AnimateVBox>
 
 </mvc:View>

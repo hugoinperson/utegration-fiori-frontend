@@ -54,6 +54,16 @@ sap.ui.define([
 	    				this.firePrevSlide(); 
 	    			}
 	    		}
+	    		
+	    		// previous animation
+	    		if (oEvent.keyCode === 38){ 
+	    			this.getCurrentPage().getAggregation("slideView").fireEvent("rollbackAnimation");
+	    		}
+
+	    		// next slide
+	    		if (oEvent.keyCode === 40){
+	    			this.getCurrentPage().getAggregation("slideView").fireEvent("performAnimation");
+	    		}
 	    	}
         },
         _afterTransitionCallback: function () {
