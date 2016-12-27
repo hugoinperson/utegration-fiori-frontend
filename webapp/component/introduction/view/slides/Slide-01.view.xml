@@ -22,7 +22,7 @@
 			height="100%"
 			alignItems="Center"
 			justifyContent="Center">
-			<m:Text class="utg-Heading1" text="slide-01 😬"/>
+			<m:Text class="utg-Heading1" text="What's Fiori? 😬"/>
 		</utg:AnimateVBox>
 		
 		<utg:AnimateVBox

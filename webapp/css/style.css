@@ -2,6 +2,7 @@
 
 .utg-fiori-hostPage .sapMPageHeader {
 	background-color: transparent;
+	height: 2.5rem;
     box-shadow: none;
 }
 
@@ -16,6 +17,7 @@
 	top: -2.5rem;
 	padding: 0 2rem;
 	transition: all 0.8s;
+	background-color: #eff4f9;
 }
 
 .utg-fiori-toolbar.show {
@@ -98,4 +100,3 @@
 .utg-fiori-slide {
 	width: 100%;
 }
-
