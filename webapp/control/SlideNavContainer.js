@@ -42,7 +42,6 @@ sap.ui.define([
 	    			
 	    			if (targetPage && targetIndex >= 0) {
 	    				this.fireNextSlide();
-	    				this.updateStyleForNewSlide(targetIndex);
 	    			}
 	    		}
 	    		
@@ -53,17 +52,20 @@ sap.ui.define([
 
 					if (targetPage && targetIndex >= 0) {
 	    				this.firePrevSlide(); 
-	    				this.updateStyleForNewSlide(targetIndex);
 	    			}
 	    		}
 	    	}
         },
-        updateStyleForNewSlide: function (targetIndex) {
-        	var newPage = this.getPages()[targetIndex];
-        	
+        _afterTransitionCallback: function () {
+        	if (NavContainer.prototype._afterTransitionCallback) {
+        		NavContainer.prototype._afterTransitionCallback.apply(this, arguments);
+        		this._updateStyleForNewSlide();
+        	}
+        },
+        _updateStyleForNewSlide: function () {
         	this.removeStyleClass("utg-fiori-slideContainerBackground-" + this._currentBackground);
-        	this.addStyleClass("utg-fiori-slideContainerBackground-" + newPage.getBackground());
-        	this._currentBackground = newPage.getBackground();
+        	this.addStyleClass("utg-fiori-slideContainerBackground-" + this.getCurrentPage().getBackground());
+        	this._currentBackground = this.getCurrentPage().getBackground();
         },
         renderer: "sap.m.NavContainerRenderer"
     });
