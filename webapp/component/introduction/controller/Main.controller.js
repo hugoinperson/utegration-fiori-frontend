@@ -1,4 +1,4 @@
-	sap.ui.define([
+sap.ui.define([
 	"jquery.sap.global",
     "sap/ui/core/mvc/Controller"
 ], function($, Controller) {
@@ -73,14 +73,18 @@
     };
     
     CustomController.prototype._routeToSlide = function (targetIndex) {
-    	var pages = this._slideNavContainer.getPages(),
-    		targetPage = pages[targetIndex];
+   // 	var pages = this._slideNavContainer.getPages(),
+   // 		targetPage = pages[targetIndex];
     		
-    	if (targetPage && targetIndex >= 0) {
-    		this._compRouter.navTo("main", {
-				slidePageNum: targetIndex + 1 < 10 ? "0" + String(targetIndex + 1) : String(targetIndex + 1)
-			});	
-    	}
+   // 	if (targetPage && targetIndex >= 0) {
+   // 		this._compRouter.navTo("main", {
+			// 	slidePageNum: targetIndex + 1 < 10 ? "0" + String(targetIndex + 1) : String(targetIndex + 1)
+			// });
+   // 	}
+    	
+    	this._compRouter.navTo("main", {
+			slidePageNum: targetIndex + 1 < 10 ? "0" + String(targetIndex + 1) : String(targetIndex + 1)
+		});	
     };
 
     return CustomController;
