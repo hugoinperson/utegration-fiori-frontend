@@ -7,12 +7,72 @@
     transition: all 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
 }
 
-/* Dark */
-.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Dark {
-	background: #171717;
+/* Red */
+.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Red {
+	background: #F44336;
+}
+
+/* Pink */
+.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Pink {
+	background: #E91E63;
+}
+
+/* Indigo */
+.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Indigo {
+	background: #3F51B5;
+}
+
+/* LightBlue */
+.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-LightBlue {
+	background: #03A9F4;
+}
+
+/* Blue */
+.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Blue {
+	background: #2196F3;
+}
+
+/* Cyan */
+.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Cyan {
+	background: #00BCD4;
+}
+
+/* Teal */
+.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Teal {
+	background: #009688;
+}
+
+/* Green */
+.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Green {
+	background: #4CAF50;
+}
+
+/* LightGreen */
+.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-LightGreen {
+	background: #8BC34A;
+}
+
+/* Lime */
+.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Lime {
+	background: #CDDC39;
+}
+
+/* Amber */
+.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Amber {
+	background: #FFC107;
 }
 
 /* Orange */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Orange {
 	background: #FF9800;
+}
+
+/* BlueGray */
+.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-BlueGray {
+	background: #607D8B;
+}
+
+/* Dark */
+.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Dark {
+	background: #171717;
 }

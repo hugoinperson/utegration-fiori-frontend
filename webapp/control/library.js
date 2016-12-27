@@ -24,9 +24,22 @@ sap.ui.define([
 		interfaces: []
 	});
 
+	// Material colors https://www.materialui.co/colors
 	utegration.fiori.frontend.control.SlideBackgroundType = {
-		Dark: "Dark",
-		Orange: "Orange"
+		Red: "Red",
+		Pink: "Pink",
+		Indigo: "Indigo",
+		Blue: "Blue",
+		LightBlue: "LightBlue",
+		Cyan: "Cyan",
+		Teal: "Teal",
+		Green: "Grenn",
+		LightGreen: "LightGreen",
+		Lime: "Lime",
+		Amber: "Amber",
+		Orange: "Orange",
+		BlueGray: "BlueGray",
+		Dark: "Dark"
 	};
        
 	return utegration.fiori.frontend.control;
