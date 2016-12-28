@@ -3,22 +3,18 @@
 
 sap.ui.define([
 	"jquery.sap.global",
-	"sap/m/VBox"
-], function ($, VBox) {
+	"sap/m/Text"
+], function ($, Text) {
 	
 	"use strict";
 
-	return VBox.extend("utegration.fiori.frontend.control.AnimateVBox", {
+	return Text.extend("utegration.fiori.frontend.control.AnimateStrokeText", {
         metadata: {
         	library: "utegration.fiori.frontend.control",
         	properties: {
         		"order": {
         			type: "int",
         			defaultValue: 0
-        		},
-        		"animation": {
-        			type: "utegration.fiori.frontend.control.AnimateBoxAnimationType",
-        			defaultValue: "Show"
         		}
         	}
         },
@@ -28,37 +24,22 @@ sap.ui.define([
         	// this.setVisible(false);
         },
         onAfterRendering: function () {
+        	this.addStyleClass("utg-fiori-animateStrokeText");
+
         	if (this.getOrder()) {
         		this.addStyleClass("utg-fiori-animateObj");
-
-        		switch(this.getAnimation()) {
-        			case "Show":
-        				this.addStyleClass("hidden");
-        				break;
-        			default:
-        		}
         	}
         },
         performAnimation: function () {
         	if (this.getOrder()) {
-        		switch(this.getAnimation()) {
-        			case "Show":
-        				this.removeStyleClass("hidden");
-        				break;
-        			default:
-        		}
+        		this.addStyleClass("stroked");
         	}
         },
         rollbackAnimation: function () {
         	if (this.getOrder()) {
-        		switch(this.getAnimation()) {
-        			case "Show":
-        				this.addStyleClass("hidden");
-        				break;
-        			default:
-        		}
+        		this.removeStyleClass("stroked");
         	}
         },
-        renderer: "sap.m.VBoxRenderer"
+        renderer: "sap.m.TextRenderer"
     });
 });

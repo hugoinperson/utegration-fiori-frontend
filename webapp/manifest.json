@@ -62,9 +62,13 @@
 			}
 		},
 		"resources": {
-			"css": [{
-				"uri": "css/style.css"
-			}]
+			"css": [
+				{ "uri": "css/style.css" },
+				{ "uri": "control/css/AnimateObject.css" },
+				{ "uri": "control/css/AnimateStrokeText.css" },
+				{ "uri": "control/css/FormatText.css" },
+				{ "uri": "control/css/SlideNavContainer.css" }
+			]
 		},
 		"rootView": {
 			"viewName": "utegration.fiori.frontend.view.Index",

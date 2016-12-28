@@ -18,7 +18,6 @@ sap.ui.define([
         init: function () {
         	NavContainer.prototype.init.apply(this, arguments);
         	$.sap.bindAnyEvent(this.handleKeyboardArrow.bind(this));
-        	$.sap.includeStyleSheet("control/css/SlideNavContainer.css");
         },
         onBeforeRendering: function () {
         },

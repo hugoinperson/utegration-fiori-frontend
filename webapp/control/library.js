@@ -44,7 +44,8 @@ sap.ui.define([
 		Amber: "Amber",
 		Orange: "Orange",
 		BlueGray: "BlueGray",
-		Dark: "Dark"
+		Dark: "Dark",
+		GreenBlue: "GreenBlue"
 	};
 	
 	utegration.fiori.frontend.control.AnimateBoxAnimationType = {

@@ -27,7 +27,6 @@ sap.ui.define([
             defaultAggregation : "content"
         },
         init: function () {
-        	$.sap.includeStyleSheet("control/css/FormatText.css");
         },
         onBeforeRendering: function () {
         },

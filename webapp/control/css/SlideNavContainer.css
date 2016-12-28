@@ -76,3 +76,10 @@
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Dark {
 	background: #171717;
 }
+
+/* GreenBlue */
+.utg-fiori-slideContainer.utg-fiori-slideContainerBackground-GreenBlue{
+	background: -moz-linear-gradient(45deg,  #92b967 0%, #009ec3 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  #92b967 0%,#009ec3 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  #92b967 0%,#009ec3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
