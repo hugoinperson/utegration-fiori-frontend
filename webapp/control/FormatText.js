@@ -12,6 +12,10 @@ sap.ui.define([
         metadata: {
         	library: "utegration.fiori.frontend.control",
         	properties: {
+        		"color": {
+        			type: "utegration.fiori.frontend.control.TextColorType",
+        			defaultValue: "White"
+        		},
         		"level": {
         			type: "utegration.fiori.frontend.control.TextLevelType",
         			defaultValue: "Normal"
@@ -36,6 +40,9 @@ sap.ui.define([
 				oRm.addClass("utg-fiori-formatText");
 				if (oControl.getLevel()) {
 					oRm.addClass("textLevel-" + oControl.getLevel());	
+				}
+				if (oControl.getColor()) {
+					oRm.addClass("textColor-" + oControl.getColor());	
 				}
 				oRm.writeClasses();
 				oRm.write(">");

@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Amaranth:400,400i,700,700i');
 
-.utg-fiori-formatText {
-	font-weight: 400;
-}
-
 .utg-fiori-formatText .sapMText {
 	font-family: 'Amaranth', sans-serif;
-	color: white;
 }
 
-/* H1 */
+/* Color - White */
+.utg-fiori-formatText.textColor-White .sapMText {
+	color: #FFFFFF;
+}
+
+/* Color - Dark */
+.utg-fiori-formatText.textColor-Dark .sapMText {
+	color: #171717;
+}
+
+/* Level - H1 */
 .utg-fiori-formatText.textLevel-H1 .sapMText {
 	font-size: 6vmin;
+	font-weight: 400;
 }

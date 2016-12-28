@@ -16,7 +16,8 @@ sap.ui.define([
 		types: [
             "utegration.fiori.frontend.control.SlideBackgroundType",
             "utegration.fiori.frontend.control.AnimateBoxAnimationType",
-            "utegration.fiori.frontend.control.TextLevelType"
+            "utegration.fiori.frontend.control.TextLevelType",
+            "utegration.fiori.frontend.control.TextColorType"
     	],
 		controls: [
 			"utegration.fiori.frontend.control.SlideNavContainer",
@@ -54,6 +55,11 @@ sap.ui.define([
 		Normal: "Normal",
 		H1: "H1",
 		H2: "H2"
+	};
+	
+	utegration.fiori.frontend.control.TextColorType = {
+		White: "White",
+		Dark: "Dark"
 	};
        
 	return utegration.fiori.frontend.control;
