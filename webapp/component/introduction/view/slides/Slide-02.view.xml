@@ -20,17 +20,23 @@
 		<utg:AnimateVBox
 			order="1"
 			height="100%"
+			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<m:Text class="utg-Heading1" text="slide-01 😅"/>
+			<utg:FormatText
+				level="H1">
+				<m:Text text="What's Fiori? 🤔"/>
+				<utg:AnimateStrokeText order="2" text="123"/>
+				<m:Text text="ABC"/>
+			</utg:FormatText>
 		</utg:AnimateVBox>
 		
 		<utg:AnimateVBox
-			order="2"
+			order="3"
 			height="100%"
 			alignItems="Center"
 			justifyContent="Center">
-			<m:Text class="utg-Heading1" text="HAHAHAHAH 😅"/>
+			<m:Text class="utg-Heading1" text="HAHAHAHAH 😬"/>
 		</utg:AnimateVBox>	
 	
 	</utg:AnimateVBox>
