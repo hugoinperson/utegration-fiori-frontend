@@ -22,8 +22,9 @@ sap.ui.define([
 		controls: [
 			"utegration.fiori.frontend.control.SlideNavContainer",
             "utegration.fiori.frontend.control.Slide",
-            "utegration.fiori.frontend.control.AnimateVBox",
-            "utegration.fiori.frontend.control.FormatText"
+            "utegration.fiori.frontend.control.AnimateBox",
+            "utegration.fiori.frontend.control.FormatText",
+            "utegration.fiori.frontend.control.AnimateStrokeText"
 		],
 		elements: [],
 		interfaces: []
@@ -55,7 +56,8 @@ sap.ui.define([
 	utegration.fiori.frontend.control.TextLevelType = {
 		Normal: "Normal",
 		H1: "H1",
-		H2: "H2"
+		H2: "H2",
+		H3: "H3"
 	};
 	
 	utegration.fiori.frontend.control.TextColorType = {

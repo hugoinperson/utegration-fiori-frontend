@@ -11,13 +11,13 @@
     height="100%">
 
 	<!--Base-->
-	<utg:AnimateVBox
+	<utg:AnimateBox
 		height="100%"
 		direction="Column"
 		alignItems="Center"
 		justifyContent="Center">
 		
-		<utg:AnimateVBox
+		<utg:AnimateBox
 			height="100%"
 			direction="Column"
 			alignItems="Center"
@@ -28,9 +28,9 @@
 			<utg:FormatText level="H1">
 				<m:Text text="Front-end"/>
 			</utg:FormatText>
-		</utg:AnimateVBox>
+		</utg:AnimateBox>
 	
-	</utg:AnimateVBox>
+	</utg:AnimateBox>
 	
 
 </mvc:View>

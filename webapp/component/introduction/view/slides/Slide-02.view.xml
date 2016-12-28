@@ -11,14 +11,13 @@
     height="100%">
     
     <!--Base-->
-	<utg:AnimateVBox
+	<utg:AnimateBox
 		height="100%"
 		direction="Column"
 		alignItems="Center"
 		justifyContent="Center">
 		
-		<utg:AnimateVBox
-			height="100%"
+		<utg:AnimateBox
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
@@ -28,12 +27,12 @@
 			</utg:FormatText>
 			<utg:FormatText
 				order="1"
-				level="Normal">
-				<m:Image src="img/reddot_.png" alt="Red Dot Award" />
+				level="H3">
+				<m:Image src="img/reddot.png" alt="Red Dot Award" />
 				<m:Text text=" wining design"/>
 			</utg:FormatText>
-		</utg:AnimateVBox>
+		</utg:AnimateBox>
 		
-	</utg:AnimateVBox>
+	</utg:AnimateBox>
 
 </mvc:View>

@@ -3,12 +3,12 @@
 
 sap.ui.define([
 	"jquery.sap.global",
-	"sap/m/VBox"
-], function ($, VBox) {
+	"sap/m/FlexBox"
+], function ($, FlexBox) {
 	
 	"use strict";
 
-	return VBox.extend("utegration.fiori.frontend.control.AnimateVBox", {
+	return FlexBox.extend("utegration.fiori.frontend.control.AnimateBox", {
         metadata: {
         	library: "utegration.fiori.frontend.control",
         	properties: {

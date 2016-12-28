@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
 @font-face {
   font-family: 'brandon';
   src: url("../../font/Brandon_bld_it-webfont.eot"); /* IE9 Compat Modes */
@@ -39,12 +41,19 @@
 	font-weight: 400;
 }
 
-/* Level - Normal */
-.utg-fiori-formatText.textLevel-Normal .sapMText {
+/* Level - H3 */
+.utg-fiori-formatText.textLevel-H3 .sapMText {
 	font-family: 'brandon';
 	font-size: 3vmin;
 	font-weight: 400;
 }
-.utg-fiori-formatText.textLevel-Normal img {
+
+.utg-fiori-formatText.textLevel-H3 img {
 	height: 2.5vmin;
+}
+
+/* Level - Normal */
+.utg-fiori-formatText.textLevel-Normal .sapMText {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 3vmin;
 }
