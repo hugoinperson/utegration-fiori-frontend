@@ -8,21 +8,22 @@ sap.ui.define([
 	
 	"use strict";
 
-	return Control.extend("utegration.fiori.frontend.control.Slide", {
+	return Control.extend("utegration.fiori.frontend.control.FormatText", {
         metadata: {
         	library: "utegration.fiori.frontend.control",
         	properties: {
-        		"background": {
-        			type: "utegration.fiori.frontend.control.SlideBackgroundType",
-        			defaultValue: "Dark"
+        		"level": {
+        			type: "utegration.fiori.frontend.control.TextLevelType",
+        			defaultValue: "Normal"
         		}
         	},
         	aggregations : {
-        		slideView: {type : "sap.ui.core.mvc.XMLView", multiple : false, visibility: "public"}
+        		content: {type : "sap.ui.core.Control", multiple : true, visibility: "public"}
             },
-            defaultAggregation : "slideView"
+            defaultAggregation : "content"
         },
         init: function () {
+        	$.sap.includeStyleSheet("control/css/FormatText.css");
         },
         onBeforeRendering: function () {
         },
@@ -32,13 +33,15 @@ sap.ui.define([
         	render: function (oRm, oControl) {
         		oRm.write("<div");
 				oRm.writeControlData(oControl);
-				oRm.addClass("utg-fiori-slide");
-				if (oControl.getBackground()) {
-					oRm.addClass("slideBackground-" + oControl.getBackground());	
+				oRm.addClass("utg-fiori-formatText");
+				if (oControl.getLevel()) {
+					oRm.addClass("textLevel-" + oControl.getLevel());	
 				}
 				oRm.writeClasses();
 				oRm.write(">");
-				oRm.renderControl(oControl.getAggregation("slideView"));
+				oControl.getAggregation("content").forEach(function(oContentControl) {
+					oRm.renderControl(oContentControl);	
+				});
 				oRm.write("</div>");
         	}
         }

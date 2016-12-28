@@ -15,12 +15,14 @@ sap.ui.define([
 		],
 		types: [
             "utegration.fiori.frontend.control.SlideBackgroundType",
-            "utegration.fiori.frontend.control.AnimateBoxAnimationType"
+            "utegration.fiori.frontend.control.AnimateBoxAnimationType",
+            "utegration.fiori.frontend.control.TextLevelType"
     	],
 		controls: [
 			"utegration.fiori.frontend.control.SlideNavContainer",
             "utegration.fiori.frontend.control.Slide",
-            "utegration.fiori.frontend.control.AnimateVBox"
+            "utegration.fiori.frontend.control.AnimateVBox",
+            "utegration.fiori.frontend.control.FormatText"
 		],
 		elements: [],
 		interfaces: []
@@ -35,7 +37,7 @@ sap.ui.define([
 		LightBlue: "LightBlue",
 		Cyan: "Cyan",
 		Teal: "Teal",
-		Green: "Grenn",
+		Green: "Green",
 		LightGreen: "LightGreen",
 		Lime: "Lime",
 		Amber: "Amber",
@@ -46,6 +48,12 @@ sap.ui.define([
 	
 	utegration.fiori.frontend.control.AnimateBoxAnimationType = {
 		Show: "Show"
+	};
+	
+	utegration.fiori.frontend.control.TextLevelType = {
+		Normal: "Normal",
+		H1: "H1",
+		H2: "H2"
 	};
        
 	return utegration.fiori.frontend.control;
