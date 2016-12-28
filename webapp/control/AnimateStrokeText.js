@@ -21,7 +21,6 @@ sap.ui.define([
         init: function () {
         },
         onBeforeRendering: function () {
-        	// this.setVisible(false);
         },
         onAfterRendering: function () {
         	this.addStyleClass("utg-fiori-animateStrokeText");

@@ -12,127 +12,71 @@
 /* Red */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Red {
 	background: #F44336;
-	
-	background-image: -moz-linear-gradient(45deg, #F44336 0%, #F44336 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(45deg, #F44336 0%, #F44336 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(45deg, #F44336 0%, #F44336 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* Pink */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Pink {
 	background: #E91E63;
-	
-	background-image: -moz-linear-gradient(45deg, #E91E63 0%, #E91E63 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(45deg, #E91E63 0%, #E91E63 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(45deg, #E91E63 0%, #E91E63 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* Indigo */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Indigo {
 	background: #3F51B5;
-	
-	background-image: -moz-linear-gradient(45deg, #3F51B5 0%, #3F51B5 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(45deg, #3F51B5 0%, #3F51B5 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(45deg, #3F51B5 0%, #3F51B5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* LightBlue */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-LightBlue {
 	background: #03A9F4;
-	
-	background-image: -moz-linear-gradient(45deg, #03A9F4 0%, #03A9F4 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(45deg, #03A9F4 0%, #03A9F4 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(45deg, #03A9F4 0%, #03A9F4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* Blue */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Blue {
 	background: #2196F3;
-	
-	background-image: -moz-linear-gradient(45deg, #2196F3 0%, #2196F3 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(45deg, #2196F3 0%, #2196F3 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(45deg, #2196F3 0%, #2196F3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* Cyan */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Cyan {
 	background: #00BCD4;
-	
-	background-image: -moz-linear-gradient(45deg, #00BCD4 0%, #00BCD4 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(45deg, #00BCD4 0%, #00BCD4 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(45deg, #00BCD4 0%, #00BCD4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* Teal */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Teal {
 	background: #009688;
-	
-	background-image: -moz-linear-gradient(45deg, #009688 0%, #009688 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(45deg, #009688 0%, #009688 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(45deg, #009688 0%, #009688 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* Green */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Green {
 	background: #4CAF50;
-	
-	background-image: -moz-linear-gradient(45deg, #4CAF50 0%, #4CAF50 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(45deg, #4CAF50 0%, #4CAF50 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(45deg, #4CAF50 0%, #4CAF50 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* LightGreen */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-LightGreen {
 	background: #8BC34A;
-	
-	background-image: -moz-linear-gradient(45deg, #8BC34A 0%, #8BC34A 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(45deg, #8BC34A 0%, #8BC34A 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(45deg, #8BC34A 0%, #8BC34A 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* Lime */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Lime {
 	background: #CDDC39;
-	
-	background-image: -moz-linear-gradient(45deg, #CDDC39 0%, #CDDC39 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(45deg, #CDDC39 0%, #CDDC39 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(45deg, #CDDC39 0%, #CDDC39 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* Amber */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Amber {
 	background: #FFC107;
-	
-	background-image: -moz-linear-gradient(45deg, #FFC107 0%, #FFC107 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #FFC107 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(45deg, #FFC107 0%, #FFC107 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* Orange */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Orange {
 	background: #FF9800;
-	
-	background-image: -moz-linear-gradient(45deg, #FF9800 0%, #FF9800 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(45deg, #FF9800 0%, #FF9800 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(45deg, #FF9800 0%, #FF9800 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* BlueGray */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-BlueGray {
 	background: #607D8B;
-	
-	background-image: -moz-linear-gradient(45deg, #607D8B 0%, #607D8B 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(45deg, #607D8B 0%, #607D8B 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(45deg, #607D8B 0%, #607D8B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* Dark */
 .utg-fiori-slideContainer.utg-fiori-slideContainerBackground-Dark {
 	background: #171717;
-	
-	background-image: -moz-linear-gradient(45deg, #171717 0%, #171717 100%); /* FF3.6-15 */
-	background-image: -webkit-linear-gradient(45deg, #171717 0%, #171717 100%); /* Chrome10-25,Safari5.1-6 */
-	background-image: linear-gradient(45deg, #171717 0%, #171717 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 /* GreenBlue */

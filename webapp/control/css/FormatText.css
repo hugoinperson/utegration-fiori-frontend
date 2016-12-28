@@ -1,7 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Amaranth:400,400i,700,700i');
+@font-face {
+  font-family: 'brandon';
+  src: url("../../font/Brandon_bld_it-webfont.eot"); /* IE9 Compat Modes */
+  src: url("../../font/Brandon_bld_it-webfont.eot?#iefix") format('embedded-opentype'), /* IE6-IE8 */
+       url("../../font/Brandon_bld_it-webfont.woff") format('woff'), /* Pretty Modern Browsers */
+       url("../../font/Brandon_bld_it-webfont.ttf")  format('truetype'), /* Safari, Android, iOS */
+       url("../../font/Brandon_bld_it-webfont.svg#BrandonGrotesqueBoldItalic") format('svg'); /* Legacy iOS */
+}
+
 
 .utg-fiori-formatText .sapMText {
-	font-family: 'Amaranth', sans-serif;
+	/*font-family: 'Amaranth', sans-serif;*/
+	font-family: 'brandon';
+	display: inline;
 }
 
 /* Color - White */
@@ -16,6 +26,12 @@
 
 /* Level - H1 */
 .utg-fiori-formatText.textLevel-H1 .sapMText {
+	font-size: 8vmin;
+	font-weight: 400;
+}
+
+/* Level - H2 */
+.utg-fiori-formatText.textLevel-H2 .sapMText {
 	font-size: 6vmin;
 	font-weight: 400;
 }

@@ -4,16 +4,40 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
     xmlns:l="sap.ui.layout"
+    xmlns:utg="utegration.fiori.frontend.control"
     xmlns:m="sap.m"
     xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
     displayBlock="true"
     height="100%">
 
-	<m:VBox
+	<!--Base-->
+	<utg:AnimateVBox
 		height="100%"
+		direction="Column"
 		alignItems="Center"
 		justifyContent="Center">
-		<m:Text class="utg-Heading1" text="slide-03 🤑"/>
-	</m:VBox>
+		
+		<utg:AnimateVBox
+			height="100%"
+			direction="Column"
+			alignItems="Center"
+			justifyContent="Center">
+			<utg:FormatText
+				level="H2">
+				<m:Text text="Fiori 2.0 is a new"/>
+				<utg:AnimateStrokeText order="1" text="design guideline"/>
+				<m:Text text="from SAP guiding development for applications"/>
+			</utg:FormatText>
+		</utg:AnimateVBox>
+		
+		<utg:AnimateVBox
+			order="2"
+			height="100%"
+			alignItems="Center"
+			justifyContent="Center">
+			<m:Text class="utg-Heading1" text="HAHAHAHAH 😬"/>
+		</utg:AnimateVBox>	
+	
+	</utg:AnimateVBox>
 
 </mvc:View>
