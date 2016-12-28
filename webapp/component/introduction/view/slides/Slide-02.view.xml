@@ -24,7 +24,13 @@
 			justifyContent="Center">
 			<utg:FormatText
 				level="H1">
-				<m:Text text="What's Fiori? 🤔"/>
+				<m:Text text="What's Fiori 2.0? 🤔"/>
+			</utg:FormatText>
+			<utg:FormatText
+				order="1"
+				level="Normal">
+				<m:Image src="img/reddot_.png" alt="Red Dot Award" />
+				<m:Text text=" wining design"/>
 			</utg:FormatText>
 		</utg:AnimateVBox>
 		

@@ -12,6 +12,10 @@ sap.ui.define([
         metadata: {
         	library: "utegration.fiori.frontend.control",
         	properties: {
+        		"order": {
+        			type: "int",
+        			defaultValue: 0
+        		},
         		"color": {
         			type: "utegration.fiori.frontend.control.TextColorType",
         			defaultValue: "White"
@@ -31,6 +35,20 @@ sap.ui.define([
         onBeforeRendering: function () {
         },
         onAfterRendering: function () {
+        	if (this.getOrder()) {
+        		this.addStyleClass("utg-fiori-animateObj");
+        		this.addStyleClass("hidden");
+        	}
+        },
+        performAnimation: function () {
+        	if (this.getOrder()) {
+        		this.removeStyleClass("hidden");
+        	}
+        },
+        rollbackAnimation: function () {
+        	if (this.getOrder()) {
+        		this.addStyleClass("hidden");
+        	}
         },
         renderer: {
         	render: function (oRm, oControl) {

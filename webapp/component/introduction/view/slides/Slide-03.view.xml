@@ -29,14 +29,6 @@
 				<m:Text text="from SAP guiding development for applications"/>
 			</utg:FormatText>
 		</utg:AnimateVBox>
-		
-		<utg:AnimateVBox
-			order="2"
-			height="100%"
-			alignItems="Center"
-			justifyContent="Center">
-			<m:Text class="utg-Heading1" text="HAHAHAHAH 😬"/>
-		</utg:AnimateVBox>	
 	
 	</utg:AnimateVBox>
 
