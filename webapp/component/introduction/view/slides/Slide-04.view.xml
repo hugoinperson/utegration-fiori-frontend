@@ -18,20 +18,19 @@
 		justifyContent="Center">
 		
 		<utg:AnimateBox
-			order="1"
-			height="100%"
+			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<m:Text class="utg-Heading1" text="slide-01 😅"/>
+			<utg:FormatText
+				level="H1">
+				<m:Text text="Why have a new design?"/>
+			</utg:FormatText>
+			<utg:FormatText
+				order="1"
+				level="H3">
+				<m:Text text="so you have to spend money to upgrade 🤑"/>
+			</utg:FormatText>
 		</utg:AnimateBox>
-		
-		<utg:AnimateBox
-			order="2"
-			height="100%"
-			alignItems="Center"
-			justifyContent="Center">
-			<m:Text class="utg-Heading1" text="HAHAHAHAH 😅"/>
-		</utg:AnimateBox>	
 	
 	</utg:AnimateBox>
 
