@@ -9,8 +9,8 @@
     xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
     displayBlock="true"
     height="100%">
-
-	<!--Base-->
+    
+    <!--Base-->
 	<utg:AnimateBox
 		height="100%"
 		direction="Column"
@@ -23,9 +23,7 @@
 			alignItems="Center"
 			justifyContent="Center">
 			<utg:FormatText level="H2">
-				<m:Text text="Fiori 2.0 is a new"/>
-				<utg:AnimateStrokeText order="1" text="design guideline"/>
-				<m:Text text="from SAP guiding development for applications"/>
+				<m:Text text="SAP️"/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 		
@@ -35,17 +33,20 @@
 			class="sapUiMediumMarginTop"
 			alignItems="Start"
 			justifyContent="Center">
+			<utg:FormatText order="1" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- The new UX reflects a broader paradigm shift, moving from a focus on features and functions to users and their experience."/>
+			</utg:FormatText>
 			<utg:FormatText order="2" level="Normal" class="sapUiTinyMarginTopBottom">
-				<m:Text text="- Responsive design patterns. Support of smartphones, tablets, and desktop.✨"/>
+				<m:Text text="- Fiori 2.0 will be the new face for SAP’s digital enterprise softwares."/>
 			</utg:FormatText>
-			<utg:FormatText order="3" level="Normal" class="sapUiTinyMarginTopBottom">
-				<m:Text text="- SAP Fiori applications built with SAPUI5 technology."/>
+			<utg:FormatText order="3" level="Normal" class="sapUiTinyMarginTopBottom sapUiMediumMarginBegin">
+				<m:Text text="• SAP S/4HANA"/>
 			</utg:FormatText>
-			<utg:FormatText order="4" level="Normal" class="sapUiTinyMarginTopBottom">
-				<m:Text text="- SAP Fiori applications are launched and running in the SAP Fiori launchpad."/>
+			<utg:FormatText order="4" level="Normal" class="sapUiTinyMarginTopBottom sapUiMediumMarginBegin">
+				<m:Text text="• SAP C4C"/>
 			</utg:FormatText>
-			<utg:FormatText order="5" level="Normal" class="sapUiTinyMarginTopBottom">
-				<m:Text text="- Business data is retrieved through OData services during runtime."/>
+			<utg:FormatText order="5" level="Normal" class="sapUiTinyMarginTopBottom sapUiMediumMarginBegin">
+				<m:Text text="• SAP HANA Cloud Platform SDK for iOS"/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 	

@@ -25,6 +25,12 @@
         <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-11"/></utg:Slide>
         <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-12"/></utg:Slide>
         <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-13"/></utg:Slide>
+        <utg:Slide background="BlueGray"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-14"/></utg:Slide>
+        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-15"/></utg:Slide>
+        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-16"/></utg:Slide>
+        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-17"/></utg:Slide>
+        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-18"/></utg:Slide>
+        <utg:Slide background="BlueGray"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-19"/></utg:Slide>
     </utg:SlideNavContainer>
 
 </mvc:View>

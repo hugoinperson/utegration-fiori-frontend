@@ -9,8 +9,8 @@
     xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
     displayBlock="true"
     height="100%">
-
-	<!--Base-->
+    
+    <!--Base-->
 	<utg:AnimateBox
 		height="100%"
 		direction="Column"
@@ -23,9 +23,7 @@
 			alignItems="Center"
 			justifyContent="Center">
 			<utg:FormatText level="H2">
-				<m:Text text="Fiori 2.0 is a new"/>
-				<utg:AnimateStrokeText order="1" text="design guideline"/>
-				<m:Text text="from SAP guiding development for applications"/>
+				<m:Text text="Client"/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 		
@@ -35,17 +33,24 @@
 			class="sapUiMediumMarginTop"
 			alignItems="Start"
 			justifyContent="Center">
-			<utg:FormatText order="2" level="Normal" class="sapUiTinyMarginTopBottom">
-				<m:Text text="- Responsive design patterns. Support of smartphones, tablets, and desktop.✨"/>
+			<utg:FormatText order="1" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- Intuitive user experience reduces the need of training and makes things easy and efficient."/>
 			</utg:FormatText>
+			<utg:AnimateBox
+				order="2"
+				class="sapUiMediumMarginTopBottom sapUiMediumMarginBeginEnd"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<utg:FormatText level="QuoteContent" color="LightBlue" class="sapUiSmallMarginBottom">
+					<m:Text text="“With the improved UX, any employee is able to tap into the systems to manage data and get insight instantly from a smartphone or tablet.”"/>
+				</utg:FormatText>
+				<utg:FormatText level="QuoteAuthor" color="BlueGray">
+					<m:Text text="— Andrew Marici, SAP IT Applications analyst, Pacific Drilling Services"/>
+				</utg:FormatText>
+			</utg:AnimateBox>
 			<utg:FormatText order="3" level="Normal" class="sapUiTinyMarginTopBottom">
-				<m:Text text="- SAP Fiori applications built with SAPUI5 technology."/>
-			</utg:FormatText>
-			<utg:FormatText order="4" level="Normal" class="sapUiTinyMarginTopBottom">
-				<m:Text text="- SAP Fiori applications are launched and running in the SAP Fiori launchpad."/>
-			</utg:FormatText>
-			<utg:FormatText order="5" level="Normal" class="sapUiTinyMarginTopBottom">
-				<m:Text text="- Business data is retrieved through OData services during runtime."/>
+				<m:Text text="- A UX for the web generation people."/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 	

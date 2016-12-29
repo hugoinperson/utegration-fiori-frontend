@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400i');
 
 @font-face {
   font-family: 'brandon';
@@ -17,32 +18,65 @@
 	display: inline;
 }
 
+.utg-fiori-formatText .sapMLnk,
+.utg-fiori-formatText .sapMLnk:focus,
+.utg-fiori-formatText .sapMLnk:active {
+	outline: 0 !important;
+}
+
 /* Color - White */
-.utg-fiori-formatText.textColor-White .sapMText {
+.utg-fiori-formatText.textColor-White .sapMText,
+.utg-fiori-formatText.textColor-White .sapMLnk {
 	color: #FFFFFF;
 }
 
 /* Color - Dark */
-.utg-fiori-formatText.textColor-Dark .sapMText {
+.utg-fiori-formatText.textColor-Dark .sapMText,
+.utg-fiori-formatText.textColor-Dark .sapMLnk {
 	color: #171717;
 }
 
+/* Color - LightBlue */
+.utg-fiori-formatText.textColor-LightBlue .sapMText,
+.utg-fiori-formatText.textColor-LightBlue .sapMLnk{
+	color: #03A9F4;
+}
+
+/* Color - BlueGray */
+.utg-fiori-formatText.textColor-BlueGray .sapMText,
+.utg-fiori-formatText.textColor-BlueGray .sapMLnk {
+	color: #607D8B;
+}
+
+/* Color - GreenBlue */
+.utg-fiori-formatText.textColor-GreenBlue .sapMText,
+.utg-fiori-formatText.textColor-GreenBlue .sapMLnk {
+	background: -webkit-linear-gradient(45deg, #92b967 0%, #009ec3 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
 /* Level - H1 */
-.utg-fiori-formatText.textLevel-H1 .sapMText {
+.utg-fiori-formatText.textLevel-H1 .sapMText,
+.utg-fiori-formatText.textLevel-H1 .sapMLnk{
 	font-family: 'brandon';
 	font-size: 8vmin;
 	font-weight: 400;
 }
 
 /* Level - H2 */
-.utg-fiori-formatText.textLevel-H2 .sapMText {
+.utg-fiori-formatText.textLevel-H2 .sapMText,
+.utg-fiori-formatText.textLevel-H2 .sapMLnk{
 	font-family: 'brandon';
 	font-size: 6vmin;
 	font-weight: 400;
 }
 
 /* Level - H3 */
-.utg-fiori-formatText.textLevel-H3 .sapMText {
+.utg-fiori-formatText.textLevel-H3 .sapMText,
+.utg-fiori-formatText.textLevel-H3 .sapMLnk{
 	font-family: 'brandon';
 	font-size: 3vmin;
 	font-weight: 400;
@@ -53,7 +87,20 @@
 }
 
 /* Level - Normal */
-.utg-fiori-formatText.textLevel-Normal .sapMText {
+.utg-fiori-formatText.textLevel-Normal .sapMText,
+.utg-fiori-formatText.textLevel-Normal .sapMLnk{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 3vmin;
+}
+
+/* Level - QuoteContent */
+.utg-fiori-formatText.textLevel-QuoteContent .sapMText {
+	font-family: 'Droid Serif', serif;
+	font-size: 2.5vmin;
+}
+
+/* Level - QuoteAuthor */
+.utg-fiori-formatText.textLevel-QuoteAuthor .sapMText {
+	font-family: 'Droid Serif', serif;
+	font-size: 2vmin;
 }

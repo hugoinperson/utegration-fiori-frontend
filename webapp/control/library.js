@@ -55,6 +55,8 @@ sap.ui.define([
 	
 	utegration.fiori.frontend.control.TextLevelType = {
 		Normal: "Normal",
+		QuoteContent: "QuoteContent",
+		QuoteAuthor: "QuoteAuthor",
 		H1: "H1",
 		H2: "H2",
 		H3: "H3"
@@ -62,7 +64,10 @@ sap.ui.define([
 	
 	utegration.fiori.frontend.control.TextColorType = {
 		White: "White",
-		Dark: "Dark"
+		Dark: "Dark",
+		LightBlue: "LightBlue",
+		BlueGray: "BlueGray",
+		GreenBlue: "GreenBlue"
 	};
        
 	return utegration.fiori.frontend.control;
