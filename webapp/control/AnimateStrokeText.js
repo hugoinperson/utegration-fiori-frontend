@@ -15,6 +15,10 @@ sap.ui.define([
         		"order": {
         			type: "int",
         			defaultValue: 0
+        		},
+        		"showStroke": {
+        			type: "boolean",
+        			defaultValue: false
         		}
         	}
         },
@@ -27,6 +31,10 @@ sap.ui.define([
 
         	if (this.getOrder()) {
         		this.addStyleClass("utg-fiori-animateObj");
+        	}
+        	
+        	if (this.getShowStroke()) {
+        		this.addStyleClass("stroked");
         	}
         },
         performAnimation: function () {

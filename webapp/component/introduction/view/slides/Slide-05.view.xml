@@ -22,15 +22,7 @@
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<utg:FormatText
-				level="H1">
-				<m:Text text="Why have a new design?"/>
-			</utg:FormatText>
-			<utg:FormatText
-				order="1"
-				level="H3">
-				<m:Text text="so you have to spend money to upgrade 🤑"/>
-			</utg:FormatText>
+			<m:Image src="img/innovation.png" class="utg-fiori-imageSizeMed"/>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

@@ -18,7 +18,7 @@
 		justifyContent="Center">
 		
 		<utg:AnimateBox
-			height="100%"
+			width="80%"
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">

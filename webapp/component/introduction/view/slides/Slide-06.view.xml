@@ -23,13 +23,13 @@
 			alignItems="Center"
 			justifyContent="Center">
 			<utg:FormatText
-				level="H1">
-				<m:Text text="Why have a new design?"/>
+				level="H2">
+				<m:Text text="In order to feel the novelty,"/>
 			</utg:FormatText>
 			<utg:FormatText
-				order="1"
-				level="H3">
-				<m:Text text="so you have to spend money to upgrade 🤑"/>
+				level="H2">
+				<m:Text text="let's take a look of"/>
+				<utg:AnimateStrokeText order="1" text="Object Page"/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 	

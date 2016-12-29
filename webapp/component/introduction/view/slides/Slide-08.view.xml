@@ -22,15 +22,10 @@
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<utg:FormatText
-				level="H1">
-				<m:Text text="Why have a new design?"/>
+			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
+				<m:Text text="UI Standards (2002-2007)"/>
 			</utg:FormatText>
-			<utg:FormatText
-				order="1"
-				level="H3">
-				<m:Text text="so you have to spend money to upgrade 🤑"/>
-			</utg:FormatText>
+			<m:Image src="img/ui-standards.png" class="utg-fiori-imageSizeMed"/>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

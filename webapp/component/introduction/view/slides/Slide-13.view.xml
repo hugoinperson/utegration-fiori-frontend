@@ -22,14 +22,12 @@
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<utg:FormatText
-				level="H1">
-				<m:Text text="Why have a new design?"/>
-			</utg:FormatText>
-			<utg:FormatText
-				order="1"
-				level="H3">
-				<m:Text text="so you have to spend money to upgrade 🤑"/>
+			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
+				<m:Text text="The design standards have evolved from a very"/>
+				<utg:AnimateStrokeText showStroke="true" text="dense and complex"/>
+				<m:Text text="user interface to an increasingly"/>
+				<utg:AnimateStrokeText showStroke="true" text="structured and usable"/>
+				<m:Text text="design that features rich and expressive content."/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 	

@@ -18,8 +18,8 @@
 		justifyContent="Center">
 		
 		<utg:AnimateBox
+			width="80%"
 			direction="Column"
-			width="100%"
 			alignItems="Center"
 			justifyContent="Center">
 			<utg:FormatText
@@ -31,8 +31,8 @@
 		</utg:AnimateBox>
 		
 		<utg:AnimateBox
+			width="80%"
 			direction="Column"
-			width="100%"
 			class="sapUiMediumMarginTop"
 			alignItems="Start"
 			justifyContent="Center">
