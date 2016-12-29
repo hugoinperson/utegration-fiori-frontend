@@ -37,7 +37,7 @@
 			alignItems="Start"
 			justifyContent="Center">
 			<utg:FormatText order="2" level="Normal" class="sapUiTinyMarginTopBottom">
-				<m:Text text="- Responsive design patterns. Support of smartphones, tablets, and desktop."/>
+				<m:Text text="- Responsive design patterns. Support of smartphones, tablets, and desktop.✨"/>
 			</utg:FormatText>
 			<utg:FormatText order="3" level="Normal" class="sapUiTinyMarginTopBottom">
 				<m:Text text="- SAP Fiori applications built with SAPUI5 technology."/>

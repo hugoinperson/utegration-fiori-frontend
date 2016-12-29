@@ -23,7 +23,7 @@
 			alignItems="Center"
 			justifyContent="Center">
 			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
-				<m:Text text="SAP Fiori 2.0 (2016)"/>
+				<m:Text text="SAP Fiori 2.0 (2016) ✨"/>
 			</utg:FormatText>
 			<m:Image src="img/sap-fiori-2.0.png" class="utg-fiori-imageSizeMed"/>
 		</utg:AnimateBox>
