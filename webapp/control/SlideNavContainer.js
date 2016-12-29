@@ -32,36 +32,50 @@ sap.ui.define([
         			targetIndex = null,
         			targetPage = null,
     				currentPage = this.getCurrentPage(),
-    				currentIndex = pages.indexOf(currentPage);
+    				currentIndex = pages.indexOf(currentPage),
+    				currentSlideView = this.getCurrentPage().getAggregation("slideView"),
+    				currentSlideController = currentSlideView.getController();
         		
         		// next slide
 	    		if (oEvent.keyCode === 39){
-	    			targetIndex = currentIndex + 1;
-	    			targetPage = pages[targetIndex];
-	    			
-	    			if (targetPage && targetIndex >= 0) {
-	    				this.fireNextSlide();
+	    			if (currentSlideController._nextAnimateObjIndex === currentSlideController._animateObjs.length) {
+	    				// there's no animation to perform on this slide
+	    				targetIndex = currentIndex + 1;
+		    			targetPage = pages[targetIndex];
+		    			
+		    			if (targetPage && targetIndex >= 0) {
+		    				this.fireNextSlide();
+		    			}
+	    			} else {
+	    				// there are still animations to perform
+	    				currentSlideView.fireEvent("performAnimation");
 	    			}
 	    		}
 	    		
 	    		// previous slide
 	    		if (oEvent.keyCode === 37){ 
-	    			targetIndex = currentIndex - 1;
-	    			targetPage = pages[targetIndex];
-
-					if (targetPage && targetIndex >= 0) {
-	    				this.firePrevSlide(); 
+	    			if (currentSlideController._nextAnimateObjIndex === 0) {
+	    				// there's no animation to perform on this slide
+	    				targetIndex = currentIndex - 1;
+		    			targetPage = pages[targetIndex];
+	
+						if (targetPage && targetIndex >= 0) {
+		    				this.firePrevSlide(); 
+		    			}
+	    			} else {
+	    				// there are still animations to rollback
+	    				currentSlideView.fireEvent("rollbackAnimation");
 	    			}
 	    		}
 	    		
 	    		// previous animation
 	    		if (oEvent.keyCode === 38){ 
-	    			this.getCurrentPage().getAggregation("slideView").fireEvent("rollbackAnimation");
+	    			currentSlideView.fireEvent("rollbackAnimation");
 	    		}
 
 	    		// next slide
 	    		if (oEvent.keyCode === 40){
-	    			this.getCurrentPage().getAggregation("slideView").fireEvent("performAnimation");
+	    			currentSlideView.fireEvent("performAnimation");
 	    		}
 	    	}
         },
