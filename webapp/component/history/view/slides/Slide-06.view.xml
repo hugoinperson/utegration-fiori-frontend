@@ -25,7 +25,7 @@
 			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
 				<m:Text text="UI Guidelines 2.0 (2010)"/>
 			</utg:FormatText>
-			<m:Image src="img/ui-guideline-2.0.png" class="utg-fiori-imageSizeMed"/>
+			<m:Image densityAware="false" src="img/ui-guideline-2.0.png" class="utg-fiori-imageSizeMed"/>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

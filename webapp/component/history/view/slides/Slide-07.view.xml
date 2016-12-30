@@ -25,7 +25,7 @@
 			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
 				<m:Text text="UX3 (2011)"/>
 			</utg:FormatText>
-			<m:Image src="img/ux3.png" class="utg-fiori-imageSizeMed"/>
+			<m:Image densityAware="false" src="img/ux3.png" class="utg-fiori-imageSizeMed"/>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

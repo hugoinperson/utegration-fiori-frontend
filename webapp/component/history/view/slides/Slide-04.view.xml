@@ -25,7 +25,7 @@
 			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
 				<m:Text text="SAP Enjoy (1999)"/>
 			</utg:FormatText>
-			<m:Image src="img/sap-enjoy.gif" class="utg-fiori-imageSizeMed"/>
+			<m:Image densityAware="false" src="img/sap-enjoy.gif" class="utg-fiori-imageSizeMed"/>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

@@ -25,7 +25,7 @@
 			<utg:FormatText level="H1" class="sapUiMediumMarginBottom">
 				<m:Text text="Why should I care?️"/>
 			</utg:FormatText>
-			<m:Image src="img/whycare.gif" class="utg-fiori-imageSizeSmall"/>
+			<m:Image densityAware="false" src="img/whycare.gif" class="utg-fiori-imageSizeSmall"/>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

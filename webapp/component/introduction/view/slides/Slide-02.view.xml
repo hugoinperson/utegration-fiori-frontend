@@ -29,7 +29,7 @@
 			<utg:FormatText
 				order="1"
 				level="H3">
-				<m:Image src="img/reddot.png" alt="Red Dot Award" />
+				<m:Image densityAware="false" src="img/reddot.png" alt="Red Dot Award" />
 				<m:Text text=" wining design"/>
 			</utg:FormatText>
 		</utg:AnimateBox>

@@ -22,7 +22,7 @@
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<m:Image src="img/innovation.png" class="utg-fiori-imageSizeMed"/>
+			<m:Image densityAware="false" src="img/innovation.png" class="utg-fiori-imageSizeMed"/>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

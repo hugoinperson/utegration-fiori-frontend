@@ -39,7 +39,7 @@
 				direction="Column"
 				alignItems="Center"
 				justifyContent="Center">
-				<m:Image src="img/principle-role-based.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
+				<m:Image densityAware="false" src="img/principle-role-based.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
 				<utg:FormatText level="Normal">
 					<m:Text text="ROLE-BASED" />
 				</utg:FormatText>
@@ -50,7 +50,7 @@
 				direction="Column"
 				alignItems="Center"
 				justifyContent="Center">
-				<m:Image src="img/principle-adaptive.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
+				<m:Image densityAware="false" src="img/principle-adaptive.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
 				<utg:FormatText level="Normal">
 					<m:Text text="ADAPTIVE" />
 				</utg:FormatText>
@@ -61,7 +61,7 @@
 				direction="Column"
 				alignItems="Center"
 				justifyContent="Center">
-				<m:Image src="img/principle-coherent.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
+				<m:Image densityAware="false" src="img/principle-coherent.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
 				<utg:FormatText level="Normal">
 					<m:Text text="COHERENT" />
 				</utg:FormatText>
@@ -72,7 +72,7 @@
 				direction="Column"
 				alignItems="Center"
 				justifyContent="Center">
-				<m:Image src="img/principle-simple.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
+				<m:Image densityAware="false" src="img/principle-simple.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
 				<utg:FormatText level="Normal">
 					<m:Text text="SIMPLE" />
 				</utg:FormatText>
@@ -83,7 +83,7 @@
 				direction="Column"
 				alignItems="Center"
 				justifyContent="Center">
-				<m:Image src="img/principle-delightful.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
+				<m:Image densityAware="false" src="img/principle-delightful.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
 				<utg:FormatText level="Normal">
 					<m:Text text="DELIGHTFUL" />
 				</utg:FormatText>
