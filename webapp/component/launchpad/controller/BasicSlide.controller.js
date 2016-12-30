@@ -5,13 +5,10 @@ sap.ui.define([
 	
 	"use strict";
 	
-	var CustomController = SlideController.extend("utegration.fiori.frontend.component.history.controller.slides.Slide-11");
+	var CustomController = SlideController.extend("utegration.fiori.frontend.component.launchpad.controller.BasicSlide");
 
 	CustomController.prototype.onInit = function () {
 		SlideController.prototype.onInit.apply(this, arguments);
-		
-		// Global variables
-		this._coreEventBus = sap.ui.getCore().getEventBus();
     };
 
     CustomController.prototype.onBeforeRendering = function () {
@@ -25,10 +22,6 @@ sap.ui.define([
     CustomController.prototype.onExit = function () {
         SlideController.prototype.onExit.apply(this, arguments);
     };
-    
-    CustomController.prototype.onNextTopic = function () {
-		this._coreEventBus.publish("app", "navToTopic", {topic: "topic-launchpad"});
-	};
 
     return CustomController;
 });

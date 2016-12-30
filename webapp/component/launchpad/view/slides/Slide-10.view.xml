@@ -1,0 +1,36 @@
+<mvc:View
+	controllerName="utegration.fiori.frontend.component.launchpad.controller.BasicSlide"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:utg="utegration.fiori.frontend.control"
+    xmlns:m="sap.m"
+    xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    displayBlock="true"
+    height="100%">
+    
+    <!--Base-->
+	<utg:AnimateBox
+		height="100%"
+		direction="Column"
+		alignItems="Center"
+		justifyContent="Center">
+		
+		<utg:AnimateBox
+			width="80%"
+			direction="Column"
+			alignItems="Center"
+			justifyContent="Center">
+			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
+				<m:Text text="The design standards have evolved from a very"/>
+				<utg:AnimateStrokeText showStroke="true" text="dense and complex"/>
+				<m:Text text="user interface to an increasingly"/>
+				<utg:AnimateStrokeText showStroke="true" text="structured and usable"/>
+				<m:Text text="design that features rich and expressive content."/>
+			</utg:FormatText>
+		</utg:AnimateBox>
+	
+	</utg:AnimateBox>
+
+</mvc:View>

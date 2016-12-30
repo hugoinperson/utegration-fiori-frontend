@@ -69,7 +69,7 @@
 										<html:div class="utg-fiori-launchpad-main-tileContainer">
 											<!--New Launchpad-->
 											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="New Launchpad"
-												subheader="Single entry point to access all apps" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
+												subheader="Single entry point to access all apps" frameType="OneByOne" app:tileName="topic-launchpad" press="onLaunchpadTilePress">
 												<tileContent>
 													<TileContent unit="20" footer="slides">
 														<content>
