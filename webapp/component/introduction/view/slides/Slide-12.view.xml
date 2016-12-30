@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="utegration.fiori.frontend.component.introduction.controller.slides.Slide-12"
+	controllerName="utegration.fiori.frontend.component.introduction.controller.BasicSlide"
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
@@ -22,8 +22,25 @@
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<utg:FormatText level="H1" color="GreenBlue" class="sapUiMediumMarginBottom">
-				<m:Link text="> SAP User Interface History️" press="onNextTopic" />
+			<utg:FormatText level="H2">
+				<m:Text text="Consultant"/>
+			</utg:FormatText>
+		</utg:AnimateBox>
+		
+		<utg:AnimateBox
+			width="80%"
+			direction="Column"
+			class="sapUiMediumMarginTop"
+			alignItems="Center"
+			justifyContent="Center">
+			<utg:FormatText level="H3">
+				<utg:Text order="1" text="Hmm "/>
+				<utg:Text order="2" text="· "/>
+				<utg:Text order="3" text="· "/>
+				<utg:Text order="4" text="· "/>
+			</utg:FormatText>
+			<utg:FormatText level="H3" order="5">
+				<m:Text text="Because SAP and Clients want it, there's no choice for us 😅"/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 	

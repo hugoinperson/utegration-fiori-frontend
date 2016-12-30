@@ -22,7 +22,10 @@
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<m:Image src="img/innovation.png" class="utg-fiori-imageSizeMed"/>
+			<m:Image src="img/cow-dolphin-duck.png" class="utg-fiori-imageSizeSmall"/>
+			<utg:FormatText level="H2" class="sapUiLargeMarginTop">
+				<m:Text text="“If It Looks Like a Cow, Swims Like a Dolphin and Quacks Like a Duck, It Must Be Enterprise Software.”"/>
+			</utg:FormatText>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

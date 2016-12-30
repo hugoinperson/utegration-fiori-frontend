@@ -23,7 +23,7 @@
 			alignItems="Center"
 			justifyContent="Center">
 			<utg:FormatText level="H2">
-				<m:Text text="Consultant"/>
+				<m:Text text="Client"/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 		
@@ -31,16 +31,26 @@
 			width="80%"
 			direction="Column"
 			class="sapUiMediumMarginTop"
-			alignItems="Center"
+			alignItems="Start"
 			justifyContent="Center">
-			<utg:FormatText level="H3">
-				<utg:Text order="1" text="Hmm "/>
-				<utg:Text order="2" text="· "/>
-				<utg:Text order="3" text="· "/>
-				<utg:Text order="4" text="· "/>
+			<utg:FormatText order="1" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- Intuitive user experience reduces the need of training and makes things easy and efficient."/>
 			</utg:FormatText>
-			<utg:FormatText level="H3" order="5">
-				<m:Text text="Because SAP and Clients want it, there's no choice for us 😅"/>
+			<utg:AnimateBox
+				order="2"
+				class="sapUiMediumMarginTopBottom sapUiMediumMarginBeginEnd"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<utg:FormatText level="QuoteContent" color="LightBlue" class="sapUiSmallMarginBottom">
+					<m:Text text="“With the improved UX, any employee is able to tap into the systems to manage data and get insight instantly from a smartphone or tablet.”"/>
+				</utg:FormatText>
+				<utg:FormatText level="QuoteAuthor" color="BlueGray">
+					<m:Text text="— Andrew Marici, SAP IT Applications analyst, Pacific Drilling Services"/>
+				</utg:FormatText>
+			</utg:AnimateBox>
+			<utg:FormatText order="3" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- A UX for the web generation people."/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 	

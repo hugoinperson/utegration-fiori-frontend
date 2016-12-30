@@ -24,6 +24,7 @@
         <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-10"/></utg:Slide>
         <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-11"/></utg:Slide>
         <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-12"/></utg:Slide>
+        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-13"/></utg:Slide>
     </utg:SlideNavContainer>
 
 </mvc:View>

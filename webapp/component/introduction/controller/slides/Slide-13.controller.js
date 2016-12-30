@@ -5,7 +5,7 @@ sap.ui.define([
 	
 	"use strict";
 	
-	var CustomController = SlideController.extend("utegration.fiori.frontend.component.introduction.controller.slides.Slide-12");
+	var CustomController = SlideController.extend("utegration.fiori.frontend.component.introduction.controller.slides.Slide-13");
 
 	CustomController.prototype.onInit = function () {
 		SlideController.prototype.onInit.apply(this, arguments);

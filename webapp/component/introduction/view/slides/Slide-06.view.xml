@@ -19,76 +19,10 @@
 		
 		<utg:AnimateBox
 			width="80%"
-			class="sapUiLargeMarginBottom"
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<utg:FormatText level="H1">
-				<m:Text text="Fiori design principles"/>
-			</utg:FormatText>
-		</utg:AnimateBox>
-		
-		<utg:AnimateBox
-			width="80%"
-			direction="Row"
-			alignItems="Center"
-			justifyContent="Center">
-		
-			<utg:AnimateBox
-				order="1"
-				direction="Column"
-				alignItems="Center"
-				justifyContent="Center">
-				<m:Image src="img/principle-role-based.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
-				<utg:FormatText level="Normal">
-					<m:Text text="ROLE-BASED" />
-				</utg:FormatText>
-			</utg:AnimateBox>
-			
-			<utg:AnimateBox
-				order="2"
-				direction="Column"
-				alignItems="Center"
-				justifyContent="Center">
-				<m:Image src="img/principle-adaptive.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
-				<utg:FormatText level="Normal">
-					<m:Text text="ADAPTIVE" />
-				</utg:FormatText>
-			</utg:AnimateBox>
-			
-			<utg:AnimateBox
-				order="3"
-				direction="Column"
-				alignItems="Center"
-				justifyContent="Center">
-				<m:Image src="img/principle-coherent.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
-				<utg:FormatText level="Normal">
-					<m:Text text="COHERENT" />
-				</utg:FormatText>
-			</utg:AnimateBox>
-			
-			<utg:AnimateBox
-				order="4"
-				direction="Column"
-				alignItems="Center"
-				justifyContent="Center">
-				<m:Image src="img/principle-simple.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
-				<utg:FormatText level="Normal">
-					<m:Text text="SIMPLE" />
-				</utg:FormatText>
-			</utg:AnimateBox>
-			
-			<utg:AnimateBox
-				order="5"
-				direction="Column"
-				alignItems="Center"
-				justifyContent="Center">
-				<m:Image src="img/principle-delightful.png" class="utg-fiori-imageSizeMini sapUiTinyMarginBottom"/>
-				<utg:FormatText level="Normal">
-					<m:Text text="DELIGHTFUL" />
-				</utg:FormatText>
-			</utg:AnimateBox>
-			
+			<m:Image src="img/innovation.png" class="utg-fiori-imageSizeMed"/>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>
