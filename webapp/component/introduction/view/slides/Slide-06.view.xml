@@ -19,7 +19,17 @@
 		
 		<utg:AnimateBox
 			width="80%"
-			height="30%"
+			class="sapUiLargeMarginBottom"
+			direction="Column"
+			alignItems="Center"
+			justifyContent="Center">
+			<utg:FormatText level="H1">
+				<m:Text text="Fiori design principles"/>
+			</utg:FormatText>
+		</utg:AnimateBox>
+		
+		<utg:AnimateBox
+			width="80%"
 			direction="Row"
 			alignItems="Center"
 			justifyContent="Center">

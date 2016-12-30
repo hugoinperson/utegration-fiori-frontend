@@ -36,10 +36,16 @@ sap.ui.define([
     
     CustomController.prototype._subscribeEvents = function () {
         this._compRouter.getRoute("launchpad").attachMatched(this._onLaunchpad, this);
+        // Listen to navToTopic event
+        this._coreEventBus.subscribe("app", "navToTopic", this._navToTopic, this);
     };
     
     CustomController.prototype._onLaunchpad = function (oEvent) {
     	this._toolbar.addStyleClass("lauchpadMode");
+    };
+    
+    CustomController.prototype._navToTopic = function (sChannel, sEvent, oPayload) {
+    	this._compRouter.navTo(oPayload.topic);
     };
     
     /*-------------------------------------------------- UI Interaction -------------------------------------------------*/

@@ -9,6 +9,9 @@ sap.ui.define([
 
 	CustomController.prototype.onInit = function () {
 		SlideController.prototype.onInit.apply(this, arguments);
+		
+		// Global variables
+		this._coreEventBus = sap.ui.getCore().getEventBus();
     };
 
     CustomController.prototype.onBeforeRendering = function () {
@@ -24,7 +27,7 @@ sap.ui.define([
     };
 
 	CustomController.prototype.onNextTopic = function () {
-		console.log('nextTopic');
+		this._coreEventBus.publish("app", "navToTopic", {topic: "topic-history"});
 	};
 
     return CustomController;

@@ -43,7 +43,7 @@ sap.ui.define([
     };
     
     CustomController.prototype._goToLaunchpad = function () {
-        this.getOwnerComponent().getRouter().navTo("launchpad");
+        this._compRouter.navTo("launchpad");
     };
 
 	CustomController.prototype._onRefresh = function (oEvent) {
