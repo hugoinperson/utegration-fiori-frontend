@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="utegration.fiori.frontend.component.introduction.controller.BasicSlide"
+	controllerName="utegration.fiori.frontend.component.history.controller.BasicSlide"
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
@@ -23,8 +23,9 @@
 			alignItems="Center"
 			justifyContent="Center">
 			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
-				<m:Text text="We can think about this question from the perspectives of the following stakeholders:️"/>
+				<m:Text text="UI Guidelines 2.0 (2010)"/>
 			</utg:FormatText>
+			<m:Image src="img/ui-guideline-2.0.png" class="utg-fiori-imageSizeMed"/>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

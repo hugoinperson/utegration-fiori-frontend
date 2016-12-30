@@ -22,10 +22,35 @@
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
-				<m:Text text="UI Guidelines 2.0 (2010)"/>
+			<utg:FormatText level="H2">
+				<m:Text text="SAP️"/>
 			</utg:FormatText>
-			<m:Image src="img/ui-guideline-2.0.png" class="utg-fiori-imageSizeMed"/>
+		</utg:AnimateBox>
+		
+		<utg:AnimateBox
+			width="80%"
+			direction="Column"
+			class="sapUiMediumMarginTop"
+			alignItems="Start"
+			justifyContent="Center">
+			<utg:FormatText order="1" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- The new UX reflects a broader paradigm shift, moving from a focus on features and functions to users and their experience."/>
+			</utg:FormatText>
+			<utg:FormatText order="2" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- Fiori 2.0 will be the new face for SAP’s digital enterprise softwares."/>
+			</utg:FormatText>
+			<utg:FormatText order="3" level="Normal" class="sapUiTinyMarginTopBottom sapUiMediumMarginBegin">
+				<m:Text text="• SAP Business Suite"/>
+			</utg:FormatText>
+			<utg:FormatText order="4" level="Normal" class="sapUiTinyMarginTopBottom sapUiMediumMarginBegin">
+				<m:Text text="• SAP S/4HANA"/>
+			</utg:FormatText>
+			<utg:FormatText order="5" level="Normal" class="sapUiTinyMarginTopBottom sapUiMediumMarginBegin">
+				<m:Text text="• SAP C4C"/>
+			</utg:FormatText>
+			<utg:FormatText order="6" level="Normal" class="sapUiTinyMarginTopBottom sapUiMediumMarginBegin">
+				<m:Text text="• SAP HANA Cloud Platform SDK for iOS"/>
+			</utg:FormatText>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

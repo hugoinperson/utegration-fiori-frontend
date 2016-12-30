@@ -95,6 +95,11 @@
                 	"name": "topic-introduction",
                     "pattern": "introduction/:slidePageNum:",
                     "target": "topic-introduction"
+                },
+                {
+                	"name": "topic-history",
+                    "pattern": "history/:slidePageNum:",
+                    "target": "topic-history"
                 }
             ],
             "targets": {
@@ -104,6 +109,9 @@
                 },
                 "topic-introduction": {
                     "viewName": "TopicIntroduction"
+                },
+                "topic-history": {
+                    "viewName": "TopicHistory"
                 }
             }
 	    }

@@ -98,10 +98,26 @@
 /**************** Image Sizes ****************/
 /*********************************************/
 
+.utg-fiori-imageSizeMini {
+	width: 15vmin;
+}
+
+.utg-fiori-imageSizeTiny {
+	width: 30vmin;
+}
+
 .utg-fiori-imageSizeSmall {
 	width: 50vmin;
 }
 
 .utg-fiori-imageSizeMed {
 	width: 70vmin;
+}
+
+.utg-fiori-imageSizeLarge {
+	width: 90vmin;
+}
+
+.utg-fiori-imageSizeLong {
+	width: 110vmin;
 }

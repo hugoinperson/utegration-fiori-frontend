@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="utegration.fiori.frontend.component.introduction.controller.BasicSlide"
+	controllerName="utegration.fiori.frontend.component.history.controller.BasicSlide"
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
@@ -23,12 +23,9 @@
 			alignItems="Center"
 			justifyContent="Center">
 			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
-				<m:Text text="The design standards have evolved from a very"/>
-				<utg:AnimateStrokeText showStroke="true" text="dense and complex"/>
-				<m:Text text="user interface to an increasingly"/>
-				<utg:AnimateStrokeText showStroke="true" text="structured and usable"/>
-				<m:Text text="design that features rich and expressive content."/>
+				<m:Text text="SAP Fiori 1.0 (2013)"/>
 			</utg:FormatText>
+			<m:Image src="img/sap-fiori-1.0.png" class="utg-fiori-imageSizeMed"/>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>
