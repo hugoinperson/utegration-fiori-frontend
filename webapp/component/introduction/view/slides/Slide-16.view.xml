@@ -40,12 +40,15 @@
 				<m:Text text="- Fiori 2.0 will be the new face for SAP’s digital enterprise softwares."/>
 			</utg:FormatText>
 			<utg:FormatText order="3" level="Normal" class="sapUiTinyMarginTopBottom sapUiMediumMarginBegin">
-				<m:Text text="• SAP S/4HANA"/>
+				<m:Text text="• SAP Business Suite"/>
 			</utg:FormatText>
 			<utg:FormatText order="4" level="Normal" class="sapUiTinyMarginTopBottom sapUiMediumMarginBegin">
-				<m:Text text="• SAP C4C"/>
+				<m:Text text="• SAP S/4HANA"/>
 			</utg:FormatText>
 			<utg:FormatText order="5" level="Normal" class="sapUiTinyMarginTopBottom sapUiMediumMarginBegin">
+				<m:Text text="• SAP C4C"/>
+			</utg:FormatText>
+			<utg:FormatText order="6" level="Normal" class="sapUiTinyMarginTopBottom sapUiMediumMarginBegin">
 				<m:Text text="• SAP HANA Cloud Platform SDK for iOS"/>
 			</utg:FormatText>
 		</utg:AnimateBox>

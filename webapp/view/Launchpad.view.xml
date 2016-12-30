@@ -28,7 +28,7 @@
 					class="utg-fiori-launchpad-main-objectPageLayout"
 					enableLazyLoading="false">
 					<uxap:sections>
-						<!--My Home Group-->
+						<!--Introduction Group-->
 						<uxap:ObjectPageSection title="Introduction">
 							<uxap:subSections>
 								<uxap:ObjectPageSubSection class="utg-fiori-launchpad-main-subSection">
@@ -61,19 +61,63 @@
 								</uxap:ObjectPageSubSection>
 							</uxap:subSections>
 						</uxap:ObjectPageSection>
-						<!--Work Space Group-->
+						<!--Fiori 2.0 Group-->
 						<uxap:ObjectPageSection title="Fiori 2.0">
 							<uxap:subSections>
 								<uxap:ObjectPageSubSection class="utg-fiori-launchpad-main-subSection">
 									<uxap:blocks>
 										<html:div class="utg-fiori-launchpad-main-tileContainer">
-											<!--UI5-->
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="SAP UI5"
-												subheader="Enterprise-ready web applications" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
+											<!--New Launchpad-->
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="New Launchpad"
+												subheader="Single entry point to access all apps" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
 												<tileContent>
-													<TileContent unit="Version" footer="1.42">
+													<TileContent unit="20" footer="slides">
 														<content>
-															<ImageContent src="sap-icon://sap-ui5"/>
+															<ImageContent src="sap-icon://business-one"/>
+														</content>
+													</TileContent>
+												</tileContent>
+											</GenericTile>
+											<!--Fiori Elements-->
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Fiori Elements"
+												subheader="Generating UIs at runtime" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
+												<tileContent>
+													<TileContent unit="20" footer="slides">
+														<content>
+															<ImageContent src="sap-icon://business-one"/>
+														</content>
+													</TileContent>
+												</tileContent>
+											</GenericTile>
+											<!--Fiori for iOS-->
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Fiori for iOS"
+												subheader="Fiori desgin guideline for iOS" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
+												<tileContent>
+													<TileContent unit="20" footer="slides">
+														<content>
+															<ImageContent src="sap-icon://business-one"/>
+														</content>
+													</TileContent>
+												</tileContent>
+											</GenericTile>
+											<!--Fiori Frontend Architecture-->
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Fiori Frontend Architecture"
+												subheader="Fiori desgin guideline for iOS" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
+												<tileContent>
+													<TileContent unit="20" footer="slides">
+														<content>
+															<ImageContent src="sap-icon://business-one"/>
+														</content>
+													</TileContent>
+												</tileContent>
+											</GenericTile>
+											<!--Upgrading to Fiori 2.0-->
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Adopting to Fiori 2.0"
+												subheader="Fiori desgin guideline for iOS" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
+												<tileContent>
+													<TileContent unit="20" footer="slides">
+														<content>
+															<ImageContent src="sap-icon://business-one"/>
 														</content>
 													</TileContent>
 												</tileContent>
@@ -83,130 +127,55 @@
 								</uxap:ObjectPageSubSection>
 							</uxap:subSections>
 						</uxap:ObjectPageSection>
-						<!--Internal Sales Group-->
-						<uxap:ObjectPageSection title="Internal Sales">
+						<!--Development Group-->
+						<uxap:ObjectPageSection title="Development">
 							<uxap:subSections>
 								<uxap:ObjectPageSubSection class="utg-fiori-launchpad-main-subSection">
 									<uxap:blocks>
 										<html:div class="utg-fiori-launchpad-main-tileContainer">
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Status Loaded - no press event"
-												subheader="Subheader" frameType="OneByOne">
+											<!--UI5-->
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="SAP UI5"
+												subheader="Version 1.42" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
 												<tileContent>
-													<TileContent unit="Unit" footer="Footer">
+													<TileContent unit="20" footer="slides">
 														<content>
-															<ImageContent src="sap-icon://line-charts"/>
+															<ImageContent src="sap-icon://sap-ui5"/>
 														</content>
 													</TileContent>
 												</tileContent>
 											</GenericTile>
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Status Loaded - with press event"
-												subheader="Subheader" frameType="OneByOne" press="press">
+											<!--OData-->
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="OData"
+												subheader="Version 4.0" frameType="OneByOne" press="press">
 												<tileContent>
-													<TileContent unit="Unit" footer="Footer">
+													<TileContent unit="30" footer="slides">
 														<content>
 															<ImageContent src="sap-icon://home-share"/>
 														</content>
 													</TileContent>
 												</tileContent>
 											</GenericTile>
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Status Loading - no press event"
-												subheader="Subheader" frameType="OneByOne" state="Loading">
+											<!--SAP Web IDE-->
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="SAP Web IDE"
+												subheader="IDE for UI5 apps" frameType="TwoByOne">
 												<tileContent>
-													<TileContent unit="Unit" footer="Footer">
-														<content>
-															<NumericContent scale="M" value="2.1"
-																valueColor="Good" indicator="Up" />
-														</content>
-													</TileContent>
-												</tileContent>
-											</GenericTile>
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Status Loading - with press event"
-												subheader="Subheader" frameType="OneByOne" state="Loading" press="press">
-												<tileContent>
-													<TileContent unit="Unit" footer="Footer">
-														<content>
-															<NumericContent scale="M" value="1.96"
-																valueColor="Error" indicator="Down" />
-														</content>
-													</TileContent>
-												</tileContent>
-											</GenericTile>
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Status Failed - no press event"
-												subheader="Subheader" frameType="TwoByOne" state="Failed">
-												<tileContent>
-													<TileContent unit="Unit" footer="Footer">
+													<TileContent unit="15" footer="slides">
 														<content>
 															<FeedContent
-																contentText="@@notify Great outcome of the Presentation today. The new functionality and the design was well received. Berlin, Tokyo, Rome, Budapest, New York, Munich, London"
-																subheader="Subheader" value="9">
+																contentText="SAP Web IDE is a powerful, extensible, web-based integrated development tool that simplifies end-to-end application development for SAP Fiori and SAPUI5 apps."
+																subheader="" value="">
 															</FeedContent>
 														</content>
 													</TileContent>
 												</tileContent>
 											</GenericTile>
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Status Failed - with press event"
-												subheader="Subheader" frameType="TwoByOne" state="Failed" press="press">
+											<!--Git-->
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Git"
+												subheader="Version control system" frameType="OneByOne" press="press">
 												<tileContent>
-													<TileContent unit="Unit" footer="Footer">
+													<TileContent unit="30" footer="slides">
 														<content>
-															<FeedContent
-																contentText="@@notify Great outcome of the Presentation today. The new functionality and the design was well received. Berlin, Tokyo, Rome, Budapest, New York, Munich, London"
-																subheader="Subheader" value="9">
-															</FeedContent>
-														</content>
-													</TileContent>
-												</tileContent>
-											</GenericTile>
-											<SlideTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout">
-												<tiles>
-													<GenericTile
-														backgroundImage="test-resources/sap/m/demokit/sample/GenericTileAsFeedTile/images/NewsImage1.png"
-														frameType="TwoByOne" state="Loading">
-														<tileContent>
-															<TileContent unit="Unit" footer="Footer">
-																<content>
-																	<NewsContent
-																		contentText="Status Loading"
-																		subheader="Subheader">
-																	</NewsContent>
-																</content>
-															</TileContent>
-														</tileContent>
-													</GenericTile>
-													<GenericTile
-														backgroundImage="test-resources/sap/m/demokit/sample/GenericTileAsFeedTile/images/NewsImage2.png"
-														frameType="TwoByOne" state="Loaded" press="press">
-														<tileContent>
-															<TileContent unit="Unit" footer="Footer">
-																<content>
-																	<NewsContent
-																		contentText="Status Loaded"
-																		subheader="Subheader">
-																	</NewsContent>
-																</content>
-															</TileContent>
-														</tileContent>
-													</GenericTile>
-												</tiles>
-											</SlideTile>
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Status Disabled"
-												subheader="Subheader" frameType="OneByOne" state="Disabled">
-												<tileContent>
-													<TileContent footer="Footer" unit="Unit">
-														<content>
-															<NumericContent value="3"
-																icon="sap-icon://travel-expense" />
-														</content>
-													</TileContent>
-												</tileContent>
-											</GenericTile>
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Status Disabled - with press event"
-												subheader="Subheader" frameType="OneByOne" state="Disabled" press="press">
-												<tileContent>
-													<TileContent footer="Footer" unit="Unit">
-														<content>
-															<NumericContent value="3"
-																icon="sap-icon://travel-expense" />
+															<ImageContent src="sap-icon://home-share"/>
 														</content>
 													</TileContent>
 												</tileContent>

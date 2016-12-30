@@ -90,7 +90,8 @@
             		"name": "launchpad",
                     "pattern": "",
                     "target": "launchpad"
-                }, {
+                }, 
+                {
                 	"name": "topic-introduction",
                     "pattern": "introduction/:slidePageNum:",
                     "target": "topic-introduction"

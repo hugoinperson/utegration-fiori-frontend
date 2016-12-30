@@ -11,7 +11,10 @@ sap.ui.define([
     	// global variables
     	this._hostPage = this.getView().byId("utg-fiori-hostPage");
     	this._toolbar = this.getView().byId("utg-fiori-toolbar");
+    	this._compRouter = this.getOwnerComponent().getRouter();
     	this._coreEventBus = sap.ui.getCore().getEventBus();
+    	// Startup functions
+        this._subscribeEvents();
     };
 
     CustomController.prototype.onBeforeRendering = function () {
@@ -27,6 +30,16 @@ sap.ui.define([
     	this._hostPage.getHeaderContent()[0].getParent().attachBrowserEvent("mouseleave", function (oEvent) {
     		that._toolbar.removeStyleClass("show");
     	});
+    };
+    
+    /*------------------------------------------------------ Events -----------------------------------------------------*/
+    
+    CustomController.prototype._subscribeEvents = function () {
+        this._compRouter.getRoute("launchpad").attachMatched(this._onLaunchpad, this);
+    };
+    
+    CustomController.prototype._onLaunchpad = function (oEvent) {
+    	this._toolbar.addStyleClass("lauchpadMode");
     };
     
     /*-------------------------------------------------- UI Interaction -------------------------------------------------*/
