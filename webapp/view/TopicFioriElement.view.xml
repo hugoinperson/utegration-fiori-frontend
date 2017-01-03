@@ -1,0 +1,13 @@
+<mvc:View
+    controllerName="utegration.fiori.frontend.controller.TopicFioriElement"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns:uxap="sap.uxap"
+	xmlns:core="sap.ui.core"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m">
+
+	<Page id="utg-fiori-tileComponentContainer" showHeader="false" />
+
+</mvc:View>

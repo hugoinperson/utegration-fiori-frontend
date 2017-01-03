@@ -8,9 +8,14 @@
   },
   "generation": [
     {
-      "templateId": "ui5template.basicSAPUI5ApplicationProject",
-      "templateVersion": "1.32.0",
-      "dateTimeStamp": "Tue, 06 Dec 2016 21:10:19 GMT"
+      "templateId": "OVP.smartovptemplate",
+      "templateVersion": "1.40.12",
+      "dateTimeStamp": "Tue, 03 Jan 2017 00:09:24 GMT"
+    },
+    {
+      "templateId": "OVP.cardtemplate",
+      "templateVersion": "0.0.0",
+      "dateTimeStamp": "Tue, 03 Jan 2017 05:05:51 GMT"
     }
   ],
   "translation": {

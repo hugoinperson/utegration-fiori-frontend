@@ -1,19 +1,43 @@
 <!DOCTYPE HTML>
 <html>
-
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta charset="UTF-8">
-
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>UTG_FIORI_FRONTEND</title>
 
+		<script type="text/javascript">
+			window["sap-ushell-config"] = {
+				defaultRenderer : "fiori2",
+				renderers: {
+					fiori2: {
+						componentData: {
+							config: {
+								rootIntent: "OVP-display",
+								search: "hidden"
+							}
+						}
+					}
+				},
+				applications: {
+					"OVP-display": {
+						"additionalInformation": "SAPUI5.Component=utegration.fiori.frontend.component.fioriElement",
+						"applicationType": "URL",
+						"url": "./"
+					}
+				}
+			};
+		</script>
+	
+		<script src="/test-resources/sap/ushell/bootstrap/sandbox.js" id="sap-ushell-bootstrap"></script>
+
 		<script id="sap-ui-bootstrap"
-			src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
-			data-sap-ui-libs="sap.m"
+			src="/resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m, sap.ushell"
 			data-sap-ui-theme="sap_belize"
 			data-sap-ui-language="en"
 			data-sap-ui-compatVersion="edge"
-			data-sap-ui-resourceroots='{"utegration.fiori.frontend": ""}'>
+			data-sap-ui-resourceroots='{"utegration.fiori.frontend": "./"}'>
 		</script>
 
 		<link rel="stylesheet" type="text/css" href="css/style.css">

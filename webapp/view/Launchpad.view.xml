@@ -80,7 +80,7 @@
 											</GenericTile>
 											<!--Fiori Elements-->
 											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Fiori Elements"
-												subheader="Generating UIs at runtime" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
+												subheader="Generating UIs at runtime" frameType="OneByOne" app:tileName="topic-fioriElement" press="onLaunchpadTilePress">
 												<tileContent>
 													<TileContent unit="20" footer="slides">
 														<content>
