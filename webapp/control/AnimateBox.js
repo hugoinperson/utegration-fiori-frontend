@@ -33,7 +33,7 @@ sap.ui.define([
 
         		switch(this.getAnimation()) {
         			case "Show":
-        				this.addStyleClass("hidden");
+        				this.addStyleClass("utg-fiori-hidden");
         				break;
         			default:
         		}
@@ -43,7 +43,7 @@ sap.ui.define([
         	if (this.getOrder()) {
         		switch(this.getAnimation()) {
         			case "Show":
-        				this.removeStyleClass("hidden");
+        				this.removeStyleClass("utg-fiori-hidden");
         				break;
         			default:
         		}
@@ -53,7 +53,7 @@ sap.ui.define([
         	if (this.getOrder()) {
         		switch(this.getAnimation()) {
         			case "Show":
-        				this.addStyleClass("hidden");
+        				this.addStyleClass("utg-fiori-hidden");
         				break;
         			default:
         		}

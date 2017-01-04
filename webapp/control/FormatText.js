@@ -37,17 +37,17 @@ sap.ui.define([
         onAfterRendering: function () {
         	if (this.getOrder()) {
         		this.addStyleClass("utg-fiori-animateObj");
-        		this.addStyleClass("hidden");
+        		this.addStyleClass("utg-fiori-hidden");
         	}
         },
         performAnimation: function () {
         	if (this.getOrder()) {
-        		this.removeStyleClass("hidden");
+        		this.removeStyleClass("utg-fiori-hidden");
         	}
         },
         rollbackAnimation: function () {
         	if (this.getOrder()) {
-        		this.addStyleClass("hidden");
+        		this.addStyleClass("utg-fiori-hidden");
         	}
         },
         renderer: {
