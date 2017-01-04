@@ -16,7 +16,11 @@ sap.ui.define([
             async: true
         }).then(function (oComponent) {
             this.getView().byId("utg-fiori-tileComponentContainer").addContent(
-                sap.ushell.Container.createRenderer()
+                new ComponentContainer({
+                    height: "100%",
+                    width: "100%",
+                    component: oComponent
+                })
             );
         }.bind(this));
         
@@ -27,7 +31,7 @@ sap.ui.define([
     };
     
     CustomController.prototype.onAfterRendering = function () {
-    	this._subscribeEvents();
+        this._subscribeEvents();
     	this._globalToolbar = this.getView().getParent().getParent().getParent().getController()._toolbar;
     };
     
@@ -45,7 +49,7 @@ sap.ui.define([
 	CustomController.prototype._onRefresh = function (oEvent) {
     	this._globalToolbar.removeStyleClass("lauchpadMode");
     };
-    
+
     return CustomController;
 
 });
