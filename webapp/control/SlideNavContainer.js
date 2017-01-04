@@ -29,6 +29,7 @@ sap.ui.define([
         },
         onBeforeRendering: function () {
         	this._sComponentName = this.data("component");
+        	this._sCurrentComponent = this.data("component");
         },
         onAfterRendering: function () {
         	this.addStyleClass("utg-fiori-slideContainer");
