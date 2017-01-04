@@ -9,7 +9,7 @@
 	xmlns:utg="utegration.fiori.frontend.control"
 	xmlns="sap.m">
 
-	<utg:SlideNavContainer id="utg-fiori-SlidePagesNavContainer" width="100%" height="100%"
+	<utg:SlideNavContainer id="utg-fiori-SlidePagesNavContainer" width="100%" height="100%" app:component="launchpad"
 		nextSlide="onNextSlide"
 		prevSlide="onPrevSlide">
         <utg:Slide background="GreenBlue"><mvc:XMLView viewName="utegration.fiori.frontend.component.launchpad.view.slides.Slide-01"/></utg:Slide>

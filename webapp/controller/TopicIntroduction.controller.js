@@ -24,6 +24,8 @@ sap.ui.define([
             );
         }.bind(this));
         
+        // Static variables
+        this._COMPONENT_NAME = "introduction";
         // global variables
     	this._coreEventBus = sap.ui.getCore().getEventBus();
     	this._compRouter = this.getOwnerComponent().getRouter();
@@ -39,7 +41,7 @@ sap.ui.define([
     
     CustomController.prototype._subscribeEvents = function () {
         this._coreEventBus.subscribe("launchpad", "backToLaunchpad", this._goToLaunchpad, this);
-        this._compRouter.getRoute("topic-introduction").attachMatched(this._onRefresh, this);
+        this._compRouter.getRoute("topic-introduction").attachPatternMatched(this._onRefresh, this);
     };
     
     CustomController.prototype._goToLaunchpad = function () {
@@ -48,6 +50,9 @@ sap.ui.define([
 
 	CustomController.prototype._onRefresh = function (oEvent) {
     	this._globalToolbar.removeStyleClass("lauchpadMode");
+    	this._coreEventBus.publish("app", "keepCurrentComponentActive", {
+    		sComponentName: this._COMPONENT_NAME
+    	});
     };
 
     return CustomController;

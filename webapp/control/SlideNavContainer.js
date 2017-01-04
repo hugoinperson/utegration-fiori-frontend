@@ -16,18 +16,30 @@ sap.ui.define([
         	}
         },
         init: function () {
+        	// global variables
+        	this._currentBackground = null;
+        	this._sComponentName = null;
+        	this._sCurrentComponent = null;
+        	this._coreEventBus = sap.ui.getCore().getEventBus();
+        	this._bHasBindKeyboardEvent = true;
+        	
         	NavContainer.prototype.init.apply(this, arguments);
         	$.sap.bindAnyEvent(this.handleKeyboardArrow.bind(this));
+        	this._coreEventBus.subscribe("app", "keepCurrentComponentActive", this.keepCurrentComponentActive, this);
         },
         onBeforeRendering: function () {
+        	this._sComponentName = this.data("component");
         },
         onAfterRendering: function () {
         	this.addStyleClass("utg-fiori-slideContainer");
         	this.addStyleClass("utg-fiori-slideContainerBackground-" + this.getCurrentPage().getBackground());
         	this._currentBackground = this.getCurrentPage().getBackground();
         },
+        keepCurrentComponentActive: function (sChannel, sEvent, oPayload) {
+        	this._sCurrentComponent = oPayload.sComponentName;
+	    },
         handleKeyboardArrow: function (oEvent) {
-        	if (oEvent.type === "keydown") {
+        	if (oEvent.type === "keydown" && this._sComponentName === this._sCurrentComponent) {
         		var pages = this.getPages(),
         			targetIndex = null,
         			targetPage = null,
