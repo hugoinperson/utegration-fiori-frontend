@@ -1,0 +1,57 @@
+<mvc:View
+	controllerName="utegration.fiori.frontend.component.principles.controller.BasicSlide"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:utg="utegration.fiori.frontend.control"
+    xmlns:m="sap.m"
+    xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    displayBlock="true"
+    height="100%">
+
+	<!--Base-->
+	<utg:AnimateBox
+		height="100%"
+		direction="Column"
+		alignItems="Center"
+		justifyContent="Center">
+		
+		<utg:AnimateBox
+			width="80%"
+			direction="Column"
+			alignItems="Center"
+			justifyContent="Center">
+			<utg:FormatText level="H2">
+				<m:Text text="Fiori 2.0 is a new"/>
+				<utg:AnimateStrokeText order="1" text="design guideline"/>
+				<m:Text text="from SAP guiding development for applications"/>
+			</utg:FormatText>
+		</utg:AnimateBox>
+		
+		<utg:AnimateBox
+			width="80%"
+			direction="Column"
+			class="sapUiMediumMarginTop"
+			alignItems="Start"
+			justifyContent="Center">
+			<utg:FormatText order="2" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- Responsive design patterns. Support of smartphones, tablets, and desktop."/>
+			</utg:FormatText>
+			<utg:FormatText order="3" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- SAP Fiori applications built with SAPUI5 technology and HCP SDK for iOS."/>
+			</utg:FormatText>
+			<utg:FormatText order="4" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- SAP Fiori applications are launched and running in the SAP Fiori launchpad."/>
+			</utg:FormatText>
+			<utg:FormatText order="5" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- Business data is retrieved through OData services during runtime."/>
+			</utg:FormatText>
+			<utg:FormatText order="6" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- Fiori 2.0 will be the new face for SAP’s digital enterprise softwares."/>
+			</utg:FormatText>
+		</utg:AnimateBox>
+	
+	</utg:AnimateBox>
+
+</mvc:View>

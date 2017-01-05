@@ -5,7 +5,7 @@ sap.ui.define([
 	
 	"use strict";
 	
-	var CustomController = SlideController.extend("utegration.fiori.frontend.component.introduction.controller.slides.End");
+	var CustomController = SlideController.extend("utegration.fiori.frontend.component.principles.controller.slides.End");
 
 	CustomController.prototype.onInit = function () {
 		SlideController.prototype.onInit.apply(this, arguments);
@@ -27,7 +27,7 @@ sap.ui.define([
     };
 
 	CustomController.prototype.onNextTopic = function () {
-		this._coreEventBus.publish("app", "navToTopic", {topic: "topic-principles"});
+		this._coreEventBus.publish("app", "navToTopic", {topic: "topic-history"});
 	};
 
     return CustomController;

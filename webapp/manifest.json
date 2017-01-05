@@ -100,6 +100,11 @@
                     "target": "topic-introduction"
                 },
                 {
+                	"name": "topic-principles",
+                    "pattern": "principles/:slidePageNum:",
+                    "target": "topic-principles"
+                },
+                {
                 	"name": "topic-history",
                     "pattern": "history/:slidePageNum:",
                     "target": "topic-history"
@@ -122,6 +127,9 @@
                 },
                 "topic-introduction": {
                     "viewName": "TopicIntroduction"
+                },
+                "topic-principles": {
+                    "viewName": "TopicPrinciples"
                 },
                 "topic-history": {
                     "viewName": "TopicHistory"
