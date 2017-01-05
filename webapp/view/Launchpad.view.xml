@@ -38,9 +38,23 @@
 											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Introduction"
 												subheader="Fiori front-end programming" frameType="OneByOne" app:tileName="topic-introduction" press="onLaunchpadTilePress">
 												<tileContent>
-													<TileContent>
+													<TileContent unit="5" footer="slides">
 														<content>
 															<ImageContent src="sap-icon://education"/>
+														</content>
+													</TileContent>
+												</tileContent>
+											</GenericTile>
+											<!--Firori Design Principles-->
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Fiori Design Principles"
+												subheader="5 new design principles" frameType="TwoByOne" app:tileName="topic-principles" press="onLaunchpadTilePress">
+												<tileContent>
+													<TileContent>
+														<content>
+															<FeedContent
+																contentText="Role-based, adaptive, coherent, simple and delightful."
+																subheader="" value="">
+															</FeedContent>
 														</content>
 													</TileContent>
 												</tileContent>
@@ -61,8 +75,8 @@
 								</uxap:ObjectPageSubSection>
 							</uxap:subSections>
 						</uxap:ObjectPageSection>
-						<!--Fiori 2.0 Group-->
-						<uxap:ObjectPageSection title="Fiori 2.0">
+						<!--Design Group-->
+						<uxap:ObjectPageSection title="Design">
 							<uxap:subSections>
 								<uxap:ObjectPageSubSection class="utg-fiori-launchpad-main-subSection">
 									<uxap:blocks>

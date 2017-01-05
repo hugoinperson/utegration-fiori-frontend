@@ -13,18 +13,10 @@
 		nextSlide="onNextSlide"
 		prevSlide="onPrevSlide">
         <utg:Slide background="GreenBlue"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-01"/></utg:Slide>
-        <utg:Slide background="BlueGray"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-02"/></utg:Slide>
-        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-03"/></utg:Slide>
-        <utg:Slide background="BlueGray"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-04"/></utg:Slide>
+        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-02"/></utg:Slide>
+        <utg:Slide background="BlueGray"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-03"/></utg:Slide>
+        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-04"/></utg:Slide>
         <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-05"/></utg:Slide>
-        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-06"/></utg:Slide>
-        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-07"/></utg:Slide>
-        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-08"/></utg:Slide>
-        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-09"/></utg:Slide>
-        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-10"/></utg:Slide>
-        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-11"/></utg:Slide>
-        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-12"/></utg:Slide>
-        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.introduction.view.slides.Slide-13"/></utg:Slide>
     </utg:SlideNavContainer>
 
 </mvc:View>
