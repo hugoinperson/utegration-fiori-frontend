@@ -1,0 +1,70 @@
+<mvc:View
+	controllerName="utegration.fiori.frontend.component.principles.controller.BasicSlide"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:utg="utegration.fiori.frontend.control"
+    xmlns:m="sap.m"
+    xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    displayBlock="true"
+    height="100%">
+
+	<!--Base-->
+	<utg:AnimateBox
+		height="100%"
+		direction="Column"
+		alignItems="Center"
+		justifyContent="Center">
+		
+		<utg:AnimateBox
+			width="80%"
+			direction="Row"
+			alignItems="Center"
+			justifyContent="Center">
+			
+			<utg:AnimateBox
+				order="1"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<utg:FormatText level="H2">
+					<m:Text text="Small device"/>
+				</utg:FormatText>
+				<utg:FormatText level="H3" order="2">
+					<utg:Text text="limited resources"/>
+					<utg:Text text="😕" isEmoji="true" class="sapUiSmallMarginBegin"/>
+				</utg:FormatText>
+			</utg:AnimateBox>
+			
+			<utg:AnimateBox
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<utg:FormatText level="H1">
+					<utg:Text text="➡" isEmoji="true"/>
+				</utg:FormatText>
+			</utg:AnimateBox>
+			
+			<utg:AnimateBox
+				order="3"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<utg:FormatText level="H2">
+					<m:Text text="Larger device"/>
+				</utg:FormatText>
+				<utg:FormatText level="H3" order="4">
+					<m:Text text="more powerful"/>
+					<utg:Text text="💪" isEmoji="true" class="sapUiSmallMarginBegin"/>
+				</utg:FormatText>
+			</utg:AnimateBox>
+			
+			
+			
+		</utg:AnimateBox>
+		
+	
+	</utg:AnimateBox>
+
+</mvc:View>

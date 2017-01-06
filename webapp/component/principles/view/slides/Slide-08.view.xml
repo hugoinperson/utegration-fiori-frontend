@@ -93,6 +93,18 @@
 			
 		</utg:AnimateBox>
 		
+		<utg:AnimateBox
+			order="1"
+			width="80%"
+			class="sapUiSmallMarginTop"
+			direction="Column"
+			alignItems="Center"
+			justifyContent="Center">
+			<utg:FormatText level="H3">
+				<m:Link text="Control library" href="https://sapui5.hana.ondemand.com/explored.html" target="_blank"/>
+			</utg:FormatText>
+		</utg:AnimateBox>
+		
 	</utg:AnimateBox>
 
 </mvc:View>

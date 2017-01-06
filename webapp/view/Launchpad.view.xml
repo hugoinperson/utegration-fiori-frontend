@@ -81,20 +81,9 @@
 								<uxap:ObjectPageSubSection class="utg-fiori-launchpad-main-subSection">
 									<uxap:blocks>
 										<html:div class="utg-fiori-launchpad-main-tileContainer">
-											<!--New Launchpad-->
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="New Launchpad"
+											<!--How to Design Fiori App-->
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Design Fiori App"
 												subheader="Single entry point to access all apps" frameType="OneByOne" app:tileName="topic-launchpad" press="onLaunchpadTilePress">
-												<tileContent>
-													<TileContent unit="20" footer="slides">
-														<content>
-															<ImageContent src="sap-icon://business-one"/>
-														</content>
-													</TileContent>
-												</tileContent>
-											</GenericTile>
-											<!--Fiori Elements-->
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Fiori Elements"
-												subheader="Generating UIs at runtime" frameType="OneByOne" app:tileName="topic-fioriElement" press="onLaunchpadTilePress">
 												<tileContent>
 													<TileContent unit="20" footer="slides">
 														<content>
@@ -105,28 +94,6 @@
 											</GenericTile>
 											<!--Fiori for iOS-->
 											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Fiori for iOS"
-												subheader="Fiori desgin guideline for iOS" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
-												<tileContent>
-													<TileContent unit="20" footer="slides">
-														<content>
-															<ImageContent src="sap-icon://business-one"/>
-														</content>
-													</TileContent>
-												</tileContent>
-											</GenericTile>
-											<!--Fiori Frontend Architecture-->
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Fiori Frontend Architecture"
-												subheader="Fiori desgin guideline for iOS" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
-												<tileContent>
-													<TileContent unit="20" footer="slides">
-														<content>
-															<ImageContent src="sap-icon://business-one"/>
-														</content>
-													</TileContent>
-												</tileContent>
-											</GenericTile>
-											<!--Upgrading to Fiori 2.0-->
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Adopting to Fiori 2.0"
 												subheader="Fiori desgin guideline for iOS" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
 												<tileContent>
 													<TileContent unit="20" footer="slides">
@@ -147,8 +114,8 @@
 								<uxap:ObjectPageSubSection class="utg-fiori-launchpad-main-subSection">
 									<uxap:blocks>
 										<html:div class="utg-fiori-launchpad-main-tileContainer">
-											<!--UI5-->
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="SAP UI5"
+											<!--Build Fiori App-->
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Build Fiori App"
 												subheader="Version 1.42" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
 												<tileContent>
 													<TileContent unit="20" footer="slides">
@@ -158,33 +125,8 @@
 													</TileContent>
 												</tileContent>
 											</GenericTile>
-											<!--OData-->
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="OData"
-												subheader="Version 4.0" frameType="OneByOne" press="press">
-												<tileContent>
-													<TileContent unit="30" footer="slides">
-														<content>
-															<ImageContent src="sap-icon://home-share"/>
-														</content>
-													</TileContent>
-												</tileContent>
-											</GenericTile>
-											<!--SAP Web IDE-->
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="SAP Web IDE"
-												subheader="IDE for UI5 apps" frameType="TwoByOne">
-												<tileContent>
-													<TileContent unit="15" footer="slides">
-														<content>
-															<FeedContent
-																contentText="SAP Web IDE is a powerful, extensible, web-based integrated development tool that simplifies end-to-end application development for SAP Fiori and SAPUI5 apps."
-																subheader="" value="">
-															</FeedContent>
-														</content>
-													</TileContent>
-												</tileContent>
-											</GenericTile>
-											<!--Git-->
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Git"
+											<!--Prototyping Tool-->
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Prototyping Tool"
 												subheader="Version control system" frameType="OneByOne" press="press">
 												<tileContent>
 													<TileContent unit="30" footer="slides">
