@@ -15,6 +15,10 @@ sap.ui.define([
         		"order": {
         			type: "int",
         			defaultValue: 0
+        		},
+        		"isEmoji": {
+        			type: "boolean",
+        			defaultValue: false
         		}
         	}
         },
@@ -36,6 +40,10 @@ sap.ui.define([
         		this.addStyleClass("utg-fiori-animateObj");
         		this.addStyleClass("utg-fiori-hidden");
         	}
+        	if (this.getIsEmoji()) {
+        		this.addStyleClass("utg-fiori-emoji");
+        	}
+        	this.addStyleClass("utg-fiori-text");
         },
         performAnimation: function () {
         	if (this.getOrder()) {

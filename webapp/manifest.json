@@ -71,7 +71,8 @@
 				{ "uri": "control/css/AnimateStrokeText.css" },
 				{ "uri": "control/css/FormatText.css" },
 				{ "uri": "control/css/SlideNavContainer.css" },
-				{ "uri": "control/css/Slide.css" }
+				{ "uri": "control/css/Slide.css" },
+				{ "uri": "control/css/Text.css" }
 			]
 		},
 		"rootView": {

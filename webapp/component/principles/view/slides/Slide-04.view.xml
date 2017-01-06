@@ -19,38 +19,49 @@
 		
 		<utg:AnimateBox
 			width="80%"
-			direction="Column"
+			direction="Row"
 			alignItems="Center"
 			justifyContent="Center">
-			<utg:FormatText level="H2">
-				<m:Text text="Fiori 2.0 is a new"/>
-				<utg:AnimateStrokeText order="1" text="design guideline"/>
-				<m:Text text="from SAP guiding development for applications"/>
-			</utg:FormatText>
+			
+			<utg:AnimateBox
+				order="1"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<utg:FormatText level="H1">
+					<m:Text text="ABAP"/>
+				</utg:FormatText>
+				<utg:FormatText level="H2" order="2">
+					<utg:AnimateStrokeText showStroke="true" text="Document-based"/>
+				</utg:FormatText>
+			</utg:AnimateBox>
+			
+			<utg:AnimateBox
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<utg:FormatText level="H1">
+					<m:Text text="vs."/>
+				</utg:FormatText>
+			</utg:AnimateBox>
+			
+			<utg:AnimateBox
+				order="3"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<utg:FormatText level="H1">
+					<m:Text text="Fiori"/>
+				</utg:FormatText>
+				<utg:FormatText level="H2" order="4">
+					<utg:AnimateStrokeText showStroke="true" text="Role-based"/>
+				</utg:FormatText>
+			</utg:AnimateBox>
+			
+			
+			
 		</utg:AnimateBox>
 		
-		<utg:AnimateBox
-			width="80%"
-			direction="Column"
-			class="sapUiMediumMarginTop"
-			alignItems="Start"
-			justifyContent="Center">
-			<utg:FormatText order="2" level="Normal" class="sapUiTinyMarginTopBottom">
-				<m:Text text="- Responsive design patterns. Support of smartphones, tablets, and desktop."/>
-			</utg:FormatText>
-			<utg:FormatText order="3" level="Normal" class="sapUiTinyMarginTopBottom">
-				<m:Text text="- SAP Fiori applications built with SAPUI5 technology and HCP SDK for iOS."/>
-			</utg:FormatText>
-			<utg:FormatText order="4" level="Normal" class="sapUiTinyMarginTopBottom">
-				<m:Text text="- SAP Fiori applications are launched and running in the SAP Fiori launchpad."/>
-			</utg:FormatText>
-			<utg:FormatText order="5" level="Normal" class="sapUiTinyMarginTopBottom">
-				<m:Text text="- Business data is retrieved through OData services during runtime."/>
-			</utg:FormatText>
-			<utg:FormatText order="6" level="Normal" class="sapUiTinyMarginTopBottom">
-				<m:Text text="- Fiori 2.0 will be the new face for SAP’s digital enterprise softwares."/>
-			</utg:FormatText>
-		</utg:AnimateBox>
 	
 	</utg:AnimateBox>
 

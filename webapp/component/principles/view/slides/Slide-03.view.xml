@@ -24,13 +24,13 @@
 			justifyContent="Center">
 			<utg:FormatText
 				level="H1">
-				<m:Text text="What is Fiori 2.0? 🤔"/>
+				<m:Text text="Role-based"/>
 			</utg:FormatText>
 			<utg:FormatText
 				order="1"
 				level="H3">
-				<m:Text text="I know I know, it wins the "/>
-				<m:Image src="img/reddot.png" />
+				<utg:Text text="foucs on user's task"/>
+				<utg:Text text="📋" isEmoji="true" class="sapUiSmallMarginBegin"/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 	

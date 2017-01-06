@@ -22,12 +22,16 @@
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<utg:FormatText level="H1">
-				<m:Text text="Fiori 2.0 Design Principles"/>
+			<utg:FormatText level="H2">
+				<utg:Text text="In most cases, you can think of this as"/>
+				<utg:AnimateStrokeText order="1" text="responsivness"/>
+				<utg:Text text=", but it doesn't mean you should run Fiori launchpad on your phone. "/>
+			</utg:FormatText>
+			<utg:FormatText level="H3" order="2" class="sapUiSmallMarginTop">
+				<utg:Text text="That's why SAP is rolling HANA Cloud Platform SDK for iOS 📱"/>
 			</utg:FormatText>
 		</utg:AnimateBox>
-	
+		
 	</utg:AnimateBox>
-	
 
 </mvc:View>

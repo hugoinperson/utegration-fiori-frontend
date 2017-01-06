@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="utegration.fiori.frontend.component.principles.controller.slides.End"
+	controllerName="utegration.fiori.frontend.component.principles.controller.BasicSlide"
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
@@ -20,13 +20,17 @@
 		<utg:AnimateBox
 			width="80%"
 			direction="Column"
-			alignItems="End"
+			alignItems="Center"
 			justifyContent="Center">
-			<utg:FormatText level="H2" color="GreenBlue">
-				<m:Text text="next topic >" />
+			<utg:FormatText
+				level="H1">
+				<m:Text text="Adaptive"/>
 			</utg:FormatText>
-			<utg:FormatText level="H2">
-				<m:Link text="Fiori 2.0 Design Principles️" press="onNextTopic" />
+			<utg:FormatText
+				order="1"
+				level="H3">
+				<utg:Text text="work with available space"/>
+				<utg:Text text="🖥" isEmoji="true" class="sapUiSmallMarginBegin"/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 	
