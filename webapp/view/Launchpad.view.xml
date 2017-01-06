@@ -81,8 +81,8 @@
 								<uxap:ObjectPageSubSection class="utg-fiori-launchpad-main-subSection">
 									<uxap:blocks>
 										<html:div class="utg-fiori-launchpad-main-tileContainer">
-											<!--How to Design Fiori App-->
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Design Fiori App"
+											<!--How to Design Fiori Apps-->
+											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Design Fiori Apps"
 												subheader="Single entry point to access all apps" frameType="OneByOne" app:tileName="topic-launchpad" press="onLaunchpadTilePress">
 												<tileContent>
 													<TileContent unit="20" footer="slides">
@@ -94,7 +94,7 @@
 											</GenericTile>
 											<!--Fiori for iOS-->
 											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Fiori for iOS"
-												subheader="Fiori desgin guideline for iOS" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
+												subheader="Fiori design guideline for iOS" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
 												<tileContent>
 													<TileContent unit="20" footer="slides">
 														<content>
