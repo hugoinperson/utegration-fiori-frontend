@@ -1,0 +1,114 @@
+<mvc:View
+	controllerName="utegration.fiori.frontend.component.designFioriApps.controller.BasicSlide"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:utg="utegration.fiori.frontend.control"
+    xmlns:m="sap.m"
+    xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    displayBlock="true"
+    height="100%">
+
+	<!--Base-->
+	<utg:AnimateBox
+		height="100%"
+		direction="Column"
+		alignItems="Center"
+		justifyContent="Center">
+		
+		<utg:AnimateBox
+			width="100%"
+			direction="Row"
+			alignItems="Center"
+			justifyContent="Center">
+			
+			<utg:AnimateBox
+				order="1"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<m:Image densityAware="false" src="img/new-in-fiori/create-page-floorplan.png" class="utg-fiori-imageSizeTiny sapUiTinyMarginBottom sapUiTinyMarginEnd"/>
+			</utg:AnimateBox>
+			
+			<utg:AnimateBox
+				order="2"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<m:Image densityAware="false" src="img/new-in-fiori/dynamic-page-layout.png" class="utg-fiori-imageSizeTiny sapUiTinyMarginBottom sapUiTinyMarginEnd"/>
+			</utg:AnimateBox>
+			
+			<utg:AnimateBox
+				order="3"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<m:Image densityAware="false" src="img/new-in-fiori/initial-page-floorplan.png" class="utg-fiori-imageSizeTiny sapUiTinyMarginBottom sapUiTinyMarginEnd"/>
+			</utg:AnimateBox>
+			
+			<utg:AnimateBox
+				order="4"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<m:Image densityAware="false" src="img/new-in-fiori/list-report.png" class="utg-fiori-imageSizeTiny sapUiTinyMarginBottom sapUiTinyMarginEnd"/>
+			</utg:AnimateBox>
+			
+		</utg:AnimateBox>
+		
+		<utg:AnimateBox
+			width="100%"
+			direction="Row"
+			alignItems="Center"
+			justifyContent="Center">
+			
+			<utg:AnimateBox
+				order="5"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<m:Image densityAware="false" src="img/new-in-fiori/analytical-card.png" class="utg-fiori-imageSizeTiny sapUiTinyMarginBottom sapUiTinyMarginEnd"/>
+			</utg:AnimateBox>
+			
+			<utg:AnimateBox
+				order="6"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<m:Image densityAware="false" src="img/new-in-fiori/calendar-date-interval.png" class="utg-fiori-imageSizeTiny sapUiTinyMarginBottom sapUiTinyMarginEnd"/>
+			</utg:AnimateBox>
+			
+			<utg:AnimateBox
+				order="7"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<m:Image densityAware="false" src="img/new-in-fiori/gantt-chart.png" class="utg-fiori-imageSizeTiny sapUiTinyMarginBottom sapUiTinyMarginEnd"/>
+			</utg:AnimateBox>
+			
+			<utg:AnimateBox
+				order="8"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<m:Image densityAware="false" src="img/new-in-fiori/invisible-text.png" class="utg-fiori-imageSizeTiny sapUiTinyMarginBottom sapUiTinyMarginEnd"/>
+			</utg:AnimateBox>
+			
+		</utg:AnimateBox>
+		
+		<utg:AnimateBox
+			width="80%"
+			class="sapUiSmallMarginTop"
+			direction="Column"
+			alignItems="Center"
+			justifyContent="Center">
+			<utg:FormatText level="H3">
+				<m:Link text="Explore SAP Fiori" href="https://experience.sap.com/fiori-design-web/explore/" target="_blank"/>
+			</utg:FormatText>
+		</utg:AnimateBox>
+		
+	
+	</utg:AnimateBox>
+
+</mvc:View>

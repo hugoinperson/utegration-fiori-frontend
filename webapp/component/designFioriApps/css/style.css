@@ -1,0 +1,5 @@
+/* adaptiveness table example */
+
+.sapMListBGTranslucent .sapMListTblSubRow {
+	background: rgba(255,255,255,1);
+}

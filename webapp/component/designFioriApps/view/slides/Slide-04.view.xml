@@ -1,0 +1,32 @@
+<mvc:View
+	controllerName="utegration.fiori.frontend.component.designFioriApps.controller.BasicSlide"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:utg="utegration.fiori.frontend.control"
+    xmlns:m="sap.m"
+    xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    displayBlock="true"
+    height="100%">
+
+	<!--Base-->
+	<utg:AnimateBox
+		height="100%"
+		direction="Column"
+		alignItems="Center"
+		justifyContent="Center">
+		
+		<utg:AnimateBox
+			width="50%"
+			direction="Column"
+			alignItems="Center"
+			justifyContent="Center">
+			<utg:FormatText level="H2">
+				<utg:Text text="First, let's look at what new offerings we have in Fiori 2.0."/>
+			</utg:FormatText>
+		</utg:AnimateBox>
+		
+	</utg:AnimateBox>
+
+</mvc:View>

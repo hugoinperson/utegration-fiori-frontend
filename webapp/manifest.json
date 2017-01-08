@@ -111,9 +111,9 @@
                     "target": "topic-history"
                 },
                 {
-                	"name": "topic-launchpad",
-                    "pattern": "launchpad/:slidePageNum:",
-                    "target": "topic-launchpad"
+                	"name": "topic-designFioriApps",
+                    "pattern": "designFioriApps/:slidePageNum:",
+                    "target": "topic-designFioriApps"
                 },
                 {
                 	"name": "topic-fioriElement",
@@ -135,8 +135,8 @@
                 "topic-history": {
                     "viewName": "TopicHistory"
                 },
-                "topic-launchpad": {
-                    "viewName": "TopicLaunchpad"
+                "topic-designFioriApps": {
+                    "viewName": "TopicDesignFioriApps"
                 },
                 "topic-fioriElement": {
                     "viewName": "TopicFioriElement"

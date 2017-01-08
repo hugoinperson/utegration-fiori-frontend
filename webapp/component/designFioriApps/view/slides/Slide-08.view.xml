@@ -1,0 +1,110 @@
+<mvc:View
+	controllerName="utegration.fiori.frontend.component.principles.controller.slides.Slide-08"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:utg="utegration.fiori.frontend.control"
+    xmlns:m="sap.m"
+    xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    displayBlock="true"
+    height="100%">
+
+	<!--Base-->
+	<utg:AnimateBox
+		height="100%"
+		direction="Column"
+		alignItems="Center"
+		justifyContent="Center">
+		
+		<utg:AnimateBox
+			width="80%"
+			direction="Column"
+			alignItems="Center"
+			justifyContent="Center">
+			
+			<m:ScrollContainer
+				id="hahaha"
+				height="56em"
+				width="100%"
+				horizontal="false"
+				vertical="true"
+				focusable="true">
+				
+				<m:Table id="adaptiveness-example-table"
+					items="{/ProductCollection}">
+					<m:columns>
+						<m:Column
+							width="12em">
+							<m:Text text="Product" />
+						</m:Column>
+						<m:Column
+							minScreenWidth="Tablet"
+							demandPopin="true">
+							<m:Text text="Supplier" />
+						</m:Column>
+						<m:Column
+							minScreenWidth="Tablet"
+							demandPopin="true"
+							hAlign="Right">
+							<m:Text text="Dimensions" />
+						</m:Column>
+						<m:Column
+							minScreenWidth="Tablet"
+							demandPopin="true"
+							hAlign="Center">
+							<m:Text text="Weight" />
+						</m:Column>
+						<m:Column
+							hAlign="Right">
+							<m:Text text="Price" />
+						</m:Column>
+					</m:columns>
+					<m:items>
+						<m:ColumnListItem>
+							<m:cells>
+								<m:ObjectIdentifier
+									title="{Name}"
+									text="{ProductId}"/>
+								<m:Text
+									text="{SupplierName}" />
+								<m:Text
+									text="{Width} x {Depth} x {Height} {DimUnit}" />
+								<m:ObjectNumber
+									number="{WeightMeasure}"
+									unit="{WeightUnit}"
+									state="{
+										path: 'WeightMeasure',
+										formatter: '.formatWeightState'
+									}" />
+								<m:ObjectNumber
+										number="{
+											parts:[{path:'Price'},{path:'CurrencyCode'}],
+											type: 'sap.ui.model.type.Currency',
+											formatOptions: {showMeasure: false}
+										}"
+										unit="{CurrencyCode}" />
+							</m:cells>
+						</m:ColumnListItem>
+					</m:items>
+				</m:Table>
+			
+			</m:ScrollContainer>
+			
+		</utg:AnimateBox>
+		
+		<utg:AnimateBox
+			order="1"
+			width="80%"
+			class="sapUiSmallMarginTop"
+			direction="Column"
+			alignItems="Center"
+			justifyContent="Center">
+			<utg:FormatText level="H3">
+				<m:Link text="Control library" href="https://sapui5.hana.ondemand.com/explored.html" target="_blank"/>
+			</utg:FormatText>
+		</utg:AnimateBox>
+		
+	</utg:AnimateBox>
+
+</mvc:View>
