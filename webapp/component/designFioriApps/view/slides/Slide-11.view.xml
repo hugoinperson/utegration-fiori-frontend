@@ -25,7 +25,7 @@
 			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
 				<m:Text text="Search result"/>
 			</utg:FormatText>
-			<m:Image densityAware="false" src="img/new-launchpad/search-result.png" class="utg-fiori-imageSizeLarge"/>
+			<m:Image densityAware="false" src="img/new-launchpad/search-result.png" class="utg-fiori-imageSizeLong"/>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

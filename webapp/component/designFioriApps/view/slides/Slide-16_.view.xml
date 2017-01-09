@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="utegration.fiori.frontend.component.designFioriApps.controller.BasicSlide"
+	controllerName="utegration.fiori.frontend.component.principles.controller.slides.End"
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
@@ -20,12 +20,14 @@
 		<utg:AnimateBox
 			width="80%"
 			direction="Column"
-			alignItems="Center"
+			alignItems="End"
 			justifyContent="Center">
-			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
-				<m:Text text="Navigation menu"/>
+			<utg:FormatText level="H2" color="GreenBlue">
+				<m:Text text="next topic >" />
 			</utg:FormatText>
-			<m:Image densityAware="false" src="img/new-launchpad/navigation-menu.png" class="utg-fiori-imageSizeLong"/>
+			<utg:FormatText level="H2">
+				<m:Link text="SAP User Interface History️" press="onNextTopic" />
+			</utg:FormatText>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>
