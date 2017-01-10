@@ -25,12 +25,12 @@
 			justifyContent="Center">
 			<utg:FormatText
 				level="H1">
-				<m:Text text="List Report"/>
+				<m:Text text="Overview Page"/>
 			</utg:FormatText>
 			<utg:FormatText
 				order="1"
 				level="H3">
-				<m:Text text="filter and work with large amounts of data"/>
+				<m:Text text="aggregates domain-specific information"/>
 			</utg:FormatText>
             
 		</utg:AnimateBox>

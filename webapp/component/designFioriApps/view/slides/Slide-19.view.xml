@@ -27,6 +27,11 @@
 				level="H1">
 				<m:Text text="Object Page"/>
 			</utg:FormatText>
+			<utg:FormatText
+				order="1"
+				level="H3">
+				<m:Text text="shows all facets of a single business object"/>
+			</utg:FormatText>
             
 		</utg:AnimateBox>
 	

@@ -23,16 +23,9 @@
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<utg:FormatText
-				level="H1">
-				<m:Text text="List Report"/>
-			</utg:FormatText>
-			<utg:FormatText
-				order="1"
-				level="H3">
-				<m:Text text="filter and work with large amounts of data"/>
-			</utg:FormatText>
-            
+
+			<m:Image densityAware="false" src="img/overview-page.png" class="utg-fiori-imageSizeLong"/>
+
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

@@ -20,27 +20,23 @@
 				</f:heading>
 				<f:actions>
 					<ToolbarSpacer/>
-					<ToggleButton
-						pressed="{/headerExpanded}"
-						text="{path:'/headerExpanded', formatter:'.formatToggleButtonText'}"
+					<OverflowToolbarButton
+						icon="sap-icon://add"
+						text="Add"
 						type="Transparent"/>
 					<OverflowToolbarButton
-							icon="sap-icon://add"
-							text="Add"
-							type="Transparent"/>
+						icon="sap-icon://edit"
+						text="Edit"
+						type="Transparent"/>
 					<OverflowToolbarButton
-							icon="sap-icon://edit"
-							text="Edit"
-							type="Transparent"/>
-					<OverflowToolbarButton
-							icon="sap-icon://delete"
-							text="Delete"
-							type="Transparent"/>
+						icon="sap-icon://delete"
+						text="Delete"
+						type="Transparent"/>
 					<Button
-							icon="sap-icon://post"
-							text="Toggle Footer"
-							type="Transparent"
-							press="onToggleFooter"/>
+						icon="sap-icon://post"
+						text="Toggle Footer"
+						type="Transparent"
+						press="onToggleFooter"/>
 				</f:actions>
 			</f:DynamicPageTitle>
 		</f:title>
