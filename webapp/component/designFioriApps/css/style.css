@@ -1,5 +1,5 @@
-/* adaptiveness table example */
-
-.sapMListBGTranslucent .sapMListTblSubRow {
-	background: rgba(255,255,255,1);
+.utg-fiori-dynamicPage {
+	width: 110vmin;
+    margin: 10vmin auto;
+    height: 80vmin;
 }

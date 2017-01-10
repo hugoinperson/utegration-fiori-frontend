@@ -18,13 +18,15 @@
 		justifyContent="Center">
 		
 		<utg:AnimateBox
-			width="80%"
+			width="60%"
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
 			<utg:FormatText
-				level="H1">
-				<m:Text text="✨ New launchpad ✨"/>
+				level="H2">
+				<utg:Text text="Based on the"/>
+				<utg:AnimateStrokeText order="1" text="annotation"/>
+				<utg:Text text="passed from the server, one Fiori element could have different looks and UI elements."/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 	

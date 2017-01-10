@@ -24,7 +24,10 @@
 			justifyContent="Center">
 			<utg:FormatText
 				level="H1">
-				<m:Text text="✨ New launchpad ✨"/>
+				<m:Text text="🌸 Fiori elements 🌼"/>
+			</utg:FormatText>
+			<utg:FormatText level="H3" order="1">
+				<utg:Text text="generating UIs at runtime based on annotations"/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 	

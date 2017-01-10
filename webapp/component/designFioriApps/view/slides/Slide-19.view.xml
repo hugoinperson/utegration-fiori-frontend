@@ -4,6 +4,7 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
     xmlns:l="sap.ui.layout"
+    xmlns:u="sap.uxap"
     xmlns:utg="utegration.fiori.frontend.control"
     xmlns:m="sap.m"
     xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
@@ -24,8 +25,9 @@
 			justifyContent="Center">
 			<utg:FormatText
 				level="H1">
-				<m:Text text="✨ New launchpad ✨"/>
+				<m:Text text="Object Page"/>
 			</utg:FormatText>
+            
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>
