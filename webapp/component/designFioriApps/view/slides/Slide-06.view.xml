@@ -28,9 +28,6 @@
 				<utg:Text text="and"/>
 				<utg:AnimateStrokeText order="2" text="Fiori elements."/>
 			</utg:FormatText>
-			<utg:FormatText level="H3" order="2" class="sapUiLargeMarginTop">
-				<utg:Text text="we will walkthrough the example just saw earlier 😉"/>
-			</utg:FormatText>
 		</utg:AnimateBox>
 		
 	</utg:AnimateBox>

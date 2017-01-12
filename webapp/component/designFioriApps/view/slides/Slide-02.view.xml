@@ -62,7 +62,7 @@
 				alignItems="Center"
 				justifyContent="Center">
 				<utg:FormatText level="Normal">
-					<m:Text text="Fiori solution and floorplans" />
+					<m:Text text="Fiori floorplans or workflows" />
 				</utg:FormatText>
 			</utg:AnimateBox>
 			

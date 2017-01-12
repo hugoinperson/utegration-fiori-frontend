@@ -27,7 +27,7 @@ sap.ui.define([
     };
     
     CustomController.prototype.onNextTopic = function () {
-		this._coreEventBus.publish("app", "navToTopic", {topic: "topic-designApp"});
+		this._coreEventBus.publish("app", "navToTopic", {topic: "topic-designFioriApps"});
 	};
 
     return CustomController;

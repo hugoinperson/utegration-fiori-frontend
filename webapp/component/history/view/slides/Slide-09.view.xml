@@ -29,7 +29,7 @@
 				<m:Text text="SAP Fiori 2.0 (2016)"/>
 			</utg:FormatText>
 			
-			<u:ObjectPageLayout id="ObjectPageLayout" height="50rem" enableLazyLoading="false" showTitleInHeaderContent="true">
+			<u:ObjectPageLayout id="ObjectPageLayout" height="50rem" enableLazyLoading="false" showTitleInHeaderContent="true" showFooter="true">
 
                 <!-- Header Title -->
                 <u:headerTitle>
@@ -149,6 +149,15 @@
                     </u:ObjectPageSection>
 
                 </u:sections>
+            
+            	<u:footer>
+            		<m:Toolbar>
+						<m:ToolbarSpacer/>
+						<m:Button text="Accept" type="Accept" />
+						<m:Button text="Reject" type="Reject" />
+					</m:Toolbar>
+            	</u:footer>
+            
             </u:ObjectPageLayout>
 			
 		</utg:AnimateBox>

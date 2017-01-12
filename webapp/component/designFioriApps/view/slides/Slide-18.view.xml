@@ -26,7 +26,7 @@
 				level="H2">
 				<utg:Text text="Based on the"/>
 				<utg:AnimateStrokeText order="1" text="annotation"/>
-				<utg:Text text="passed from the server, one Fiori element could have different looks and UI elements."/>
+				<utg:Text text="passed from backend, one Fiori element could have different looks and UI elements."/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 	
