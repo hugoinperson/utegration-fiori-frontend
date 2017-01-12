@@ -18,14 +18,17 @@
 		justifyContent="Center">
 		
 		<utg:AnimateBox
-			width="80%"
+			width="60%"
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
-				<m:Text text="UI Standards (2002-2007)"/>
+			<utg:FormatText
+				level="H2">
+				<m:Text text="Fiori for iOS adapts the existing SAP's"/>
+				<utg:AnimateStrokeText order="1" text="Fiori design" />
+				<m:Text text="and Apple's"/>
+				<utg:AnimateStrokeText order="2" text="Human Interface Guideline." />
 			</utg:FormatText>
-			<m:Image densityAware="false" src="img/ui-standards.png" class="utg-fiori-imageSizeMed"/>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

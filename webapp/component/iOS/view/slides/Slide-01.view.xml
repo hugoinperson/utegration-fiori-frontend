@@ -23,7 +23,7 @@
 			alignItems="Center"
 			justifyContent="Center">
 			<utg:FormatText level="H1">
-				<m:Text text="SAP User Interface History"/>
+				<m:Text text="Fiori for iOS"/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 	

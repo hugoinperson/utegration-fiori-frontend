@@ -18,14 +18,28 @@
 		justifyContent="Center">
 		
 		<utg:AnimateBox
-			width="80%"
+			width="60%"
 			direction="Column"
-			alignItems="Center"
+			alignItems="Begin"
 			justifyContent="Center">
-			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
-				<m:Text text="SAP Enjoy (1999)"/>
+			<utg:FormatText
+				level="H2">
+				<m:Text text="Since Fiori design is responsive, can’t I just run my Fiori apps on mobile browsers?"/>
 			</utg:FormatText>
-			<m:Image densityAware="false" src="img/sap-enjoy.gif" class="utg-fiori-imageSizeMed"/>
+		</utg:AnimateBox>
+		
+		<utg:AnimateBox
+			width="60%"
+			direction="Column"
+			class="sapUiMediumMarginTopBottom"
+			alignItems="Start"
+			justifyContent="Center">
+			<utg:FormatText order="1" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- poor performance compared with native app 👎🏻"/>
+			</utg:FormatText>
+			<utg:FormatText order="2" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- original Fiori design doesn't fit Apple's design language 🙅🏻‍♂️"/>
+			</utg:FormatText>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

@@ -23,9 +23,8 @@
 			alignItems="Center"
 			justifyContent="Center">
 			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
-				<m:Text text="SAP UI Evolution"/>
+				<m:Text text="SAP 🤝 Apple"/>
 			</utg:FormatText>
-			<m:Image densityAware="false" src="img/sap-ui-evolution.png" class="utg-fiori-imageSizeLong"/>
 		</utg:AnimateBox>
 		
 	</utg:AnimateBox>

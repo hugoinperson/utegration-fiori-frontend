@@ -18,21 +18,14 @@
 		justifyContent="Center">
 		
 		<utg:AnimateBox
-			width="40%"
+			width="80%"
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
 			<utg:FormatText level="H2" class="sapUiSmallMarginBottom">
-				<m:Text text="Object page (iPhone)"/>
+				<m:Text text="Recommended workflow"/>
 			</utg:FormatText>
-			<m:ScrollContainer
-				height="50rem"
-				width="100%"
-				horizontal="true"
-				vertical="true"
-				focusable="true">
-				<Image src="img/ios-object-page-iphone.png" densityAware="false" width="100%"/>
-			</m:ScrollContainer>
+			<Image src="img/ios-workflow.png" densityAware="false" class="utg-fiori-imageSizeLarge"/>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

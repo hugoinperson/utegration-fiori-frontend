@@ -18,14 +18,11 @@
 		justifyContent="Center">
 		
 		<utg:AnimateBox
-			width="80%"
+			width="60%"
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
-				<m:Text text="UI Guidelines 2.0 (2010)"/>
-			</utg:FormatText>
-			<m:Image densityAware="false" src="img/ui-guideline-2.0.png" class="utg-fiori-imageSizeMed"/>
+			<m:Image densityAware="false" src="img/ios-list-report.png" class="utg-fiori-imageSizeSmall"/>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

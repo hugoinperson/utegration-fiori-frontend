@@ -18,14 +18,36 @@
 		justifyContent="Center">
 		
 		<utg:AnimateBox
-			width="80%"
+			width="50%"
 			direction="Column"
-			alignItems="Center"
+			alignItems="Begin"
 			justifyContent="Center">
-			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
-				<m:Text text="UX3 (2011)"/>
+			<utg:FormatText level="H2">
+				<m:Text text="take advantage of the features of mobile devices:"/>
 			</utg:FormatText>
-			<m:Image densityAware="false" src="img/ux3.png" class="utg-fiori-imageSizeMed"/>
+		</utg:AnimateBox>
+		
+		<utg:AnimateBox
+			width="50%"
+			direction="Column"
+			class="sapUiMediumMarginTopBottom"
+			alignItems="Start"
+			justifyContent="Center">
+			<utg:FormatText order="1" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- Camera"/>
+			</utg:FormatText>
+			<utg:FormatText order="2" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- Bluetooth"/>
+			</utg:FormatText>
+			<utg:FormatText order="3" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- Compass"/>
+			</utg:FormatText>
+			<utg:FormatText order="4" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- GPS"/>
+			</utg:FormatText>
+			<utg:FormatText order="4" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- Finger print sensor"/>
+			</utg:FormatText>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

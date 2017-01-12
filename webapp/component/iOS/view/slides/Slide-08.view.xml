@@ -18,14 +18,16 @@
 		justifyContent="Center">
 		
 		<utg:AnimateBox
-			width="80%"
+			width="50%"
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
-				<m:Text text="SAP Fiori 1.0 (2013)"/>
+			<utg:FormatText level="H2" class="sapUiSmallMarginBottom">
+				<m:Text text="The SDK is not out yet, what can we do now? 🤷🏻‍♂️️"/>
 			</utg:FormatText>
-			<m:Image densityAware="false" src="img/sap-fiori-1.0.png" class="utg-fiori-imageSizeMed"/>
+			<utg:FormatText order="1" level="H3">
+				<m:Text text="design the workflow for your mobile app"/>
+			</utg:FormatText>
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>
