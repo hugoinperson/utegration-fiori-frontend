@@ -1,0 +1,40 @@
+<mvc:View
+	controllerName="utegration.fiori.frontend.component.designFioriApps.controller.BasicSlide"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:u="sap.uxap"
+    xmlns:utg="utegration.fiori.frontend.control"
+    xmlns:m="sap.m"
+    xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    displayBlock="true"
+    height="100%">
+    
+    <!--Base-->
+	<utg:AnimateBox
+		height="100%"
+		direction="Column"
+		alignItems="Center"
+		justifyContent="Center">
+		
+		<utg:AnimateBox
+			width="80%"
+			direction="Column"
+			alignItems="Center"
+			justifyContent="Center">
+			<utg:FormatText
+				level="H1">
+				<m:Text text="Example 1"/>
+			</utg:FormatText>
+			<utg:FormatText
+				order="1"
+				level="H3">
+				<m:Text text="approval app ✅"/>
+			</utg:FormatText>
+            
+		</utg:AnimateBox>
+	
+	</utg:AnimateBox>
+
+</mvc:View>

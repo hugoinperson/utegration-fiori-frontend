@@ -116,9 +116,9 @@
                     "target": "topic-designFioriApps"
                 },
                 {
-                	"name": "topic-fioriElement",
-                    "pattern": "fioriElement/:slidePageNum:",
-                    "target": "topic-fioriElement"
+                	"name": "topic-buildFioriApps",
+                    "pattern": "buildFioriApps/:slidePageNum:",
+                    "target": "topic-buildFioriApps"
                 }
             ],
             "targets": {
@@ -138,8 +138,8 @@
                 "topic-designFioriApps": {
                     "viewName": "TopicDesignFioriApps"
                 },
-                "topic-fioriElement": {
-                    "viewName": "TopicFioriElement"
+                "topic-buildFioriApps": {
+                    "viewName": "TopicBuildFioriApps"
                 }
             }
 	    }

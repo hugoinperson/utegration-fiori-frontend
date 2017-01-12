@@ -1,0 +1,55 @@
+<mvc:View
+	controllerName="utegration.fiori.frontend.component.buildFioriApps.controller.BasicSlide"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:utg="utegration.fiori.frontend.control"
+    xmlns:m="sap.m"
+    xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    displayBlock="true"
+    height="100%">
+    
+    <!--Base-->
+	<utg:AnimateBox
+		height="100%"
+		direction="Column"
+		alignItems="Center"
+		justifyContent="Center">
+		
+		<utg:AnimateBox
+			width="50%"
+			direction="Column"
+			alignItems="Begin"
+			justifyContent="Center">
+			<utg:FormatText level="H2">
+				<m:Text text="why use SAP Web IDE?"/>
+			</utg:FormatText>
+		</utg:AnimateBox>
+		
+		<utg:AnimateBox
+			width="50%"
+			direction="Column"
+			class="sapUiMediumMarginTopBottom"
+			alignItems="Start"
+			justifyContent="Center">
+			<utg:FormatText order="1" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- Code completion"/>
+			</utg:FormatText>
+			<utg:FormatText order="2" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- In-line error validation"/>
+			</utg:FormatText>
+			<utg:FormatText order="3" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- Git integration"/>
+			</utg:FormatText>
+			<utg:FormatText order="4" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- Layout editor"/>
+			</utg:FormatText>
+			<utg:FormatText order="4" level="Normal" class="sapUiTinyMarginTopBottom">
+				<m:Text text="- Deploy to HCP and ABAP repository"/>
+			</utg:FormatText>
+		</utg:AnimateBox>
+	
+	</utg:AnimateBox>
+
+</mvc:View>

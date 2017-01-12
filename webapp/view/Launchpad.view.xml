@@ -116,7 +116,7 @@
 										<html:div class="utg-fiori-launchpad-main-tileContainer">
 											<!--Build Fiori App-->
 											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Build Fiori App"
-												subheader="Version 1.42" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
+												subheader="Version 1.42" frameType="OneByOne" app:tileName="topic-buildFioriApps" press="onLaunchpadTilePress">
 												<tileContent>
 													<TileContent unit="20" footer="slides">
 														<content>

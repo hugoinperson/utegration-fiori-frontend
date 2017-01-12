@@ -16,20 +16,7 @@
 		direction="Column"
 		alignItems="Center"
 		justifyContent="Center">
-		
-		<utg:AnimateBox
-			width="80%"
-			class="sapUiLargeMarginBottom"
-			direction="Column"
-			alignItems="Center"
-			justifyContent="Center">
-			<utg:FormatText level="H2">
-				<m:Text text="What does"/>
-				<utg:AnimateStrokeText text="design Fiori apps" showStroke="true"/>
-				<m:Text text="means?"/>
-			</utg:FormatText>
-		</utg:AnimateBox>
-		
+	
 		<utg:AnimateBox
 			width="80%"
 			direction="Row"
@@ -41,8 +28,8 @@
 				direction="Column"
 				alignItems="Center"
 				justifyContent="Center">
-				<utg:FormatText level="Normal">
-					<m:Text text="business requirements" />
+				<utg:FormatText level="H2">
+					<m:Text text="Fiori tile" />
 				</utg:FormatText>
 			</utg:AnimateBox>
 			
@@ -61,8 +48,28 @@
 				direction="Column"
 				alignItems="Center"
 				justifyContent="Center">
-				<utg:FormatText level="Normal">
-					<m:Text text="Fiori solution and floorplans" />
+				<utg:FormatText level="H2">
+					<m:Link text="Worklist" />
+				</utg:FormatText>
+			</utg:AnimateBox>
+			
+			<utg:AnimateBox
+				order="4"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<utg:FormatText level="H2">
+					<utg:Text text="➡" isEmoji="true"/>
+				</utg:FormatText>
+			</utg:AnimateBox>
+			
+			<utg:AnimateBox
+				order="5"
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<utg:FormatText level="H2">
+					<m:Link text="Object Page" />
 				</utg:FormatText>
 			</utg:AnimateBox>
 			

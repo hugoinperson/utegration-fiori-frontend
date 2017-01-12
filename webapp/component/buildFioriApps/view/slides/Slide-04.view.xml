@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="utegration.fiori.frontend.component.designFioriApps.controller.BasicSlide"
+	controllerName="utegration.fiori.frontend.component.buildFioriApps.controller.BasicSlide"
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
@@ -19,19 +19,6 @@
 		
 		<utg:AnimateBox
 			width="80%"
-			class="sapUiLargeMarginBottom"
-			direction="Column"
-			alignItems="Center"
-			justifyContent="Center">
-			<utg:FormatText level="H2">
-				<m:Text text="What does"/>
-				<utg:AnimateStrokeText text="design Fiori apps" showStroke="true"/>
-				<m:Text text="means?"/>
-			</utg:FormatText>
-		</utg:AnimateBox>
-		
-		<utg:AnimateBox
-			width="80%"
 			direction="Row"
 			alignItems="Center"
 			justifyContent="Center">
@@ -41,8 +28,20 @@
 				direction="Column"
 				alignItems="Center"
 				justifyContent="Center">
-				<utg:FormatText level="Normal">
-					<m:Text text="business requirements" />
+				<utg:FormatText level="H2">
+					<utg:AnimateStrokeText showStroke="true" text="SAPUI5" />
+				</utg:FormatText>
+				<utg:FormatText level="H3" order="3">
+					<m:Text text="Need license" />
+				</utg:FormatText>
+			</utg:AnimateBox>
+			
+			<utg:AnimateBox
+				direction="Column"
+				alignItems="Center"
+				justifyContent="Center">
+				<utg:FormatText level="H2">
+					<utg:Text text="vs."/>
 				</utg:FormatText>
 			</utg:AnimateBox>
 			
@@ -52,22 +51,15 @@
 				alignItems="Center"
 				justifyContent="Center">
 				<utg:FormatText level="H2">
-					<utg:Text text="➡" isEmoji="true"/>
+					<utg:AnimateStrokeText showStroke="true" text="OpenUI5" />
 				</utg:FormatText>
-			</utg:AnimateBox>
-			
-			<utg:AnimateBox
-				order="3"
-				direction="Column"
-				alignItems="Center"
-				justifyContent="Center">
-				<utg:FormatText level="Normal">
-					<m:Text text="Fiori solution and floorplans" />
+				<utg:FormatText level="H3" order="4">
+					<m:Text text="Open source" />
 				</utg:FormatText>
 			</utg:AnimateBox>
 			
 		</utg:AnimateBox>
-	
+		
 	</utg:AnimateBox>
 
 </mvc:View>
