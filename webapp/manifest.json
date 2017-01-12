@@ -119,6 +119,11 @@
                 	"name": "topic-buildFioriApps",
                     "pattern": "buildFioriApps/:slidePageNum:",
                     "target": "topic-buildFioriApps"
+                },
+                {
+                	"name": "topic-iOS",
+                    "pattern": "iOS/:slidePageNum:",
+                    "target": "topic-iOS"
                 }
             ],
             "targets": {
@@ -140,6 +145,9 @@
                 },
                 "topic-buildFioriApps": {
                     "viewName": "TopicBuildFioriApps"
+                },
+                "topic-iOS": {
+                    "viewName": "TopicIOS"
                 }
             }
 	    }

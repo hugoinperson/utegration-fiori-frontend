@@ -94,7 +94,7 @@
 											</GenericTile>
 											<!--Fiori for iOS-->
 											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Fiori for iOS"
-												subheader="Fiori design guideline for iOS" frameType="OneByOne" app:tileName="topic-ui5" press="onLaunchpadTilePress">
+												subheader="Fiori design guideline for iOS" frameType="OneByOne" app:tileName="topic-iOS" press="onLaunchpadTilePress">
 												<tileContent>
 													<TileContent unit="20" footer="slides">
 														<content>
@@ -121,17 +121,6 @@
 													<TileContent unit="20" footer="slides">
 														<content>
 															<ImageContent src="sap-icon://sap-ui5"/>
-														</content>
-													</TileContent>
-												</tileContent>
-											</GenericTile>
-											<!--Prototyping Tool-->
-											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Prototyping Tool"
-												subheader="Version control system" frameType="OneByOne" press="press">
-												<tileContent>
-													<TileContent unit="30" footer="slides">
-														<content>
-															<ImageContent src="sap-icon://home-share"/>
 														</content>
 													</TileContent>
 												</tileContent>

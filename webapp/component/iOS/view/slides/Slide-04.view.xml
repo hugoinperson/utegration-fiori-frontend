@@ -1,0 +1,33 @@
+<mvc:View
+	controllerName="utegration.fiori.frontend.component.iOS.controller.BasicSlide"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:utg="utegration.fiori.frontend.control"
+    xmlns:m="sap.m"
+    xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+    displayBlock="true"
+    height="100%">
+    
+    <!--Base-->
+	<utg:AnimateBox
+		height="100%"
+		direction="Column"
+		alignItems="Center"
+		justifyContent="Center">
+		
+		<utg:AnimateBox
+			width="80%"
+			direction="Column"
+			alignItems="Center"
+			justifyContent="Center">
+			<utg:FormatText level="H2" class="sapUiMediumMarginBottom">
+				<m:Text text="SAP Enjoy (1999)"/>
+			</utg:FormatText>
+			<m:Image densityAware="false" src="img/sap-enjoy.gif" class="utg-fiori-imageSizeMed"/>
+		</utg:AnimateBox>
+	
+	</utg:AnimateBox>
+
+</mvc:View>
