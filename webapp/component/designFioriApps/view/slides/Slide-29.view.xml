@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="utegration.fiori.frontend.component.designFioriApps.controller.slides.ExOneFlowOne"
+	controllerName="utegration.fiori.frontend.component.designFioriApps.controller.slides.ExOneFlowTwo"
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
@@ -25,7 +25,7 @@
 			justifyContent="Center">
 
 			<utg:FormatText level="H2">
-				<utg:AnimateStrokeText showStroke="true" text="Solution 1" />
+				<utg:AnimateStrokeText showStroke="true" text="Solution 2" />
 			</utg:FormatText>
 
 		</utg:AnimateBox>
@@ -42,7 +42,7 @@
 				alignItems="Center"
 				justifyContent="Center">
 				<utg:FormatText level="H2">
-					<m:Text text="Fiori tiles" />
+					<m:Text text="one Fiori tile" />
 				</utg:FormatText>
 			</utg:AnimateBox>
 			
@@ -62,7 +62,7 @@
 				alignItems="Center"
 				justifyContent="Center">
 				<utg:FormatText level="H2">
-					<m:Link text="Worklist" press=".onWorkListPress"/>
+					<m:Link text="List Report" press=".onListReportPress"/>
 				</utg:FormatText>
 			</utg:AnimateBox>
 			
@@ -96,7 +96,7 @@
 			justifyContent="Center">
 
 			<utg:FormatText level="H3" order="6">
-				<utg:Text text="Auth through launchpad tile assignment" />
+				<utg:Text text="Auth through OData annotation" />
 			</utg:FormatText>
 
 		</utg:AnimateBox>

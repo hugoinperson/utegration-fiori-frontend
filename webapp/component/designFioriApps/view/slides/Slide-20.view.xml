@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="utegration.fiori.frontend.component.designFioriApps.controller.BasicSlide"
+	controllerName="utegration.fiori.frontend.component.designFioriApps.controller.slides.ObjPage"
     xmlns="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns:core="sap.ui.core"
@@ -24,34 +24,28 @@
 			alignItems="Center"
 			justifyContent="Center">
 			
-			<u:ObjectPageLayout
-                id="ObjectPageLayout"
-                height="60rem"
-                enableLazyLoading="false"
-                showTitleInHeaderContent="true">
+			<u:ObjectPageLayout id="ObjectPageLayout" height="50rem" enableLazyLoading="false" showTitleInHeaderContent="true">
 
                 <!-- Header Title -->
                 <u:headerTitle>
                     <u:ObjectPageHeader
-				        class="ccuxObjectPageHeader"
 				        xmlns:u="sap.uxap"
 				        xmlns:m="sap.m"
-				        headerDesign="Light"
 				        showTitleSelector="false"
 				        objectImageShape="Circle"
-				        objectImageAlt="{oBpModel>/FirstName} {oBpModel>/LastName}"
 				        objectImageURI="./img/jimmy.jpeg"
 				        objectTitle="Jimmy Leong"
-				        objectSubtitle="{oBpModel>/CustomerSegmentation}"
+				        objectSubtitle="Director"
 				        isObjectIconAlwaysVisible="false"
 				        isObjectTitleAlwaysVisible="false"
 				        isObjectSubtitleAlwaysVisible="false">
 				        <u:breadCrumbsLinks>
-							<m:Link text="XDDDDD" press="onBpNoPress"/>
-							<m:Link text="XDDFFFF" press="onCaNoPress"/>
+							<m:Link text="All employees"/>
+							<m:Link text="CE &amp; UX"/>
 						</u:breadCrumbsLinks>
 				        <u:actions>
-				            <u:ObjectPageHeaderActionButton text="Customer Journey" hideIcon="true" hideText="false" type="Accept" press="toggleCustomerJourney"/>
+				            <u:ObjectPageHeaderActionButton text="Edit" hideIcon="true" hideText="false" type="Accept" press="toggleCustomerJourney"/>
+				            <u:ObjectPageHeaderActionButton text="Share" hideIcon="true" hideText="false" type="Accept" press="toggleCustomerJourney"/>
 				        </u:actions>
 				    </u:ObjectPageHeader>
                 </u:headerTitle>
@@ -59,169 +53,95 @@
                 <!-- Header Content -->
                 <u:headerContent>
                     <l:VerticalLayout>
-				        <m:ObjectStatus state="Success" icon="sap-icon://loan" text="Deposit"/>
-				        <m:FlexBox>
-				            <m:items>
-				                <m:Button class="sapUiTinyMarginEnd" visible="{oBpModel>/GroupWater}" text="Water" type="Accept"/>
-				                <m:Button class="sapUiTinyMarginEnd" visible="{oBpModel>/GroupGas}" text="Gas" type="Accept"/>
-				                <m:Button class="sapUiTinyMarginEnd" visible="{oBpModel>/GroupElectricity}" text="Electricity" type="Accept"/>
-				                <m:Button class="sapUiTinyMarginEnd" visible="{oBpModel>/GroupTrash}" text="Trash" type="Accept"/>
-				                <m:Button class="sapUiTinyMarginEnd" visible="{oBpModel>/GroupSewer}" text="Sewer" type="Accept"/>
-				            </m:items>
-				        </m:FlexBox>
+				        <m:Link text="www.utegration.com" href="https://www.utegration.com/" target="_blank"/>
 				    </l:VerticalLayout>
 				
 				    <l:VerticalLayout
 				        xmlns:l="sap.ui.layout"
 				        xmlns:m="sap.m">
-				        <m:ObjectStatus title="Location" text="{oCoModel>/City}, {oCoModel>/State}"/>
-				        <m:ObjectStatus title="Weather" text="{oCoModel>/LocalTemperature}"/>
-				        <m:ObjectStatus title="Service length" text="{oBpModel>/ServiceLength}"/>
-				        <m:ObjectStatus title="Contract account name" text="{oBpModel>/FirstName} {oBpModel>/LastName}"/>
+				        <m:Text class="sapUiTinyMarginEnd" text="3535 Briarpark Dr #101"/>
+		                <m:Text class="sapUiTinyMarginEnd" text="Houston, TX 77042"/>
+		                <m:Text class="sapUiTinyMarginEnd" text="United States"/>
 				    </l:VerticalLayout>
 				
 				    <l:VerticalLayout
 				        xmlns:l="sap.ui.layout"
 				        xmlns:m="sap.m">
-				        <m:Label id="ccuxCaComboBoxLabel" text="Contract Account"/>
-				        <m:ComboBox
-				            id="ccuxCaComboBox"
-				            class="ccuxHeaderComboBox"
-				            selectionChange="onCcuxCaComboBoxChange"
-				            showSecondaryValues="true"
-				            items="{
-				                path: 'oCaMenuModel>/'
-				            }">
-				            <core:ListItem
-				                key="{oCaMenuModel>CaNo}"
-				                text="{oCaMenuModel>CaNo}"
-				                additionalText="{= ${oCaMenuModel>PoBox} !== '' ? 'PoBox' : '' } {oCaMenuModel>PoBox} {oCaMenuModel>HouseNo} {oCaMenuModel>City} {= ${oCaMenuModel>UnitNo} !== '' ? '#' : '' } {oCaMenuModel>UnitNo}, {oCaMenuModel>Street}, {oCaMenuModel>City}, {oCaMenuModel>State} {oCaMenuModel>ZipCode}"/>
-				        </m:ComboBox>
-				        <m:Label id="ccuxCoComboBoxLabel" text="Contract"/>
-				        <m:ComboBox
-				            id="ccuxCoComboBox"
-				            class="ccuxHeaderComboBox"
-				            selectionChange="onCcuxCoComboBoxChange"
-				            showSecondaryValues= "true"
-				            items="{
-				                path: 'oCoMenuModel>/'
-				            }">
-				            <core:ListItem
-				                key="{oCoMenuModel>CoNo}"
-				                text="{oCoMenuModel>CoNo}"
-				                additionalText="{= ${oCoMenuModel>PoBox} !== '' ? 'PoBox' : '' } {oCoMenuModel>PoBox} {oCoMenuModel>HouseNo} {oCoMenuModel>City} {= ${oCoMenuModel>UnitNo} !== '' ? '#' : '' } {oCoMenuModel>UnitNo}, {oCoMenuModel>Street}, {oCoMenuModel>City}, {oCoMenuModel>State} {oCoMenuModel>ZipCode}"/>
-				        </m:ComboBox>
+				        <m:ObjectStatus title="Phone" text="713-337-3888"/>
+				        <m:ObjectStatus title="Fax" text="713-337-3891"/>
+				        <m:ObjectStatus title="Status" text="Active"/>
 				    </l:VerticalLayout>
+
                 </u:headerContent>
 
                 <!-- Sections -->
                 <u:sections>
 
-                    <!-- Usage Graph -->
-                    <u:ObjectPageSection id="ccuxHighBillNonCustomerDriven-PageSection" class="ccuxHighBill-PageSection" title="Usage Chart">
+                    <!-- Document 1 -->
+                    <u:ObjectPageSection class="ccuxHighBill-PageSection" title="Documents 1">
                         <u:subSections>
-                            <u:ObjectPageSubSection id="ccuxHighBillNonCustomerDriven-PageSubSection" class="ccuxHighBill-PageSubSection">
+                            <u:ObjectPageSubSection class="ccuxHighBill-PageSubSection">
                                 <u:blocks>
                                     <!-- Block Content -->
-                                    <m:Text text="sdfsdfsdf" />
-
+									<m:List mode="MultiSelect" items="{path: '/ProductCollection'}" growingThreshold="5" growing="true" >
+										<m:CustomListItem>
+											<m:HBox>
+												<core:Icon size="2rem" src="sap-icon://attachment-photo" class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" />
+												<m:VBox  class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+													<m:Link text="{Name}" target="{ProductPicUrl}" press="handlePress"/>
+													<m:Label text="{ProductId}"/>
+												</m:VBox>
+											</m:HBox>
+										</m:CustomListItem>
+									</m:List>
                                 </u:blocks>
                             </u:ObjectPageSubSection>
                         </u:subSections>
                     </u:ObjectPageSection>
 
-                    <!-- Usage Table -->
-                    <u:ObjectPageSection class="ccuxUsage-PageSection" title="Usage Table">
+                    <!-- Document 2 -->
+                    <u:ObjectPageSection class="ccuxHighBill-PageSection" title="Documents 2">
                         <u:subSections>
-                            <u:ObjectPageSubSection class="ccuxUsage-PageSubSection">
+                            <u:ObjectPageSubSection class="ccuxHighBill-PageSubSection">
                                 <u:blocks>
                                     <!-- Block Content -->
-									<m:Text text="sdfsdfsdf" />
-
+									<m:List mode="MultiSelect" items="{path: '/ProductCollection'}" growingThreshold="5" growing="true" >
+										<m:CustomListItem>
+											<m:HBox>
+												<core:Icon size="2rem" src="sap-icon://attachment-photo" class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" />
+												<m:VBox  class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+													<m:Link text="{Name}" target="{ProductPicUrl}" press="handlePress"/>
+													<m:Label text="{ProductId}"/>
+												</m:VBox>
+											</m:HBox>
+										</m:CustomListItem>
+									</m:List>
                                 </u:blocks>
                             </u:ObjectPageSubSection>
                         </u:subSections>
                     </u:ObjectPageSection>
                     
-                    <!-- Usage Table -->
-                    <u:ObjectPageSection class="ccuxUsage-PageSection" title="Usage Table">
+                    <!-- Document 3 -->
+                    <u:ObjectPageSection class="ccuxHighBill-PageSection" title="Documents 3">
                         <u:subSections>
-                            <u:ObjectPageSubSection class="ccuxUsage-PageSubSection">
+                            <u:ObjectPageSubSection class="ccuxHighBill-PageSubSection">
                                 <u:blocks>
                                     <!-- Block Content -->
-									<m:Text text="sdfsdfsdf" />
-
+									<m:List mode="MultiSelect" items="{path: '/ProductCollection'}" growingThreshold="5" growing="true" >
+										<m:CustomListItem>
+											<m:HBox>
+												<core:Icon size="2rem" src="sap-icon://attachment-photo" class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" />
+												<m:VBox  class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+													<m:Link text="{Name}" target="{ProductPicUrl}" press="handlePress"/>
+													<m:Label text="{ProductId}"/>
+												</m:VBox>
+											</m:HBox>
+										</m:CustomListItem>
+									</m:List>
                                 </u:blocks>
                             </u:ObjectPageSubSection>
                         </u:subSections>
                     </u:ObjectPageSection>
-                    
-                    <!-- Usage Table -->
-                    <u:ObjectPageSection class="ccuxUsage-PageSection" title="Usage Table">
-                        <u:subSections>
-                            <u:ObjectPageSubSection class="ccuxUsage-PageSubSection">
-                                <u:blocks>
-                                    <!-- Block Content -->
-									<m:Text text="sdfsdfsdf" />
-
-                                </u:blocks>
-                            </u:ObjectPageSubSection>
-                        </u:subSections>
-                    </u:ObjectPageSection>
-                    
-                	<!-- Usage Table -->
-                    <u:ObjectPageSection class="ccuxUsage-PageSection" title="Usage Table">
-                        <u:subSections>
-                            <u:ObjectPageSubSection class="ccuxUsage-PageSubSection">
-                                <u:blocks>
-                                    <!-- Block Content -->
-									<m:Text text="sdfsdfsdf" />
-
-                                </u:blocks>
-                            </u:ObjectPageSubSection>
-                        </u:subSections>
-                    </u:ObjectPageSection>
-                    
-                    <!-- Usage Table -->
-                    <u:ObjectPageSection class="ccuxUsage-PageSection" title="Usage Table">
-                        <u:subSections>
-                            <u:ObjectPageSubSection class="ccuxUsage-PageSubSection">
-                                <u:blocks>
-                                    <!-- Block Content -->
-									<m:Text text="sdfsdfsdf" />
-
-                                </u:blocks>
-                            </u:ObjectPageSubSection>
-                        </u:subSections>
-                    </u:ObjectPageSection>
-                    
-                    <!-- Usage Table -->
-                    <u:ObjectPageSection class="ccuxUsage-PageSection" title="Usage Table">
-                        <u:subSections>
-                            <u:ObjectPageSubSection class="ccuxUsage-PageSubSection">
-                                <u:blocks>
-                                    <!-- Block Content -->
-									<m:Text text="sdfsdfsdf" />
-
-                                </u:blocks>
-                            </u:ObjectPageSubSection>
-                        </u:subSections>
-                    </u:ObjectPageSection>
-                    
-                    <!-- Usage Table -->
-                    <u:ObjectPageSection class="ccuxUsage-PageSection" title="Usage Table">
-                        <u:subSections>
-                            <u:ObjectPageSubSection class="ccuxUsage-PageSubSection">
-                                <u:blocks>
-                                    <!-- Block Content -->
-									<m:Text text="sdfsdfsdf" />
-
-                                </u:blocks>
-                            </u:ObjectPageSubSection>
-                        </u:subSections>
-                    </u:ObjectPageSection>
-                    
-                    
 
                 </u:sections>
             </u:ObjectPageLayout>

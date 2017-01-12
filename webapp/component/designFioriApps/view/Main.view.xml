@@ -39,6 +39,9 @@
         <utg:Slide background="BlueGray"><mvc:XMLView viewName="utegration.fiori.frontend.component.designFioriApps.view.slides.Slide-25"/></utg:Slide>
         <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.designFioriApps.view.slides.Slide-26"/></utg:Slide>
         <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.designFioriApps.view.slides.Slide-27"/></utg:Slide>
+        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.designFioriApps.view.slides.Slide-28"/></utg:Slide>
+        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.designFioriApps.view.slides.Slide-29"/></utg:Slide>
+        <utg:Slide background="Dark"><mvc:XMLView viewName="utegration.fiori.frontend.component.designFioriApps.view.slides.Slide-30"/></utg:Slide>
     </utg:SlideNavContainer>
 
 </mvc:View>

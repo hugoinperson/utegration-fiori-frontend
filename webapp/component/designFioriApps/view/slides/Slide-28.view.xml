@@ -23,16 +23,9 @@
 			direction="Column"
 			alignItems="Center"
 			justifyContent="Center">
-			<utg:FormatText
-				level="H1">
-				<m:Text text="Example"/>
-			</utg:FormatText>
-			<utg:FormatText
-				order="1"
-				level="H3">
-				<m:Text text="approval app ✅"/>
-			</utg:FormatText>
-            
+
+			<m:Image densityAware="false" src="img/tile-auth.png" class="utg-fiori-imageSizeLarge"/>
+
 		</utg:AnimateBox>
 	
 	</utg:AnimateBox>

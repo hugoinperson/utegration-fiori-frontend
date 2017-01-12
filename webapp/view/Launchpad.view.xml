@@ -49,7 +49,7 @@
 											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Fiori Design Principles"
 												subheader="5 new design principles" frameType="TwoByOne" app:tileName="topic-principles" press="onLaunchpadTilePress">
 												<tileContent>
-													<TileContent>
+													<TileContent unit="16" footer="slides">
 														<content>
 															<FeedContent
 																contentText="Role-based, adaptive, coherent, simple and delightful."
@@ -63,7 +63,7 @@
 											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="History"
 												subheader="Subheader" frameType="OneByOne" app:tileName="topic-history" press="onLaunchpadTilePress">
 												<tileContent>
-													<TileContent>
+													<TileContent unit="11" footer="slides">
 														<content>
 															<ImageContent src="sap-icon://sap-box"/>
 														</content>
@@ -85,7 +85,7 @@
 											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Design Fiori Apps"
 												subheader="Single entry point to access all apps" frameType="OneByOne" app:tileName="topic-designFioriApps" press="onLaunchpadTilePress">
 												<tileContent>
-													<TileContent unit="20" footer="slides">
+													<TileContent unit="30" footer="slides">
 														<content>
 															<ImageContent src="sap-icon://business-one"/>
 														</content>
@@ -96,7 +96,7 @@
 											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Fiori for iOS"
 												subheader="Fiori design guideline for iOS" frameType="OneByOne" app:tileName="topic-iOS" press="onLaunchpadTilePress">
 												<tileContent>
-													<TileContent unit="20" footer="slides">
+													<TileContent unit="14" footer="slides">
 														<content>
 															<ImageContent src="sap-icon://business-one"/>
 														</content>
@@ -118,7 +118,7 @@
 											<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop utg-fiori-launchpad-tileLayout" header="Build Fiori App"
 												subheader="Version 1.42" frameType="OneByOne" app:tileName="topic-buildFioriApps" press="onLaunchpadTilePress">
 												<tileContent>
-													<TileContent unit="20" footer="slides">
+													<TileContent unit="19" footer="slides">
 														<content>
 															<ImageContent src="sap-icon://sap-ui5"/>
 														</content>
