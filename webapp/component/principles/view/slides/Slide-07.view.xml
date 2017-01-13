@@ -23,7 +23,9 @@
 			alignItems="Center"
 			justifyContent="Center">
 			<utg:FormatText level="H2">
-				<utg:Text text="Adaptiveness as a content strategy for the available space."/>
+				<utg:Text text="Adaptiveness as a"/>
+				<utg:AnimateStrokeText order="1" text="content strategy"/>
+				<utg:Text text="for the available space."/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 		

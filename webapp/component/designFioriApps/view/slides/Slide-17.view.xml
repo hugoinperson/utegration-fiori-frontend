@@ -27,7 +27,7 @@
 				<m:Text text="🌸 Fiori elements 🌼"/>
 			</utg:FormatText>
 			<utg:FormatText level="H3" order="1">
-				<utg:Text text="generating UIs at runtime based on annotations"/>
+				<utg:Text text="configuring UIs at runtime based on annotations"/>
 			</utg:FormatText>
 		</utg:AnimateBox>
 	
